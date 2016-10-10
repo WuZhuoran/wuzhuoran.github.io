@@ -1154,52 +1154,95 @@
 </head>
 
 <body class='markdown-preview'>
+  <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+  <ul>
+    <li><a href="#discussion-2016104-tuesday">Discussion 2016/10/4 Tuesday</a>
+      <ul>
+        <li><a href="#example-of-profit-cost-and-revenue-second-order-condition">Example of Profit, Cost, and Revenue, <strong>Second Order Condition</strong></a></li>
+        <li><a href="#example-of-consumer-problem-envelope-method">Example of consumer problem, <strong>Envelope method</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- /TOC -->
   <h1>Discussion 2016/10/4 Tuesday</h1>
-  <p><span class="math"><script type="math/tex">\pi = revenue - cost</script></span>.</p>
+  <hr>
   <blockquote>
-    <p>Example:
-      <br>
-      <span class="math"><script type="math/tex">R = 6x_1 + \frac{99}{4}x_2</script></span>;
-      <br>
-      <span class="math"><script type="math/tex">C = \frac{x_1x_2}{4} + ln(\frac{1}{x_{1}^{\frac{1}{8}}}) + \frac{x_2^2}{2}</script></span>
-      <br>
-      <span class="math"><script type="math/tex">max(x_1, x_2) = R - C</script></span></p>
+    <p>To Solve Problem like <span class="math"><script type="math/tex">\displaystyle \pi = revenue - cost</script></span></p>
   </blockquote>
-  <p><img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-dca69.png?v=1476001078439" alt="IMG_1081">
-    <br>
-    <img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-c07b0.png?v=1476001078440" alt="IMG_0880">
-    <br>
-    <img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-93faf.png?v=1476001078440" alt="IMG_6016">
-    <br>
-    <br> Find the critical points <span class="math"><script type="math/tex">x_1 = 2 ~ or ~ x_1 = 1, (x_1, x_2) = (2, \frac{97}{4}) ~ or ~ (1, \frac{49}{2})</script></span>
-    <br>
-    <br>
-  </p>
-  <p><span class="math"><script type="math/tex">\frac{\partial^2 F}{\partial x_1^2} \lt 0, \frac{\partial^2 F}{\partial x_2^2} \lt 0</script></span></p>
-  <p><span class="math"><script type="math/tex">\frac{\partial^2 F}{\partial x_1^2} * \frac{\partial^2 F}{\partial x_2^2} \gt (\frac{\partial^2 F}{\partial x_1 \partial x_2})^2</script></span></p>
-  <p><img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-3ef7d.png?v=1476001078440" alt="IMG_5340">
-    <br>
-    <img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-d75bb.png?v=1476001078440" alt="IMG_8111">
-    <br>
-    <img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-6ef42.png?v=1476001078441" alt="IMG_0091">
-    <br>
-    <img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-e7e2c.png?v=1476001078441" alt="IMG_8125"></p>
-  <p>Example of consumer problem, <strong>Envelope method</strong>
-    <br> to find max of <span class="math"><script type="math/tex">x_1^{\frac{2}{5}} x_2^{\frac{3}{5}}</script></span></p>
-  <p>such that <span class="math"><script type="math/tex">p_1x_1 + p_2x_2 = I</script></span>.</p>
-  <p><span class="math"><script type="math/tex">max(x_1, x_2, \lambda):x_1^{\frac{2}{5}}x_2^{\frac{3}{5}} + \lambda(I - p_1x_1 + p_2x_2);</script></span></p>
-  <p><span class="math"><script type="math/tex">\frac{2x_2}{3x_1} = \frac{p_1}{p_2} \rightarrow x_2 = \frac{3x_1p_1}{2p_2}</script></span></p>
-  <p>replace in constraint:
-    <span class="math"><script type="math/tex">x_1^* = \frac{2I}{5p_1}, x_2^* = \frac{3I}{5p_2}</script></span></p>
-  <p><img src="..\..\ECON-11\assets\ECNO-11-Discussion-2016-9-27-58c7e.png?v=1476001078441" alt="IMG_2896"></p>
-  <p>the value of the function:
-    <br>
-    <span class="math"><script type="math/tex">V(x_1^* ,x_2^* ) = (\frac{2I}{5p_1})^{\frac{2}{5}} * (\frac{3I}{5p_2})^{\frac{3}{5}}</script></span></p>
-  <p>change in well-being when I changes, <span class="math"><script type="math/tex">\frac{\partial V(x_1^* ,x_2^* )}{\partial I}</script></span></p>
+  <h2>Example of Profit, Cost, and Revenue, <strong>Second Order Condition</strong></h2>
+  <hr>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle R = 6x_1 + \frac{99}{4}x_2
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle C = \frac{x_1x_2}{4} + ln(\frac{1}{x_{1}^{1/8}}) + \frac{x_2^2}{2}
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle max(x_1, x_2) = R - C
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \max_{x_1, x_2} \left.(6x_1 + \frac{99}{4}x_2 - \frac{x_1x_2}{4} + \frac{1}{8}\ln(x_1) - \frac{x_2^2}{2})\right.
+</script></span>
+  <p>FIRST ORDER</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial \pi}{\partial x_1} = 6 - \frac{x_2}{4} + \frac{1}{8x_1} = 0
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial \pi}{\partial x_2} = \frac{99}{4} - \frac{x_1}{4} = x_2
+</script></span>
+  <p>REPLACE <span class="math"><script type="math/tex">x_2</script></span></p>
+  <span class="math"><script type="math/tex; mode=display">  \begin{align}
+    \displaystyle 6 - \frac{1}{4}(\frac{99}{4} - \frac{x_1}{4}) + \frac{1}{8x_1} & = 0 \\
+    \frac{1}{16x_1}(x_1^2 - 3x_1 + 2)  & = 0 \\
+    x_1 & = \frac{3 \pm \sqrt{9-8}}{2}
+  \end{align}
+</script></span>
+  <p>Find the critical points</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle x_1 = 2 ~ or ~ x_1 = 1, (x_1, x_2) = (2, \frac{97}{4}) ~ or ~ (1, \frac{49}{2})
+</script></span>
+  <p>SECOND ORDER FOR MAX</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 F}{\partial x_1^2} \lt 0, \frac{\partial^2 F}{\partial x_2^2} \lt 0
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 F}{\partial x_1^2} * \frac{\partial^2 F}{\partial x_2^2} \gt (\frac{\partial^2 F}{\partial x_1 \partial x_2})^2
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 \pi}{\partial x_1^2} = -\frac{1}{8x_1^2}
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 \pi}{\partial x_2^2} = -\frac{1}{}
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 \pi}{\partial x_1 \partial x_2} = -\frac{1}{4}
+</script></span>
+  <p>FOR <span class="math"><script type="math/tex">\displaystyle x_1 = 2, x_2 = \frac{97}{4}</script></span></p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2\pi}{\partial x_1^2} < 0
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{1}{32} < \frac{1}{16}
+</script></span>
+  <p>This is not a MAX.</p>
+  <p>FOR <span class="math"><script type="math/tex">\displaystyle x_1 = 1, x_2 = \frac{49}{2}</script></span></p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{1}{8} \gt \frac{1}{16}
+</script></span>
+  <p>This is the only MAX.</p>
+  <h2>Example of consumer problem, <strong>Envelope method</strong></h2>
+  <hr>
+  <p>To find max of <span class="math"><script type="math/tex">\displaystyle x_1^{2/5} x_2^{3/5}</script></span>, such that</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle p_1x_1 + p_2x_2 = I
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle max(x_1, x_2, \lambda):x_1^{2/5}x_2^{3/5} + \lambda(I - p_1x_1 + p_2x_2);
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{2x_2}{3x_1} = \frac{p_1}{p_2} \rightarrow x_2 = \frac{3x_1p_1}{2p_2}
+</script></span>
+  <p>Replace in constraint:</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle x_1^* = \frac{2I}{5p_1}, x_2^* = \frac{3I}{5p_2}
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial x_1^* }{\partial p_2} = 0
+</script></span>
+  <p>NO CHANGE WHEN <span class="math"><script type="math/tex">P_2</script></span> CHANGES</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial x_1^* }{\partial I} = \frac{2}{5p_1} \gt 0
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial x_1^* }{\partial p_1} = -\frac{2I}{5p_1^2} \lt 0
+</script></span>
+  <p>The value of the function:</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle V(x_1^* ,x_2^* ) = (\frac{2I}{5p_1})^{\frac{2}{5}} * (\frac{3I}{5p_2})^{\frac{3}{5}}
+</script></span>
+  <p>Change in well-being when I changes, <span class="math"><script type="math/tex">\displaystyle \frac{\partial V(x_1^* ,x_2^* )}{\partial I}</script></span></p>
   <p><strong><span class="math"><script type="math/tex">\rightarrow</script></span> the definition of envelope theorem:</strong>
-    <br> derivative of the value of the function =</p>
-  <p><span class="math"><script type="math/tex">\frac{\partial L(x_1^* ,x_2^* , \lambda)}{\partial I} = (chain ~ rule) = \frac{\partial L}{\partial I} + \frac{\partial L}{\partial x_1} * \frac{\partial x_1}{\partial I} + \frac{\partial L}{\partial x_2} * \frac{\partial x_2}{\partial I} + \frac{\partial L}{\partial \lambda} * \frac{\partial \lambda}{\partial I}</script></span></p>
-  <p>then plug in the value of <span class="math"><script type="math/tex">x_1^* ,x_2^* ~ and ~ \lambda</script></span>.</p>
+    <br> Derivative of the value of the function =</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial L(x_1^* ,x_2^* , \lambda)}{\partial I} = (chain ~ rule) = \frac{\partial L}{\partial I} + \frac{\partial L}{\partial x_1} * \frac{\partial x_1}{\partial I} + \frac{\partial L}{\partial x_2} * \frac{\partial x_2}{\partial I} + \frac{\partial L}{\partial \lambda} * \frac{\partial \lambda}{\partial I}
+</script></span>
+  <p>Then plug in the value of <span class="math"><script type="math/tex">x_1^* ,x_2^* ~ and ~ \lambda</script></span>.</p>
 </body>
 
 </html>

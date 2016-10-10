@@ -1174,73 +1174,74 @@
     <li>Office : 2nd floor of bunch.</li>
   </ul>
   <h2>Single Variable Max</h2>
+  <hr>
   <ul>
-    <li>first order</li>
+    <li>First Order</li>
   </ul>
-  <span class="math"><script type="math/tex; mode=display">\frac {d}{dx} A* x^b = A*b*x^{b-1}
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac {d}{dx} A* x^b = A*b*x^{b-1}
 </script></span>
-  <span class="math"><script type="math/tex; mode=display">\frac {d}{dx} f(g(x)) = f'(g(x)) * g'(x)
+  <span class="math"><script type="math/tex; mode=display">\displaystyle  \frac {d}{dx} f(g(x)) = f'(g(x)) * g'(x)
 </script></span>
-  <blockquote>
-    <p>Max of <span class="math"><script type="math/tex">ln(15x) - 2x^2</script></span>, when <span class="math"><script type="math/tex">x \gt 0</script></span>
-      <br> derivative <span class="math"><script type="math/tex">\frac {1}{15x}  * 15  - 4x  = 0</script></span>
-      <br>
-      <span class="math"><script type="math/tex">\Rightarrow \frac {1}{x} = 4x</script></span>
-      <br>
-      <span class="math"><script type="math/tex">\Rightarrow x* =\frac{1}{2}</script></span>, (<strong>the critical point</strong>)</p>
-  </blockquote>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle Max \, of \, ln(15x) - 2x^2$, when \, x \gt 0
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle derivative  \frac {1}{15x}  * 15  - 4x  = 0
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \Rightarrow \frac {1}{x} = 4x
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \Rightarrow x^* =\frac{1}{2},  (the \, critical \, point)
+</script></span>
   <ul>
-    <li>second order <span class="math"><script type="math/tex">d^2 * \frac {f(x*)}{dx^2}</script></span>,
-      <br>
-      <span class="math"><script type="math/tex">\lt 0</script></span>, <span class="math"><script type="math/tex">x*</script></span> is a max.
-      <br>
-      <span class="math"><script type="math/tex">\gt 0</script></span>, <span class="math"><script type="math/tex">x*</script></span> is a min.</li>
+    <li>Second Order</li>
   </ul>
-  <blockquote>
-    <p><span class="math"><script type="math/tex">\frac {d}{dx}(\cfrac {1}{x} - 4x) = 0 \Leftarrow\Rightarrow \frac {d^2}{dx^2}(ln(15x) - 2x^2) \Rightarrow -x^{-2}-4</script></span>, the answer is alway negative,
-      <br> therefore the critical point <span class="math"><script type="math/tex">x* = \frac{1}{2}</script></span> is a maximum point.</p>
-  </blockquote>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle
+d^2 * \frac {f(x^* )}{dx^2} =
+\begin{cases}
+\lt 0,  & \text{if $x^* $ is a max} \\[4ex]
+\gt 0, & \text{if $x^* $ is a min}  \\
+\end{cases}
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac {d}{dx}(\cfrac {1}{x} - 4x) = 0 \Leftarrow\Rightarrow \frac {d^2}{dx^2}(ln(15x) - 2x^2) \Rightarrow -x^{-2}-4
+</script></span>
+  <p>The answer is alway negative, therefore the critical point <span class="math"><script type="math/tex">x^* = \frac{1}{2}</script></span> is a maximum point.</p>
   <h2>Multivariate Calculus</h2>
-  <p><span class="math"><script type="math/tex">f(x_1, x_2) = (x_1)^3 + 8x_2</script></span>, such that <span class="math"><script type="math/tex">(x_1) + 2(x_2) = 10</script></span></p>
+  <hr>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle f(x_1, x_2) = (x_1)^3 + 8x_2, \, such \, that \, \displaystyle (x_1) + 2(x_2) = 10
+</script></span>
   <h3>Partical derivatives</h3>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac {\partial f(x_1, x_2)}{\partial x_1} = f
+</script></span>
+  <p>Everything that is <strong>not <span class="math"><script type="math/tex">x_1</script></span></strong> is taken as a <strong>constant</strong>.</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac {\partial F}{\partial x_1} = 3(x_1)^2, \frac {\partial F}{\partial x_2} = 8
+</script></span>
   <ul>
-    <li><span class="math"><script type="math/tex">\frac {\partial f(x_1, x_2)}{\partial x_1} = f</script></span> everything that is <strong>not <span class="math"><script type="math/tex">x_1</script></span></strong> is taken as a <strong>constant</strong>.</li>
+    <li>Second Order</li>
   </ul>
-  <blockquote>
-    <p><span class="math"><script type="math/tex">\frac {\partial F}{\partial x_1} = 3(x_1)^2, \frac {\partial F}{\partial x_2} = 8</script></span></p>
-  </blockquote>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 F}{\partial x_1} * \partial x_2 , \, cross \, partial \, \frac{\partial^22 F}{\partial x_1^2} = (x_1^3)'' = (3(x_1)^2)' = 6x_1
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 F}{\partial (x_2)^2} = 8' = 0
+</script></span>
+  <p>Therefore,</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial^2 F}{\partial x_1} * \partial x_2 = \frac {\partial ^ 2 F}{\partial x_2} * \partial x_1
+</script></span>
   <ul>
-    <li>second order</li>
+    <li>Example:</li>
   </ul>
-  <p><span class="math"><script type="math/tex">\frac{\partial^2 F}{\partial x_1} * \partial x_2</script></span> , cross partial</p>
-  <blockquote>
-    <p><span class="math"><script type="math/tex">\frac{\partial^22 F}{\partial x_1^2} = (x_1^3)'' = (3(x_1)^2)' = 6x_1</script></span>
-      <br>
-      <span class="math"><script type="math/tex">\frac{\partial^2 F}{\partial (x_2)^2} = 8' = 0</script></span></p>
-  </blockquote>
-  <p>therefore, <span class="math"><script type="math/tex">\frac{\partial^2 F}{\partial x_1} * \partial x_2 = \frac {\partial ^ 2 F}{\partial x_2} * \partial x_1</script></span></p>
-  <ul>
-    <li>example:</li>
-  </ul>
-  <blockquote>
-    <p><span class="math"><script type="math/tex">F(x_1,x_2) = (x_1)^{\frac{1}{2}} * (x_2)^{\frac{1}{2}}</script></span>
-      <br>
-      <span class="math"><script type="math/tex">\frac {\partial F}{\partial x_1} = (x_2)^{\frac{1}{2}} * \frac{1}{2} * (x_1)^{-\frac{1}{2}}</script></span></p>
-  </blockquote>
-  <p><strong>to Find the Max <span class="math"><script type="math/tex">F(x_1,x_2)</script></span>, first order <span class="math"><script type="math/tex">\frac{\partial F}{\partial x_1} = \frac {\partial F}{\partial x_2} = 0</script></span></strong>.</p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle F(x_1,x_2) = (x_1)^{\frac{1}{2}} * (x_2)^{\frac{1}{2}}
+</script></span>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac {\partial F}{\partial x_1} = (x_2)^{\frac{1}{2}} * \frac{1}{2} * (x_1)^{-\frac{1}{2}}
+</script></span>
+  <p><strong>To Find the Max <span class="math"><script type="math/tex">\displaystyle F(x_1,x_2)</script></span>, first order <span class="math"><script type="math/tex">\displaystyle \frac{\partial F}{\partial x_1} = \frac {\partial F}{\partial x_2} = 0</script></span></strong>.</p>
   <h3>Lagrangian, MAX = <span class="math"><script type="math/tex">F(x_1,x_2) +  \lambda G(x_1,x_2)</script></span></h3>
+  <hr>
   <p>[<span class="math"><script type="math/tex">F(x)</script></span> is the function we want to maximise, <span class="math"><script type="math/tex">G(x)</script></span> is the conditions ]</p>
-  <blockquote>
-    <p><span class="math"><script type="math/tex">MAX(x_1,x_2)</script></span> in <strong><span class="math"><script type="math/tex">F(x_1, x_2)</script></span></strong> <span class="math"><script type="math/tex">= (x_1)^3 + 8(x_2)</script></span>, such
-      that <strong><span class="math"><script type="math/tex">G(x_1, x_2)</script></span></strong> <span class="math"><script type="math/tex">= (x_1) + 2(x_2) = 10</script></span></p>
-  </blockquote>
+  <p><span class="math"><script type="math/tex">MAX(x_1,x_2)</script></span> in <strong><span class="math"><script type="math/tex">F(x_1, x_2)</script></span></strong> <span class="math"><script type="math/tex">= (x_1)^3 + 8(x_2)</script></span>, such that
+    <strong><span class="math"><script type="math/tex">G(x_1, x_2)</script></span></strong> <span class="math"><script type="math/tex">= (x_1) + 2(x_2) = 10</script></span></p>
   <p><strong>Always take left hand side to right hand side</strong></p>
-  <blockquote>
-    <p><span class="math"><script type="math/tex">(x_1)^3 + 8(x_2)</script></span>, such that <span class="math"><script type="math/tex">G(x) = 0</script></span>
-      <span class="math"><script type="math/tex">max(x_1, x_2, \lambda):~Let~ L = (x_1)^3 + 8(x_2) +  \lambda[(10 - (x_1) - 2(x_2)]</script></span>
-      <br> first order: <strong><span class="math"><script type="math/tex">\frac{\partial L}{\partial x_1}</script></span></strong> <span class="math"><script type="math/tex">= 3(x_1)^2 -  \lambda</script></span>, <strong><span class="math"><script type="math/tex">\frac{\partial L}{\partial x_2}</script></span></strong>      <span class="math"><script type="math/tex">= 8 - 2\lambda</script></span>, <strong><span class="math"><script type="math/tex">\frac{\partial L}{\partial \lambda}</script></span></strong> <span class="math"><script type="math/tex">= 10 - (x_1) - 2(x_2)</script></span>      [ Always <span class="math"><script type="math/tex">G(x_1, x_2)</script></span>].
-      <br> to find the max, all these derivatives are zero.</p>
-  </blockquote>
+  <p><span class="math"><script type="math/tex">\displaystyle (x_1)^3 + 8(x_2)</script></span>, such that <span class="math"><script type="math/tex">G(x) = 0</script></span></p>
+  <span class="math"><script type="math/tex; mode=display">\displaystyle max(x_1, x_2, \lambda): \, Let \,  L = (x_1)^3 + 8(x_2) +  \lambda[(10 - (x_1) - 2(x_2)]
+</script></span>
+  <p>First order: <strong><span class="math"><script type="math/tex">\frac{\partial L}{\partial x_1}</script></span></strong> <span class="math"><script type="math/tex">= 3(x_1)^2 -  \lambda</script></span>, <strong><span class="math"><script type="math/tex">\displaystyle \frac{\partial L}{\partial x_2}</script></span></strong>    <span class="math"><script type="math/tex">= 8 - 2\lambda</script></span>, <strong><span class="math"><script type="math/tex">\frac{\partial L}{\partial \lambda}</script></span></strong> <span class="math"><script type="math/tex">= 10 - (x_1) - 2(x_2)</script></span>    [ Always <span class="math"><script type="math/tex">G(x_1, x_2)</script></span>].</p>
+  <p>To find the max, all these derivatives are zero.</p>
 </body>
 
 </html>
