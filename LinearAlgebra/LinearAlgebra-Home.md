@@ -31,7 +31,7 @@
 
    2. $T(c\vec{x}) = cT(\vec{x}), c \in \color{#0FF}{F}$     
 
-   这个变换就叫做`linear transformation`，比如我们以刚刚那个$\vec{a_1} = (1 ,2 ,3)$ 变成 $\vec{a_2} = (2,3,4)$ 的变换举个例子。我们随便从 $\color{#FF0}{V}$ 也就是 $\color{#FF0}{R^3}$ 取两个`vector`, 分别是 $\vec{x} = (1,1,1)$ 和 $\vec{y} = (2,2,2)$  当然 $\vec{x}+\vec{y} = (3,3,3)$ 。然后你看， $T(\vec{x} + \vec{y}) = (6,6,6)$， $T(\vec{x}) = (2,2,2)$ ， $T(\vec{y}) = (4,4,4)$ 加起来就是 $(6,6,6)$ 你看就是 $T(\vec{x} +\vec{y})$ 对吧。同理对第二个式子也成立，所以这个把一个向量里面每个值都乘以2的这个`Transformation`，就是一个`Linear Transformation`。
+   这个变换就叫做`linear transformation`，比如我们以刚刚那个 $\vec{a_1} = (1 ,2 ,3)$ 变成 $\vec{a_2} = (2,3,4)$ 的变换举个例子。我们随便从 $\color{#FF0}{V}$ 也就是 $\color{#FF0}{R^3}$ 取两个`vector`, 分别是 $\vec{x} = (1,1,1)$ 和 $\vec{y} = (2,2,2)$  当然 $\vec{x}+\vec{y} = (3,3,3)$ 。然后你看， $T(\vec{x} + \vec{y}) = (6,6,6)$， $T(\vec{x}) = (2,2,2)$ ， $T(\vec{y}) = (4,4,4)$ 加起来就是 $(6,6,6)$ 你看就是 $T(\vec{x} +\vec{y})$ 对吧。同理对第二个式子也成立，所以这个把一个向量里面每个值都乘以2的这个`Transformation`，就是一个`Linear Transformation`。
 
 * `Linear Transformation`的本质
 
