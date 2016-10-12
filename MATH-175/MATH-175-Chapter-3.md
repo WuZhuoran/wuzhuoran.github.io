@@ -17,38 +17,96 @@
 
 # Chapter 3 Annuities  
 
-## 3.1 introduction:     
+## 3.1 introduction:
+
 * **Annuity** is the series of payments made at specified intervals for a fixed or continent period.     
-> repayment of loan;     
-> deposits to a retirement fund;     
+	`e.g.` repayment of loan, or deposits to a retirement fund;     
+* **Payment period** , the interval.         
 
-* **Payment period** , the interval.     
-*
+## 3.2 Annuities - immediate,
+`Pay at the **end** of each payment period, receive first payment at the end of first payment period.`     
 
-## 3.2 Annuities - immediate, at the **end** of each payment period.      
-present value of the basic annuity immediate lasting n period equals the sum of the present value of the $n$ end-of-period payments, $v(1) + v(2) + \ldots + v(n)$.      
-![Snip20161005_100](assets/MATH-175-Chapter-3-c20df.png)     
-![Snip20161005_101](assets/MATH-175-Chapter-3-2cafc.png)     
+* Basic annuity immediate lasting n period, with level payment 1.      
+* The Present value of basic annuity immediate equals the sum of the present value of the $n$ end-of-period payments:     
+$v(1) + v(2) + \ldots + v(n)$.  
+<br/>  
+  * when it is compound interest at an effective rate of $i$ per period,     
+	$v(t) = (1+i)^{-t}= v^t$     
+	therefore the sum is  $v+v^2+v^3+\ldots+v^n$.     
+<br/>  
+* Geomatric series:      
+$c+cr+c^2+ \ldots +cr^{n-1} = \frac{c(1-r^n)}{1-r}$.     
+&rarr; the present value of the basic annuuity-immediate lasting $n$ interest periods $v+v^2+v^3+\ldots+v^n=\frac{v(1-v^n)}{1-v}=\frac{1-v^n}{i}$.   
+<br/>  
+* Present value symbol a<sub>${\overline{n|}}i$</sub>.      
+<br/>    
+* Compound interest annual effective rate:     
+a<sub>${\overline{n|}}i$</sub>$=v+v^2+v^3+\ldots+v^n=\frac{1-v^v}{i}$.   
+<br/>   
+* Final payment is S<sub>${\overline{n|}}i$</sub>, measure teh value $n$ period after, only for compound interst $a(t)=(1+i)^t$.  
+<br/>  
+* When $a(n)=(1+i)^n$, S<sub>${\overline{n|}}i$</sub>$=(1+i)^n$a<sub>${\overline{n|}}i$</sub>, and a<sub>${\overline{n|}}i$</sub> $=v^n$S<sub>${\overline{n|}}i$</sub>.     
+<br/>  
+* In General: S<sub>${\overline{n|}}i$</sub>$=a(n)$ a<sub>${\overline{n|}}i$</sub>, and a<sub>${\overline{n|}}i$</sub> $=v(n)$ S<sub>${\overline{n|}}i$</sub>.   
+<br/>  
+* S<sub>${\overline{n|}}i$</sub>$=\frac{(1+i)^n-1}{i}$     
+<br/>  
+* PMT ＝ FV／a<sub>${\overline{n|}}i$</sub>     
+If future value (Loan)is to be repaid by n level end-of-period PMT, with effective interest rate for the payment period is $i$.
 
-## 3.3 Annuities - due, at the **beginning** of each payment period.       
-![Snip20161003_71](assets/MATH-175-Chapter-3-b3f9a.png)      
-![Snip20161003_70](assets/MATH-175-Chapter-3-e40c5.png)     
-![Snip20161005_103](assets/MATH-175-Chapter-3-447b2.png)     
+* PMT ＝ FV／S<sub>${\overline{n|}}i$</sub>    
+If future value is to be accumulated by n level end-of-period PMT, with effective interest rate for the payment period is $i$.
 
-## 3.4 Perpetuity, annuity with an **infinite** term.       
-![Snip20161003_68](assets/MATH-175-Chapter-3-0e58a.png)     
+* $i+1/$ S<sub>${\overline{n|}}i$</sub> $=1/$ a<sub>${\overline{n|}}i$</sub>
+
+* Calculator, calculare without BGN on the top, meadnning the payment is given at the end of period. `See page p120`.     
+  * I/Y, interest rate per year, nominal interest rate, as percentage;
+  * P/Y, payments per year;     
+  * C/Y, the number of interest conversion period per year.
+
+## 3.3 Annuities - due     
+`Pay at the **beginning** of each payment period.`
+
+* ${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub>, represents the value at (first payment time) that lasts $n$ periods.   (present value).
+* ${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub>, represents the value (at the end) that lasts $n$ periods.   
+* ${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub> $=(1+i)^n$ ${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub>,
+and ${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub> $=v^n$ ${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub>.     
+<br/>  
+* In General: ${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub>$=a(n)$ ${\ddot  {a}}$<sub>${\overline{n|}}i$</sub>, and ${\ddot  {a}}$<sub>${\overline{n|}}i$</sub> $=v(n)$ ${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub>.   
+<br/>  
+* Compound interest annual effective rate:     
+${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub>$=v+v^2+v^3+\ldots+v^n=\frac{1-v^v}{i}$.   
+<br/>      
+* $v+v^2+v^3+\ldots+v^{n-1}=\frac{1(1-v^n)}{1-v}=\frac{1-v^n}{d}$.       
+* ${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub>$=\frac{(1+i)^n-1}{d}$     
+<br/>  
+`note:`  
+<br/>
+* ${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub> $=(1+i)$ a<sub>${\overline{n|}}i$</sub>     
+${\ddot  {S}}$ <sub>${\overline{n|}}i$</sub> $=(1+i)$ S<sub>${\overline{n|}}i$</sub>      
+* ${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub> $=$ a<sub>${\overline{n-1|}}i$</sub> $+1$     
+${\ddot  {a}}$ <sub>${\overline{n|}}i$</sub> $=$ a<sub>${\overline{n-1|}}i$</sub> $+1$
+
+
+## 3.4 Perpetuity,
+`annuity with an infinity term`.     
+* infinite payment periods, ${\ddot  {a}}$ <sub>${\overline{∞|}}i$</sub> $=$ a<sub>${\overline{∞|}}i$</sub> $+1$    
+* ${\ddot  {a}}$ <sub>${\overline{∞|}}i$</sub> $=\frac{1}{d}$     
+* a<sub>${\overline{∞|}}i$</sub> $=\frac{1}{i}$
+`example 3.5.7`
 
 ## 3.5 Deferred annuities and values on any date      
-1. retrospective method     
+* A wait of more than one payment period for a payment. retrospective method     
+*
 
 ## 3.6 Outstanding loan balance     
-
+how to find loan balance at an intermediate date between the loan origination date and the date of the final payment.      
+* Retropective method,
 ## 3.7 Non-level Annuities
 
+---     
 ## 3.8 Annuities with payments in geometry progression:     
 
 ## 3.9 Annuities with payments in arithmetic progression:     
 
 ## 3.10 Yield rate     
-
-## 3.11

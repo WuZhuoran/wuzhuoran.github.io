@@ -1,6 +1,14 @@
 # CHANGE LOG
 ---
 
+## 0.8.0 (Oct 12, 2016)
+
+### Notes
+
+* Add `MATH-115A` Notes.
+* Update old notes by `Melissa`.
+
+
 ## 0.7.0 (Oct 11, 2016)
 
 ### Notes

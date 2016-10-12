@@ -661,6 +661,10 @@
       border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
     }
 
+    .spell-check-corrections {
+      width: 25em !important;
+    }
+
     pre.editor-colors,
     .host {
       background-color: #282c34;
@@ -1156,9 +1160,19 @@
 <body class='markdown-preview'>
   <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
   <ul>
-    <li><a href="#preface">Preface</a></li>
-    <li><a href="#chapter-1">Chapter 1</a></li>
-    <li><a href="#chapter-2">Chapter 2</a>
+    <li>
+      <p><a href="#preface">Preface</a></p>
+    </li>
+    <li>
+      <p><a href="#chapter-1">Chapter 1</a></p>
+      <ul>
+        <li><a href="#general-features">General features</a></li>
+        <li><a href="#theorey-of-value">Theorey of value</a></li>
+        <li><a href="#Microeconomics">Microeconomics</a></li>
+      </ul>
+    </li>
+    <li>
+      <p><a href="#chapter-2">Chapter 2</a></p>
       <ul>
         <li><a href="#profits">Profits</a>
           <ul>
@@ -1182,70 +1196,109 @@
   </ul>
   <!-- /TOC -->
   <hr>
+  <p><code>Sept 28, 2016 Thursday Lecture</code></p>
   <h1>Preface</h1>
   <ul>
-    <li>2 midterms 10/25, 11/17 in class, 1hr 15 mins,</li>
-    <li>1 final 12/8 11:30-2:30</li>
-    <li>problems set will be graded due in one week</li>
+    <li>Midterms 10/25, 11/17 in class, 1hr 15 mins,</li>
+    <li>Final 12/8 11:30-2:30</li>
+    <li>Problems set will be graded due in one week</li>
     <li>HW 10%</li>
-    <li>30/30/30, when final is lower than midterm</li>
-    <li>50% higher midterm, 40% final, when final is higher than midterm.</li>
+    <li>Exam 90%
+      <ul>
+        <li>30/30/30, when final is lower than midterm</li>
+        <li>50% higher midterm, 40% final, when final is higher than midterm.</li>
+      </ul>
+    </li>
   </ul>
   <h1>Chapter 1</h1>
-  <p><strong>Microeconomics, behavior of individual decision makers (consumers and firms).</strong></p>
+  <h2>General features</h2>
+  <ul>
+    <li>the <em>ceteris paribus</em> assumption, meaning other things stay same.</li>
+    <li>Optimization assumptions, maximize the profits.</li>
+    <li>positive - normative distinction, positive = real world, normative = how things shoulebe like.</li>
+  </ul>
+  <h2>Theorey of value</h2>
   <ul>
     <li>
+      <p>Determine Equilibrium price,
+        <br> set quantity demanded = quantity supplied, q<sub>D</sub> = q<sub>S</sub></p>
+    </li>
+    <li>
+      <p>Production possibility frontier,</p>
+      <ul>
+        <li>No free luch, oppotunity cost;</li>
+        <li>Oppotunity cost depends on how much each goods is produced.</li>
+      </ul>
+    </li>
+  </ul>
+  <h2>Microeconomics</h2>
+  <ul>
+    <li>
+      <p><code>Behavior of individual decision makers (consumers and firms)</code>.</p>
+    </li>
+    <li>
       <p>Maximizing behaviours.
+        <br>
         <code>e.g.</code> stay bed/go to class, bacon/cereals,</p>
     </li>
     <li>
       <p>Price elasticity / Income effect.
+        <br>
         <code>e.g.</code> bus/car to school</p>
     </li>
     <li>
       <p>Price is not only the money you pay. Psychological cost (do not want to risk/ waste time).
+        <br>
         <code>e.g.</code> bank/parent loan/ investments (bonds, stocks)</p>
     </li>
     <li>
       <p>Marginal rate of substation. (cost of behavior), maximizing behavior.
+        <br>
         <code>e.g.</code> listen to the lecture/doze off, history/econ/job</p>
     </li>
   </ul>
+  <hr>
   <h1>Chapter 2</h1>
   <ul>
-    <li>Mathematics of optimisation.</li>
-    <li>Why do we need to know?</li>
-    <li>Consumers attempt to maximize their welfare/utility when making decision.</li>
-    <li>Firms attempt to maximizing their profit when choosing input and outputs.</li>
+    <li>
+      <p>Mathematics of optimisation.</p>
+      <ul>
+        <li>Consumers attempt to maximize their welfare/utility when making decision.</li>
+        <li>Firms attempt to maximizing their profit when choosing input and outputs.</li>
+      </ul>
+    </li>
+    <li>
+      <p>Profits <span class="math"><script type="math/tex">\pi</script></span> = total revenue - total cost</p>
+    </li>
+    <li>
+      <p>Total revenue = <span class="math"><script type="math/tex">p*q</script></span>, <span class="math"><script type="math/tex">p</script></span> is the price and <span class="math"><script type="math/tex">q</script></span> is the quantity.</p>
+    </li>
   </ul>
-  <h2>Profits</h2>
-  <p><span class="math"><script type="math/tex">\pi</script></span> = profits = total revenue - total cost total revenue = <span class="math"><script type="math/tex">p*q</script></span>, <span class="math"><script type="math/tex">p</script></span> is the
-    price and <span class="math"><script type="math/tex">q</script></span> is the quantity.</p>
-  <h3>Derivates</h3>
-  <p><code>first order derivatives</code></p>
+  <h2>Derivates</h2>
+  <h3>first order derivatives</h3>
   <ol>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = Q, ~ Q ~ is ~ a ~ constant, ~ derivatives = 0;
+      <span class="math"><script type="math/tex; mode=display">f(x) = Q, ~ Q ~ is ~ a ~ constant, ~ f'(x) = 0;
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = Q*x, ~ derivatives = a;
+      <span class="math"><script type="math/tex; mode=display">f(x) = Q*x, ~ f'(x) = a;
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = a*g(x),~derivatives = a ~ d ~ of ~  g(x);
+      <span class="math"><script type="math/tex; mode=display">f(x) = a*g(x),~ f'(x) = a ~ d ~ of ~  g(x);
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = x^b, ~ b ~ is ~ constant, ~ derivatives = b x^{(b-1)};
+      <span class="math"><script type="math/tex; mode=display">f(x) = x^b, ~ b ~ is ~ constant, ~ f'(x) = b x^{(b-1)};
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = a x^b = a g(x) ~ derivatives = a*b*x^{(b-1)};
+      <span class="math"><script type="math/tex; mode=display">f(x) = a x^b = a g(x) ~ f'(x) = a*b*x^{(b-1)};
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = ln(x) ~ derivatives = \frac {1}{x};
+      <span class="math"><script type="math/tex; mode=display">f(x) = ln(x) ~ f'(x) = \frac {1}{x};
 </script></span>
     </li>
   </ol>
@@ -1265,31 +1318,32 @@
   </blockquote>
   <ol start="7">
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = a^x ~ derivatives = ln(a) * a^x;
+      <span class="math"><script type="math/tex; mode=display">f(x) = a^x ~ f'(x) = ln(a) * a^x;
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = e^x ~ derivatives = e^x;
+      <span class="math"><script type="math/tex; mode=display">f(x) = e^x ~ f'(x) = e^x;
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = g(x) + h(x) ~ derivatives = g'(x) + h'(x);
+      <span class="math"><script type="math/tex; mode=display">f(x) = g(x) + h(x) ~ f'(x) = g'(x) + h'(x);
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = g(x) * h(x) ~ derivatives = g'(x)h(x) + h'(x)g(x);
+      <span class="math"><script type="math/tex; mode=display">f(x) = g(x) * h(x) ~ f'(x) = g'(x)h(x) + h'(x)g(x);
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = \frac {g(x)}{h(x)} ~ derivatives = \frac {[g'(x)h(x) - h'(x)g(x)]} {g^{2}(x)};
+      <span class="math"><script type="math/tex; mode=display">f(x) = \frac {g(x)}{h(x)}  ~ f'(x) = \frac {[g'(x)h(x) - h'(x)g(x)]} {g^{2}(x)};
 </script></span>
     </li>
     <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = g[h(x)] ~ derivatives = \frac {dg}{dh} * \frac {dh}{dx} ~~~ chain ~ rule;
+      <span class="math"><script type="math/tex; mode=display">f(x) = g[h(x)] ~ f'(x) = \frac {dg}{dh} * \frac {dh}{dx} ~~~ chain ~ rule;
 </script></span>
     </li>
   </ol>
-  <p><code>second order derivatives</code></p>
+  <br>
+  <h3>Second order derivatives</h3>
   <ul>
     <li>first order condition max of a function with one variable, the derivative at that point is 0;</li>
     <li>second order condition to make sure the critical point is the max ( second derivative is negative). critical point is min when second derivative is positive.</li>
@@ -1299,31 +1353,32 @@
   <blockquote>
     <span class="math"><script type="math/tex; mode=display">\pi = f(q) = 11q - 8 - q - q^2, ~ find ~ max:
 </script></span>
+    <ol>
+      <li>write down</li>
+    </ol>
+    <span class="math"><script type="math/tex; mode=display">f.o.c ~ \Rightarrow ~  f'(q) = 0:
+</script></span>
+    <span class="math"><script type="math/tex; mode=display">f'(q) = 11 - 0 - 1 -2q = 10 - 2q
+</script></span>
+    <p><span class="math"><script type="math/tex">~~~~~~~~~and ~ set</script></span></p>
+    <span class="math"><script type="math/tex; mode=display">10 - 2q = 0, ~ \rightarrow ~ q* = 5
+</script></span>
+    <ol start="2">
+      <li>check s.o.c</li>
+    </ol>
+    <span class="math"><script type="math/tex; mode=display">f''(q) \lt 0:
+</script></span>
+    <span class="math"><script type="math/tex; mode=display">f''(q) = - 2 \lt 0
+</script></span>
+    <ol start="3">
+      <li>∴ <span class="math"><script type="math/tex">f(q)</script></span> is the maximum when <span class="math"><script type="math/tex">q = 5</script></span>.
+        <br>
+        <br>
+      </li>
+    </ol>
   </blockquote>
-  <ol>
-    <li>write down</li>
-  </ol>
-  <span class="math"><script type="math/tex; mode=display">f.o.c ~ \Rightarrow ~  f'(q) = 0:
-</script></span>
-  <span class="math"><script type="math/tex; mode=display">f'(q) = 11 - 0 - 1 -2q = 10 - 2q
-</script></span>
-  <p><span class="math"><script type="math/tex">~~~~~~~~~and ~ set</script></span></p>
-  <span class="math"><script type="math/tex; mode=display">10 - 2q = 0, ~ \rightarrow ~ q* = 5
-</script></span>
-  <ol start="2">
-    <li>check s.o.c</li>
-  </ol>
-  <span class="math"><script type="math/tex; mode=display">f''(q) \lt 0:
-</script></span>
-  <span class="math"><script type="math/tex; mode=display">f''(q) = - 2 \lt 0
-</script></span>
-  <ol start="3">
-    <li>∴ <span class="math"><script type="math/tex">f(q)</script></span> is the maximum when <span class="math"><script type="math/tex">q = 5</script></span>.</li>
-  </ol>
-  <h3>Function with several variable</h3>
-  <ul>
-    <li>utility function</li>
-  </ul>
+  <h2>Function with several variable</h2>
+  <h3>Utility function</h3>
   <blockquote>
     <p>x<sub>1</sub> = Food consumption, x<sub>2</sub> = Transportation, x<sub>3</sub> = Housing , … , x<sub>n</sub> = leisure</p>
     <span class="math"><script type="math/tex; mode=display">U =f (x_1 , x_2 , x_3 , \cdots , x_n  )
@@ -1336,38 +1391,45 @@
 </script></span>
   </blockquote>
   <ul>
-    <li><span class="math"><script type="math/tex">\rightarrow max ~ f(x_1, x_2, x_3, \ldots, x_n)</script></span></li>
+    <li><span class="math"><script type="math/tex">\rightarrow max ~ f(x_1, x_2, x_3, \ldots, x_n)</script></span>
+      <br>
+      <br>
+    </li>
   </ul>
-  <p><code>Partial derivatives</code></p>
-  <blockquote>
-    <ol>
-      <li></li>
-    </ol>
-    <span class="math"><script type="math/tex; mode=display">f(x_1, x_2) = ax_1^2 + bx_1x_2 + cx_2^2 \\
+  <h3>Partial derivatives</h3>
+  <ol>
+    <li></li>
+  </ol>
+  <span class="math"><script type="math/tex; mode=display">f(x_1, x_2) = ax_1^2 + bx_1x_2 + cx_2^2 \\
 f'(x_1) = \frac {\partial f}{\partial x_1} = 2ax_1 + bx_2 \\
 f'(x_2) = \frac {\partial f}{\partial x_2} = bx_1 + 2cx_2 \\
 </script></span>
-    <ol start="2">
-      <li></li>
-    </ol>
-    <span class="math"><script type="math/tex; mode=display">f(x_1, x_2) = e^{ax_1 +bx_2} = g(h(x_1, x_2));\\
+  <ol start="2">
+    <li></li>
+  </ol>
+  <span class="math"><script type="math/tex; mode=display">f(x_1, x_2) = e^{ax_1 +bx_2} = g(h(x_1, x_2));\\
 \rightarrow g(h) = e^h, ~ h(x_1, x_2) = ax_1 +bx_2 \\
 f'(x_1) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_1}) = a2^{ax_1+bx_2} \\
 f'(x_2) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_2}) = b2^{ax_1+bx_2}
 </script></span>
-    <ol start="3">
-      <li></li>
-    </ol>
-    <span class="math"><script type="math/tex; mode=display">\frac {[\partial(\cfrac{\partial f}{\partial x_1})]}{\partial x_2} = f_{ij}
+  <ol start="3">
+    <li></li>
+  </ol>
+  <span class="math"><script type="math/tex; mode=display">\frac {[\partial(\cfrac{\partial f}{\partial x_1})]}{\partial x_2} = f_{ij}
 </script></span>
-  </blockquote>
+  <br>
   <h3>Total Differential</h3>
   <ul>
-    <li>consider <span class="math"><script type="math/tex">U=f(x_1,x_2,x_3, \cdots, x_n)</script></span>,</li>
-    <li>how much f changes if all variable by a small amount <span class="math"><script type="math/tex">(dx_1, dx_2, dx_3, \ldots, dx_n)</script></span></li>
-    <li><span class="math"><script type="math/tex">du = df = (\frac{\partial f}{\partial x_1}) * dx_1 + (\frac{\partial f}{\partial x_2}) * dx_2 + (\frac{\partial f}{\partial x_3}) * dx_3 + \ldots + (\frac{\partial f}{\partial x_n}) * dx_n</script></span></li>
-    <li><strong>first order conditions</strong>, a necessary condition for a maximum (or a minimum ) of the function <span class="math"><script type="math/tex">f(x_1, x_2, x_3, \ldots, x_n)</script></span>), is that <span class="math"><script type="math/tex">du = 0</script></span>,
-      for any combination of small changes in the <span class="math"><script type="math/tex">x's(dx_1, dx_2, dx_3, \ldots, dx_n)</script></span> the only way for this to be true is if <span class="math"><script type="math/tex">f_1 = f_2 = f_3 = \ldots = f_n = 0;</script></span></li>
+    <li>
+      <p>Consider <span class="math"><script type="math/tex">U=f(x_1,x_2,x_3, \cdots, x_n)</script></span>, How much f changes if all variable by a small amount $(dx_1, dx_2, dx_3, \ldots, dx_n) ?</p>
+    </li>
+    <li>
+      <p>Set <span class="math"><script type="math/tex">du = df = (\frac{\partial f}{\partial x_1}) * dx_1 + (\frac{\partial f}{\partial x_2}) * dx_2 + (\frac{\partial f}{\partial x_3}) * dx_3 + \ldots + (\frac{\partial f}{\partial x_n}) * dx_n</script></span></p>
+    </li>
+    <li>
+      <p><strong>First order conditions</strong>, a necessary condition for a maximum (or a minimum ) of the function <span class="math"><script type="math/tex">f(x_1, x_2, x_3, \ldots, x_n)</script></span>, is that <span class="math"><script type="math/tex">du = 0</script></span>,
+        for any combination of small changes in the <span class="math"><script type="math/tex">x's(dx_1, dx_2, dx_3, \ldots, dx_n)</script></span> the only way for this to be true is if <span class="math"><script type="math/tex">f_1 = f_2 = f_3 = \ldots = f_n = 0;</script></span></p>
+    </li>
   </ul>
   <hr>
   <p><code>Oct 4, 2016 Tuesday Lecture</code></p>
@@ -1377,6 +1439,7 @@ f'(x_2) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_2}) = 
     <li><span class="math"><script type="math/tex">max = L(x_1, x_2) + \lambda G(x_1, x_2)</script></span></li>
     <li>λ is called a <strong>Lagrangian multiplier</strong>, often called <strong>Lagrangian</strong></li>
     <li>Find the first order conditions of the new objective function L;
+      <br>
       <code>assume the answer is max/min, what the question asks for, no need to check second order derivative.</code></li>
   </ul>
   <h3>Example</h3>
