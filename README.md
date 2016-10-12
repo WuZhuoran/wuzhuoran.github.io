@@ -16,20 +16,21 @@
 ## Staging
 
 ```bash
-git clone git@gitlab.com:mo-project/lecture-notes.git
-cd lecture-notes
+git clone git@github.com:WuZhuoran/wuzhuoran.github.io.git
+cd wuzhuoran.github.io
 ```
 
 Open with your Markdown Editor.
 
 
 ## Course List
-1. [Math 175](https://gitlab.com/mo-project/lecture-notes/tree/master/MATH-175)
-2. [Econ 11](https://gitlab.com/mo-project/lecture-notes/tree/master/ECON-11)
+1. [Math 175](https://github.com/WuZhuoran/wuzhuoran.github.io/tree/master/MATH-175)
+2. [Econ 11](https://github.com/WuZhuoran/wuzhuoran.github.io/tree/master/ECON-11)
+3. [Math 115a](https://github.com/WuZhuoran/wuzhuoran.github.io/tree/master/Math-115A)
 
 ## Style guide
 If you want to contribute to this project, please follow the style guide. Before the completion for the docs of style guide in this project, just follow [Melissa's](https://gitlab.com/u/lmelissa-li) Style.
 
 
 ## Contributor
-This Project was created and maintained by [Melissa](https://gitlab.com/u/lmelissa-li) and [Oliver](https://gitlab.com/u/zhuoran).
+This Project was created and maintained by [Melissa](https://gitlab.com/u/lmelissa-li) and [Oliver](https://github.com/WuZhuoran).
