@@ -24,9 +24,9 @@ Open with your Markdown Editor.
 
 
 ## Course List
-1. [Math 175](https://github.com/WuZhuoran/wuzhuoran.github.io/tree/master/MATH-175)
-2. [Econ 11](https://github.com/WuZhuoran/wuzhuoran.github.io/tree/master/ECON-11)
-3. [Math 115a](https://github.com/WuZhuoran/wuzhuoran.github.io/tree/master/Math-115A)
+1. [Math 175](https://wuzhuoran.github.io/HTML/MATH-175/MATH-175-Home.md.html)
+2. [Econ 11](https://wuzhuoran.github.io/HTML/ECON-11/ECON-11-Home.md.html)
+3. [Math 115a](https://wuzhuoran.github.io/HTML/MATH-115A/MATH-115A-Home.md.html)
 
 ## Style guide
 If you want to contribute to this project, please follow the style guide. Before the completion for the docs of style guide in this project, just follow [Melissa's](https://gitlab.com/u/lmelissa-li) Style.
