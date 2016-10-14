@@ -1160,31 +1160,32 @@
 <body class='markdown-preview'>
   <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
   <ul>
-    <li>
-      <p><a href="#preface">Preface</a></p>
-    </li>
-    <li>
-      <p><a href="#chapter-1">Chapter 1</a></p>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#chapter-1">Chapter 1</a>
       <ul>
         <li><a href="#general-features">General features</a></li>
         <li><a href="#theorey-of-value">Theorey of value</a></li>
-        <li><a href="#Microeconomics">Microeconomics</a></li>
+        <li><a href="#microeconomics">Microeconomics</a></li>
       </ul>
     </li>
-    <li>
-      <p><a href="#chapter-2">Chapter 2</a></p>
+    <li><a href="#chapter-2">Chapter 2</a>
       <ul>
-        <li><a href="#profits">Profits</a>
+        <li><a href="#derivates">Derivates</a>
           <ul>
-            <li><a href="#derivates">Derivates</a></li>
-            <li><a href="#function-with-several-variable">Function with several variable</a></li>
+            <li><a href="#first-order-derivatives">first order derivatives</a></li>
+            <li><a href="#second-order-derivatives">Second order derivatives</a></li>
+          </ul>
+        </li>
+        <li><a href="#function-with-several-variable">Function with several variable</a>
+          <ul>
+            <li><a href="#utility-function">Utility function</a></li>
+            <li><a href="#partial-derivatives">Partial derivatives</a></li>
             <li><a href="#total-differential">Total Differential</a></li>
           </ul>
         </li>
         <li><a href="#constrained-maximisation-lagrangian">Constrained Maximisation, <strong>Lagrangian</strong></a>
           <ul>
-            <li><a href="#example">Example</a></li>
-            <li><a href="#lambda-economic-interpretation"><span class="math"><script type="math/tex">\lambda</script></span> - economic interpretation</a></li>
+            <li><a href="#lambda-economic-interpretation"><span class="math"><script type="math/tex">\lambda</script></span> - Economic interpretation</a></li>
           </ul>
         </li>
         <li><a href="#implicit-function-theorem-gx-y-0-how-xy-are-related">Implicit function theorem: <span class="math"><script type="math/tex">g(x, y) = 0</script></span>, how <span class="math"><script type="math/tex">x,y</script></span> are related</a></li>
@@ -1195,9 +1196,8 @@
     </li>
   </ul>
   <!-- /TOC -->
-  <hr>
-  <p><code>Sept 28, 2016 Thursday Lecture</code></p>
   <h1>Preface</h1>
+  <hr>
   <ul>
     <li>Midterms 10/25, 11/17 in class, 1hr 15 mins,</li>
     <li>Final 12/8 11:30-2:30</li>
@@ -1206,36 +1206,45 @@
     <li>Exam 90%
       <ul>
         <li>30/30/30, when final is lower than midterm</li>
-        <li>50% higher midterm, 40% final, when final is higher than midterm.</li>
+        <li>50% higher midterm, 40% final, when final is higher than midterm.
+          <br>
+          <br>
+        </li>
       </ul>
     </li>
   </ul>
   <h1>Chapter 1</h1>
   <h2>General features</h2>
   <ul>
-    <li>the <em>ceteris paribus</em> assumption, meaning other things stay same.</li>
+    <li>the <strong>ceteris paribus</strong> assumption, meaning other things stay same.</li>
     <li>Optimization assumptions, maximize the profits.</li>
-    <li>positive - normative distinction, positive = real world, normative = how things shoulebe like.</li>
+    <li>positive - normative distinction
+      <ul>
+        <li>positive = real world;</li>
+        <li>normative = how things shoule be like.</li>
+      </ul>
+    </li>
   </ul>
   <h2>Theorey of value</h2>
   <ul>
     <li>
       <p>Determine Equilibrium price,
-        <br> set quantity demanded = quantity supplied, q<sub>D</sub> = q<sub>S</sub></p>
+        <br> set quantity demanded = quantity supplied, <span class="math"><script type="math/tex">q_D=q_S</script></span></p>
     </li>
     <li>
       <p>Production possibility frontier,</p>
       <ul>
         <li>No free luch, oppotunity cost;</li>
-        <li>Oppotunity cost depends on how much each goods is produced.</li>
+        <li>Oppotunity cost depends on how much each goods is produced.
+          <br>
+          <br>
+        </li>
       </ul>
     </li>
   </ul>
   <h2>Microeconomics</h2>
+  <p><code>Behavior of individual decision makers (consumers and firms)</code></p>
   <ul>
-    <li>
-      <p><code>Behavior of individual decision makers (consumers and firms)</code>.</p>
-    </li>
     <li>
       <p>Maximizing behaviours.
         <br>
@@ -1254,14 +1263,17 @@
     <li>
       <p>Marginal rate of substation. (cost of behavior), maximizing behavior.
         <br>
-        <code>e.g.</code> listen to the lecture/doze off, history/econ/job</p>
+        <code>e.g.</code> listen to the lecture/doze off, history/econ/job
+        <br>
+        <br>
+      </p>
     </li>
   </ul>
-  <hr>
   <h1>Chapter 2</h1>
+  <hr>
   <ul>
     <li>
-      <p>Mathematics of optimisation.</p>
+      <p>Mathematics of Optimization.</p>
       <ul>
         <li>Consumers attempt to maximize their welfare/utility when making decision.</li>
         <li>Firms attempt to maximizing their profit when choosing input and outputs.</li>
@@ -1276,152 +1288,118 @@
   </ul>
   <h2>Derivates</h2>
   <h3>first order derivatives</h3>
-  <ol>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = Q, ~ Q ~ is ~ a ~ constant, ~ f'(x) = 0;
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = Q*x, ~ f'(x) = a;
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = a*g(x),~ f'(x) = a ~ d ~ of ~  g(x);
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = x^b, ~ b ~ is ~ constant, ~ f'(x) = b x^{(b-1)};
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = a x^b = a g(x) ~ f'(x) = a*b*x^{(b-1)};
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = ln(x) ~ f'(x) = \frac {1}{x};
-</script></span>
-    </li>
-  </ol>
+  <p><span class="math"><script type="math/tex">f(x) = Q, ~ Q ~ is ~ a ~ constant, ~ f'(x) = 0</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = Q*x, ~ f'(x) = a</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = a*g(x),~ f'(x) = a ~ d ~ of ~  g(x)</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = x^b, ~ b ~ is ~ constant, ~ f'(x) = b x^{(b-1)}</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = a x^b = a g(x) ~ f'(x) = a*b*x^{(b-1)}</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = ln(x) ~ f'(x) = \frac {1}{x}</script></span></p>
   <blockquote>
-    <span class="math"><script type="math/tex; mode=display">e = ruler's~number~ \approx ~ 2.72
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">ln(e^{x}) = x
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">ln(e) =1
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">ln(a*b) = ln(a) + ln(b)
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">ln(\frac {a}{b}) = ln(a) - ln(b)
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">ln(b^a) = a*ln(b)
-</script></span>
+    <p><span class="math"><script type="math/tex">e = ruler's~number~ \approx ~ 2.72</script></span>
+      <br>
+      <span class="math"><script type="math/tex">ln(e^{x}) = x</script></span>
+      <br>
+      <span class="math"><script type="math/tex">ln(e) =1</script></span>
+      <br>
+      <span class="math"><script type="math/tex">ln(a*b) = ln(a) + ln(b)</script></span>
+      <br>
+      <span class="math"><script type="math/tex">ln(\frac {a}{b}) = ln(a) - ln(b)</script></span>
+      <br>
+      <span class="math"><script type="math/tex">ln(b^a) = a*ln(b)</script></span></p>
   </blockquote>
-  <ol start="7">
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = a^x ~ f'(x) = ln(a) * a^x;
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = e^x ~ f'(x) = e^x;
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = g(x) + h(x) ~ f'(x) = g'(x) + h'(x);
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = g(x) * h(x) ~ f'(x) = g'(x)h(x) + h'(x)g(x);
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = \frac {g(x)}{h(x)}  ~ f'(x) = \frac {[g'(x)h(x) - h'(x)g(x)]} {g^{2}(x)};
-</script></span>
-    </li>
-    <li>
-      <span class="math"><script type="math/tex; mode=display">f(x) = g[h(x)] ~ f'(x) = \frac {dg}{dh} * \frac {dh}{dx} ~~~ chain ~ rule;
-</script></span>
-    </li>
-  </ol>
-  <br>
+  <p><span class="math"><script type="math/tex">f(x) = a^x ~ f'(x) = ln(a) * a^x</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = e^x ~ f'(x) = e^x</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = g(x) + h(x) ~ f'(x) = g'(x) + h'(x)</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = g(x) * h(x) ~ f'(x) = g'(x)h(x) + h'(x)g(x)</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = \frac {g(x)}{h(x)}  ~ f'(x) = \frac {[g'(x)h(x) - h'(x)g(x)]} {g^{2}(x)}</script></span></p>
+  <p><span class="math"><script type="math/tex">f(x) = g[h(x)] ~ f'(x) = \frac {dg}{dh} * \frac {dh}{dx} ~~~ chain ~ rule</script></span>
+    <br>
+    <br>
+  </p>
   <h3>Second order derivatives</h3>
   <ul>
     <li>first order condition max of a function with one variable, the derivative at that point is 0;</li>
     <li>second order condition to make sure the critical point is the max ( second derivative is negative). critical point is min when second derivative is positive.</li>
     <li>MAX: “mountain shape”, <strong>concave</strong></li>
-    <li>MIN: “smile face”, <strong>convex</strong></li>
-  </ul>
-  <blockquote>
-    <span class="math"><script type="math/tex; mode=display">\pi = f(q) = 11q - 8 - q - q^2, ~ find ~ max:
-</script></span>
-    <ol>
-      <li>write down</li>
-    </ol>
-    <span class="math"><script type="math/tex; mode=display">f.o.c ~ \Rightarrow ~  f'(q) = 0:
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">f'(q) = 11 - 0 - 1 -2q = 10 - 2q
-</script></span>
-    <p><span class="math"><script type="math/tex">~~~~~~~~~and ~ set</script></span></p>
-    <span class="math"><script type="math/tex; mode=display">10 - 2q = 0, ~ \rightarrow ~ q* = 5
-</script></span>
-    <ol start="2">
-      <li>check s.o.c</li>
-    </ol>
-    <span class="math"><script type="math/tex; mode=display">f''(q) \lt 0:
-</script></span>
-    <span class="math"><script type="math/tex; mode=display">f''(q) = - 2 \lt 0
-</script></span>
-    <ol start="3">
-      <li>∴ <span class="math"><script type="math/tex">f(q)</script></span> is the maximum when <span class="math"><script type="math/tex">q = 5</script></span>.
-        <br>
-        <br>
-      </li>
-    </ol>
-  </blockquote>
-  <h2>Function with several variable</h2>
-  <h3>Utility function</h3>
-  <blockquote>
-    <p>x<sub>1</sub> = Food consumption, x<sub>2</sub> = Transportation, x<sub>3</sub> = Housing , … , x<sub>n</sub> = leisure</p>
-    <span class="math"><script type="math/tex; mode=display">U =f (x_1 , x_2 , x_3 , \cdots , x_n  )
-</script></span>
-    <p>and real problem is to solve the max of U. because of Budget constraint ( limited sources and unlimited wants).</p>
-  </blockquote>
-  <blockquote>
-    <p>set p<sub>1</sub> = price of x<sub>1</sub>, p<sub>2</sub> x<sub>2</sub>, p<sub>3</sub> x<sub>3</sub> … p<sub>n</sub> = Price Leisure I = income</p>
-    <span class="math"><script type="math/tex; mode=display">I = p_1x_1 + p_2x_2 + p_3x_3 +, \cdots, p_nx_n;
-</script></span>
-  </blockquote>
-  <ul>
-    <li><span class="math"><script type="math/tex">\rightarrow max ~ f(x_1, x_2, x_3, \ldots, x_n)</script></span>
+    <li>MIN: “smile face”, <strong>convex</strong>
       <br>
       <br>
     </li>
   </ul>
-  <h3>Partial derivatives</h3>
+  <p><strong>Example</strong>:
+    <br>
+    <span class="math"><script type="math/tex">\pi = f(q) = 11q - 8 - q - q^2, ~ find ~ max:</script></span></p>
   <ol>
-    <li></li>
+    <li>write down
+      <br>
+      <span class="math"><script type="math/tex">f.o.c ~ \Rightarrow ~  f'(q) = 0</script></span>
+      <br>
+      <span class="math"><script type="math/tex">f'(q) = 11 - 0 - 1 -2q = 10 - 2q</script></span>
+      <br>
+      <span class="math"><script type="math/tex">~~~~~~~~~and ~ set</script></span>
+      <span class="math"><script type="math/tex">10 - 2q = 0, ~ \rightarrow ~ q* = 5</script></span></li>
+    <li>check s.o.c
+      <span class="math"><script type="math/tex">f''(q) \lt 0</script></span>
+      <br>
+      <span class="math"><script type="math/tex">f''(q) = - 2 \lt 0</script></span></li>
+    <li>∴ <span class="math"><script type="math/tex">f(q)</script></span> is the maximum when <span class="math"><script type="math/tex">q = 5</script></span>.
+      <br>
+      <br>
+    </li>
   </ol>
-  <span class="math"><script type="math/tex; mode=display">f(x_1, x_2) = ax_1^2 + bx_1x_2 + cx_2^2 \\
-f'(x_1) = \frac {\partial f}{\partial x_1} = 2ax_1 + bx_2 \\
-f'(x_2) = \frac {\partial f}{\partial x_2} = bx_1 + 2cx_2 \\
-</script></span>
-  <ol start="2">
-    <li></li>
-  </ol>
-  <span class="math"><script type="math/tex; mode=display">f(x_1, x_2) = e^{ax_1 +bx_2} = g(h(x_1, x_2));\\
-\rightarrow g(h) = e^h, ~ h(x_1, x_2) = ax_1 +bx_2 \\
-f'(x_1) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_1}) = a2^{ax_1+bx_2} \\
-f'(x_2) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_2}) = b2^{ax_1+bx_2}
-</script></span>
-  <ol start="3">
-    <li></li>
-  </ol>
-  <span class="math"><script type="math/tex; mode=display">\frac {[\partial(\cfrac{\partial f}{\partial x_1})]}{\partial x_2} = f_{ij}
-</script></span>
-  <br>
+  <p><strong>Example</strong>:
+    <br> Max of <span class="math"><script type="math/tex">ln(15x) - 2x^2</script></span>,</p>
+  <p><span class="math"><script type="math/tex">\displaystyle derivative  \frac {1}{15x}  * 15  - 4x  = 0</script></span></p>
+  <p><span class="math"><script type="math/tex">\displaystyle \Rightarrow \frac {1}{x} = 4x</script></span></p>
+  <p><span class="math"><script type="math/tex">\displaystyle \Rightarrow x^* =\frac{1}{2},  (the \, critical \, point)</script></span>
+    <br>
+    <br>
+  </p>
+  <h2>Function with several variable</h2>
+  <h3>Utility function</h3>
+  <blockquote>
+    <p>x<sub>1</sub> = Food consumption, x<sub>2</sub> = Transportation, x<sub>3</sub> = Housing , … , x<sub>n</sub> = leisure
+      <span class="math"><script type="math/tex">U =f (x_1 , x_2 , x_3 , \cdots , x_n  )</script></span>
+      <br> and real problem is to solve the max of U. because of Budget constraint ( limited sources and unlimited wants).</p>
+  </blockquote>
+  <blockquote>
+    <p>set p<sub>1</sub> = price of x<sub>1</sub>, p<sub>2</sub> x<sub>2</sub>, p<sub>3</sub> x<sub>3</sub> … p<sub>n</sub> = Price Leisure I = income
+      <span class="math"><script type="math/tex">I = p_1x_1 + p_2x_2 + p_3x_3 +, \cdots, p_nx_n;</script></span>
+      <br>
+      <span class="math"><script type="math/tex">\rightarrow max ~ f(x_1, x_2, x_3, \ldots, x_n)</script></span>
+      <br>
+      <br>
+    </p>
+  </blockquote>
+  <h3>Partial derivatives</h3>
+  <ul>
+    <li>
+      <p><span class="math"><script type="math/tex">f(x_1, x_2) = ax_1^2 + bx_1x_2 + cx_2^2</script></span>
+        <br>
+        <span class="math"><script type="math/tex">f'(x_1) = \frac {\partial f}{\partial x_1} = 2ax_1 + bx_2</script></span>
+        <br>
+        <span class="math"><script type="math/tex">f'(x_2) = \frac {\partial f}{\partial x_2} = bx_1 + 2cx_2</script></span></p>
+    </li>
+    <li>
+      <p><span class="math"><script type="math/tex">f(x_1, x_2) = e^{ax_1 +bx_2} = g(h(x_1, x_2))</script></span>
+        <br>
+        <span class="math"><script type="math/tex">g(h) = e^h, ~ h(x_1, x_2) = ax_1 +bx_2</script></span>
+        <br>
+        <span class="math"><script type="math/tex">f'(x_1) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_1}) = a2^{ax_1+bx_2}</script></span>
+        <br>
+        <span class="math"><script type="math/tex">f'(x_2) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_2}) = b2^{ax_1+bx_2}</script></span></p>
+    </li>
+    <li>
+      <p><span class="math"><script type="math/tex">\frac{[\partial(\cfrac{\partial f}{\partial x_1})]}{\partial x_2} = f_{ij}</script></span>
+        <br>
+        <br>
+      </p>
+    </li>
+  </ul>
   <h3>Total Differential</h3>
   <ul>
     <li>
-      <p>Consider <span class="math"><script type="math/tex">U=f(x_1,x_2,x_3, \cdots, x_n)</script></span>, How much f changes if all variable by a small amount $(dx_1, dx_2, dx_3, \ldots, dx_n) ?</p>
+      <p>Consider <span class="math"><script type="math/tex">U=f(x_1,x_2,x_3, \cdots, x_n)</script></span>, How much f changes if all variable by a small amount (<span class="math"><script type="math/tex">dx_1, dx_2, dx_3, \ldots, dx_n</script></span>) ?</p>
     </li>
     <li>
       <p>Set <span class="math"><script type="math/tex">du = df = (\frac{\partial f}{\partial x_1}) * dx_1 + (\frac{\partial f}{\partial x_2}) * dx_2 + (\frac{\partial f}{\partial x_3}) * dx_3 + \ldots + (\frac{\partial f}{\partial x_n}) * dx_n</script></span></p>
@@ -1431,8 +1409,6 @@ f'(x_2) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_2}) = 
         for any combination of small changes in the <span class="math"><script type="math/tex">x's(dx_1, dx_2, dx_3, \ldots, dx_n)</script></span> the only way for this to be true is if <span class="math"><script type="math/tex">f_1 = f_2 = f_3 = \ldots = f_n = 0;</script></span></p>
     </li>
   </ul>
-  <hr>
-  <p><code>Oct 4, 2016 Tuesday Lecture</code></p>
   <h2>Constrained Maximisation, <strong>Lagrangian</strong></h2>
   <ul>
     <li><span class="math"><script type="math/tex">L(x)</script></span> is the function we want to maximise, <span class="math"><script type="math/tex">G(x)</script></span> is the conditions</li>
@@ -1442,38 +1418,103 @@ f'(x_2) = (\frac{\partial f}{\partial h}) * (\frac{\partial h}{\partial x_2}) = 
       <br>
       <code>assume the answer is max/min, what the question asks for, no need to check second order derivative.</code></li>
   </ul>
-  <h3>Example</h3>
-  <span class="math"><script type="math/tex; mode=display">c_1 = consumption ~ of ~ food, ~ c_2 = consumption ~ of ~ other ~ goods;\\
-p_1 = the ~ price ~ of ~ c_1, ~ p_2 = the ~ price ~ of ~ c_2;\\
-\rightarrow U = f(c_1, c_2) = 2ln(c_1) + (1-\alpha)ln(c_2), ~ 0 \lt \alpha \lt 1;
-</script></span>
+  <p><strong>Example 1</strong>:
+    <br>
+    <span class="math"><script type="math/tex">c_1</script></span> = consumption of food,
+    <span class="math"><script type="math/tex">c_2</script></span> = consumption of other goods;
+    <br>
+    <span class="math"><script type="math/tex">p_1</script></span> = the price of <span class="math"><script type="math/tex">c_1</script></span>,
+    <span class="math"><script type="math/tex">p_2</script></span> = the price of <span class="math"><script type="math/tex">c_2</script></span>;
+    <br>
+    <span class="math"><script type="math/tex">U = f(c_1, c_2) = 2ln(c_1) + (1-\alpha)ln(c_2)</script></span>
+    <br>
+    <br>
+  </p>
+  <p><strong>Example 2, Find the max</strong></p>
+  <p><span class="math"><script type="math/tex">\alpha ln(c_1) + (1-\alpha)ln(c_2)</script></span> under condition of <span class="math"><script type="math/tex">I = p_1c_1 + p_2c_2</script></span>
+    <br> therefore, <span class="math"><script type="math/tex">I - p_1 * c_1- p_2 * c_2 = 0</script></span>
+    <br>
+    <span class="math"><script type="math/tex">L = 2ln(c_1) + (1-\alpha)ln(c_2) + \lambda(I - p_1 * c_1 + p_2 * c_2)</script></span>;
+    <br>
+    <br>
+  </p>
+  <p><span class="math"><script type="math/tex">\frac{\partial L}{\partial c_1} = \frac {\alpha}{c_1} - \lambda * p_1 = 0</script></span></p>
+  <p><span class="math"><script type="math/tex">\frac{\partial L}{\partial c_2} = \frac {1- \alpha}{c_2} - \lambda * p_2 = 0</script></span></p>
+  <p><span class="math"><script type="math/tex">\frac{\partial L}{\partial \lambda} = I - p_1 * c_1 + p_2 * c_2 = 0</script></span></p>
+  <p><span class="math"><script type="math/tex">\frac {2}{c_1} = \lambda * p_2</script></span></p>
+  <p><span class="math"><script type="math/tex">\frac {1-\alpha}{c_2} = \lambda * p_2</script></span></p>
+  <p><span class="math"><script type="math/tex">I - p_1 * c_1 + p_2 * c_2 = 0</script></span>, Divided both side <span class="math"><script type="math/tex">\frac {c_1}{c_2} = \frac {1-\alpha}{\alpha} * \frac {p_1}{p_2}</script></span>;
+    <br>
+    <span class="math"><script type="math/tex">c_1^{ * } = \alpha \frac {I}{p_1}</script></span>
+    <br>
+    <span class="math"><script type="math/tex">c_2^{ * } = (1-\alpha) \frac {I}{p_2}</script></span>
+    <br>
+    <span class="math"><script type="math/tex">\lambda^{ * } = \frac {1}{I}</script></span>
+    <br> if <span class="math"><script type="math/tex">p_1</script></span> increases, <span class="math"><script type="math/tex">\alpha \frac {I}{p_1} >0</script></span>.</p>
+  <br>
+  <p><strong>Example 3, Profit, Cost, and Revenue, Second Order Condition</strong>:</p>
   <blockquote>
-    <p><strong>Find the max</strong> of</p>
-    <span class="math"><script type="math/tex; mode=display">\alpha ln(c_1) + (1-\alpha)ln(c_2)
-</script></span>
-    <p>under condition of</p>
-    <span class="math"><script type="math/tex; mode=display">I = p_1c_1 + p_2c_2
+    <p><span class="math"><script type="math/tex">\displaystyle R = 6x_1 + \frac{99}{4}x_2</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle C = \frac{x_1x_2}{4} + ln(\frac{1}{x_{1}^{1/8}}) + \frac{x_2^2}{2}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle max(x_1, x_2) = R - C</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \max_{x_1, x_2} \left.(6x_1 + \frac{99}{4}x_2 - \frac{x_1x_2}{4} + \frac{1}{8}\ln(x_1) - \frac{x_2^2}{2})\right.</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→ FIRST ORDER
+      <br>
+      <span class="math"><script type="math/tex">\displaystyle \frac{\partial \pi}{\partial x_1} = 6 - \frac{x_2}{4} + \frac{1}{8x_1} = 0</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial \pi}{\partial x_2} = \frac{99}{4} - \frac{x_1}{4} = x_2</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→ REPLACE <span class="math"><script type="math/tex">x_2</script></span></p>
+    <span class="math"><script type="math/tex; mode=display"> \begin{align}
+   \displaystyle 6 - \frac{1}{4}(\frac{99}{4} - \frac{x_1}{4}) + \frac{1}{8x_1} & = 0 \\
+   \frac{1}{16x_1}(x_1^2 - 3x_1 + 2)  & = 0 \\
+   x_1 & = \frac{3 \pm \sqrt{9-8}}{2}
+ \end{align}
 </script></span>
   </blockquote>
   <blockquote>
-    <span class="math"><script type="math/tex; mode=display">I - p_1 * c_1- p_2 * c_2 = 0 \\
-L = 2ln(c_1) + (1-\alpha)ln(c_2) + \lambda(I - p_1 * c_1 + p_2 * c_2);\\
-\frac{\partial L}{\partial c_1} = \frac {\alpha}{c_1} - \lambda * p_1 = 0\\
-\frac{\partial L}{\partial c_2} = \frac {1- \alpha}{c_2} - \lambda * p_2 = 0\\
-\frac{\partial L}{\partial \lambda} = I - p_1 * c_1 + p_2 * c_2 = 0\\
-\rightarrow \\
-\frac {2}{c_1} = \lambda * p_2 \\
-\frac {1-\alpha}{c_2} = \lambda * p_2 \\
-I - p_1 * c_1 + p_2 * c_2 = 0\\
-Divided ~ both ~ side ~ \rightarrow \\
-\frac {c_1}{c_2} = \frac {1-\alpha}{\alpha} * \frac {p_1}{p_2};\\
-c_1^{ * } = \alpha \frac {I}{p_1}\\
-c_2^{ * } = (1-\alpha) \frac {I}{p_2}\\
-\lambda^{ * } = \frac {1}{I}\\
-if ~ p_1 ~ increases, ~ \alpha \frac {I}{p_1} \lt 0
-</script></span>
+    <p>→Find the critical points
+      <span class="math"><script type="math/tex">\displaystyle x_1 = 2 ~ or ~ x_1 = 1, (x_1, x_2) = (2, \frac{97}{4}) ~ or ~ (1, \frac{49}{2})</script></span></p>
   </blockquote>
-  <h3><span class="math"><script type="math/tex">\lambda</script></span> - economic interpretation</h3>
+  <blockquote>
+    <p>→SECOND ORDER FOR MAX
+      <span class="math"><script type="math/tex">\displaystyle \frac{\partial^2 F}{\partial x_1^2} \lt 0, \frac{\partial^2 F}{\partial x_2^2} \lt 0</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial^2 F}{\partial x_1^2} * \frac{\partial^2 F}{\partial x_2^2} \gt (\frac{\partial^2 F}{\partial x_1 \partial x_2})^2</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial^2 \pi}{\partial x_1^2} = -\frac{1}{8x_1^2}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial^2 \pi}{\partial x_2^2} = -\frac{1}{}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial^2 \pi}{\partial x_1 \partial x_2} = -\frac{1}{4}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→FOR <span class="math"><script type="math/tex">\displaystyle x_1 = 2, x_2 = \frac{97}{4}</script></span>
+      <span class="math"><script type="math/tex">\displaystyle \frac{\partial^2\pi}{\partial x_1^2} < 0</script></span>
+      <br>
+      <span class="math"><script type="math/tex">\displaystyle \frac{1}{32} < \frac{1}{16}</script></span>
+      <br> This is not a MAX.</p>
+  </blockquote>
+  <blockquote>
+    <p>→ FOR <span class="math"><script type="math/tex">\displaystyle x_1 = 1, x_2 = \frac{49}{2}</script></span>
+      <br>
+      <span class="math"><script type="math/tex">\displaystyle \frac{1}{8} \gt \frac{1}{16}</script></span> This is the only MAX.</p>
+  </blockquote>
+  <h3><span class="math"><script type="math/tex">\lambda</script></span> - Economic interpretation</h3>
   <p>meaning How much we can increase the objective function <span class="math"><script type="math/tex">f</script></span> if the constraint is relaxed slightly.</p>
   <ul>
     <li>a HIGH value of <span class="math"><script type="math/tex">\lambda</script></span> indicates that the utility could be increased substantially by relaxing the constraint (poor people );</li>
@@ -1497,15 +1538,64 @@ if ~ p_1 ~ increases, ~ \alpha \frac {I}{p_1} \lt 0
   <h2>The Envelope theorem</h2>
   <span class="math"><script type="math/tex; mode=display">U = f(c_1, c_2, \alpha) = \alpha ln(c_1) + (1-\alpha)ln(c_2) + \lambda(I - p_1 * c_1+ p_2 * c_2);
 </script></span>
+  <p><strong>Example of consumer problem, Envelope method</strong>
+    <br> To find max of <span class="math"><script type="math/tex">\displaystyle x_1^{2/5} x_2^{3/5}</script></span>, such that</p>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle p_1x_1 + p_2x_2 = I</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle max(x_1, x_2, \lambda):x_1^{2/5}x_2^{3/5} + \lambda(I - p_1x_1 + p_2x_2);</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{2x_2}{3x_1} = \frac{p_1}{p_2} \rightarrow x_2 = \frac{3x_1p_1}{2p_2}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→ Replace in constraint:
+      <span class="math"><script type="math/tex">\displaystyle x_1^* = \frac{2I}{5p_1}, x_2^* = \frac{3I}{5p_2}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial x_1^* }{\partial p_2} = 0</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→ NO CHANGE WHEN <span class="math"><script type="math/tex">P_2</script></span> CHANGES</p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial x_1^* }{\partial I} = \frac{2}{5p_1} \gt 0</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p><span class="math"><script type="math/tex">\displaystyle \frac{\partial x_1^* }{\partial p_1} = -\frac{2I}{5p_1^2} \lt 0</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→ The value of the function:
+      <br>
+      <span class="math"><script type="math/tex">\displaystyle V(x_1^* ,x_2^* ) = (\frac{2I}{5p_1})^{\frac{2}{5}} * (\frac{3I}{5p_2})^{\frac{3}{5}}</script></span></p>
+  </blockquote>
+  <blockquote>
+    <p>→ Change in well-being when I changes, <span class="math"><script type="math/tex">\displaystyle \frac{\partial V(x_1^* ,x_2^* )}{\partial I}</script></span>
+      <br>
+      <br>
+    </p>
+  </blockquote>
   <ul>
-    <li>a formula to compute , at the optimum , the derivative of <span class="math"><script type="math/tex">U</script></span> with respect to parameter in the maximisation problem:</li>
+    <li>The definition of envelope theorem:
+      <br> Derivative of the value of the function =</li>
   </ul>
-  <span class="math"><script type="math/tex; mode=display">\frac {dU}{d\alpha} = f_{\alpha}
+  <span class="math"><script type="math/tex; mode=display">\displaystyle \frac{\partial L(x_1^* ,x_2^* , \lambda)}{\partial I} = (chain ~ rule) = \frac{\partial L}{\partial I} + \frac{\partial L}{\partial x_1} * \frac{\partial x_1}{\partial I} + \frac{\partial L}{\partial x_2} * \frac{\partial x_2}{\partial I} + \frac{\partial L}{\partial \lambda} * \frac{\partial \lambda}{\partial I}
 </script></span>
+  <p>Then plug in the value of <span class="math"><script type="math/tex">x_1^* ,x_2^* ~ and ~ \lambda</script></span>.</p>
+  <ul>
+    <li>a formula to compute , at the optimum , the derivative of <span class="math"><script type="math/tex">U</script></span> with respect to parameter in the maximisation problem:
+      <span class="math"><script type="math/tex">\frac {dU}{d\alpha} = f_{\alpha}</script></span>
+      <br>
+      <br>
+    </li>
+  </ul>
   <h2>Homogeneous Functions</h2>
-  <p>called Homogeneous of degree K, if</p>
-  <span class="math"><script type="math/tex; mode=display">f(tx_1,tx_2,\cdots, tx_n) = t^{k} f(x_1, x_2, \cdots, x_n)
-</script></span>
+  <p>called Homogeneous of degree K, if
+    <span class="math"><script type="math/tex">f(tx_1,tx_2,\cdots, tx_n) = t^{k} f(x_1, x_2, \cdots, x_n)</script></span>
+    <br>
+    <br>
+  </p>
   <h2>Euler’s Theorem</h2>
   <p>Special relationship between value of function and the partial derivatives of the function.</p>
 </body>

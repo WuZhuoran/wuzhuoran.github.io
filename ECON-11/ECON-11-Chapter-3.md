@@ -4,8 +4,16 @@
 	- [Rational Choices](#rational-choices)
 	- [Utility:](#utility)
 	- [Trade and Substitution:](#trade-and-substitution)
+		- [indifference curves](#indifference-curves)
+		- [Transitivity](#transitivity)
+		- [Convexity](#convexity)
+		- [Example of utility functions](#example-of-utility-functions)
+		- [Homothetic Preference:](#homothetic-preference)
+	- [The many good case:](#the-many-good-case)
 
 <!-- /TOC -->
+
+
 `Oct 06, 2016 Thursday Lecture`
 # Chapter 3 Preference and Utility
 how people make decisions.    
@@ -46,8 +54,10 @@ Example:
   - MRS changes as $x$ and $y$ change.      
 
 Example:
-All $x$, $y$ such that $U(x, y) = K$;     
+All $x$, $y$ such that $U(x, y) = K$;  
+
 Total differential $U' = 0$;   
+
 $d U = \frac {\partial L}{\partial x} +  \frac {\partial L}{\partial y} = 0$   
 <br/>
 
@@ -65,7 +75,22 @@ line AB is higher utility than the indifference curve.
   * $U(x,y) = x^α v^β, α,β>0$, $U(x,y)=α*logx + β*logy$,     
   * MRS = $\frac{U_x}{U_y}$, where $U_x = \frac{α}{x}$,$U_y = \frac{β}{y}$     
   * Therefore **MRS $=\frac{α}{β}* \frac{y}{x}$**     
-	<br/>           
+
+> $U(F,C,B)=6ln F + 2ln C + lnB$, and given: $P_F = 5, P_C = 20,P_B = 50, I =500$,     
+&rarr; $5F+20C+50B=500$     
+therefore, $L=6ln F + 2ln C + lnB + λ（500－5F－20C－50B)$     
+$\frac{∂L}{∂F} = \frac{6}{F}=5λ$     
+$\frac{∂L}{∂B} = \frac{1}{B}=50λ$     
+$\frac{∂L}{∂C} = \frac{2}{C}=20λ$     
+therefore:      
+> $MRS_{B,F} = \frac{6}{F} * B = 5/50 = \frac{P_F}{P_B}$     
+$MRS_{C,F} = \frac{6}{F} * \frac{C}{2} = 5/20 =\frac{P_F}{P_C}$      
+$MRS_{C,B} = \frac{1}{B} * \frac{C}{2} = 50/20 =\frac{P_B}{P_C}$    
+Tangent condition $MRS = \frac{U_x}{U_y} = \frac{P_x}{P_y}$      
+(holds to many goods)
+
+	<br/>       
+
 
 * **Perfect substitutes**:
   * $U(x,y)=Ax+By$     

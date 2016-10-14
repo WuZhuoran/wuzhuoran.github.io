@@ -3,7 +3,7 @@
 
 **Author: `Melissa`**    
 
-**Update Time: `2016/10/9`**
+**Update Time: `2016/10/13`**
 
 ## Introduction
 ---
@@ -20,6 +20,6 @@ This is the class notes of `ECON-11`.
 
 * [ECON-11-Chapter-4](ECON-11-Chapter-4.md.html)
 
-* [ECON-11-Discussion-2016-9-27](ECON-11-Discussion-2016-9-27.md.html)
+* [ECON-11-Discussion-2016-10-4](ECON-11-Discussion-2016-10-4.md.html)
 
 * [ECON-11-Discussion-2016-10-4](ECON-11-Discussion-2016-10-4.md.html)
