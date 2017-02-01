@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>MATH-175-Chapter-6</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,35 +1132,241 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
+    <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
     <ul>
-        <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
+        <li><a href="#chapter-6-bonds">Chapter 6 Bonds</a>
+            <ul>
+                <li><a href="#61-introduction">6.1 introduction</a></li>
+                <li><a href="#62-bonds-alphabet-soup-and-the-basic-price-formula">6.2 bonds alphabet soup and the basic price formula:</a></li>
+                <li><a href="#63-the-premuim-discount-formula">6.3 The premuim-discount formula</a></li>
+                <li><a href="#64-other-price-formulas">6.4 Other price formulas</a></li>
+                <li><a href="#65-bond-amortization-schedule">6.5 Bond Amortization Schedule</a>
+                    <ul>
+                        <li><a href="#premium-bonds-writing-down">Premium bonds (writing down):</a></li>
+                        <li><a href="#discount-bonds-writing-up">Discount bonds (writing up):</a></li>
+                        <li><a href="#bond-with-level-coupons">Bond with level coupons:</a></li>
+                    </ul>
+                </li>
+                <li><a href="#66-value-of-bond-after-issuing">6.6 Value of Bond after issuing</a></li>
+                <li><a href="#67-sell-a-bond-after-issuing">6.7 Sell a Bond after issuing</a></li>
+                <li><a href="#68-yield-rate-example">6.8 Yield rate example</a></li>
+                <li><a href="#69-callable-bond">6.9 Callable bond</a>
+                    <ul>
+                        <li><a href="#european-option">European option</a></li>
+                        <li><a href="#bermuda-option">Bermuda option</a></li>
+                        <li><a href="#american-option">American option</a></li>
+                    </ul>
+                </li>
+            </ul>
         </li>
     </ul>
+    <!-- /TOC -->
+    <h1>Chapter 6 Bonds</h1>
+    <h2>6.1 introduction</h2>
+    <ul>
+        <li>
+            <p><strong>bonds:</strong> government issued,</p>
+        </li>
+        <li>
+            <p>last payment occurs at <strong>maturity date / redemption date</strong></p>
+        </li>
+        <li>
+            <p>purchase date is called <strong>issue date</strong>,</p>
+        </li>
+        <li>
+            <p><strong>term:</strong> intervel</p>
+        </li>
+        <li>
+            <p>maturity date is fixed, then the bond is <strong>noncallable</strong>,</p>
+        </li>
+        <li>
+            <p>a single payment at a fixed maturity date, it is called <strong>zero-coupon bonds / (pure) discount bonds</strong></p>
+        </li>
+        <li>
+            <p>a sequence of payment prior to and at the redemption date <strong>coupon bonds</strong>, as well as an redemption payment additionally.</p>
+        </li>
+        <li>
+            <p>length of the interval between coupon payments is <strong>coupon period</strong>, usually semiannual , half a year;</p>
+        </li>
+        <li>
+            <p><strong>indenture</strong> is the legal document that specifies the term and conditions of a particular bond;<br>
+                <br></p>
+        </li>
+    </ul>
+    <h2>6.2 bonds alphabet soup and the basic price formula:</h2>
+    <ul>
+        <li>
+            <p><strong>Face value / Par value</strong> <span class="math"><script type="math/tex">F</script></span>, calculate the size of the coupon payments, not the price investor pay, not the redemption value of the bond at maturity.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">\alpha</script></span>, the nominal rate convertible <span class="math"><script type="math/tex">m</script></span> times per year, <span class="math"><script type="math/tex">m</script></span> is the
+                number of coupons each year.</p>
+        </li>
+        <li>
+            <p>Set <span class="math"><script type="math/tex">r=\frac {\alpha}{m}</script></span>, <strong>r</strong> is the effective rate for the coupon period.</p>
+        </li>
+        <li>
+            <p>both <span class="math"><script type="math/tex">\alpha</script></span> and <strong>r</strong> are sometimes called <strong>Coupon Rates</strong>.</p>
+        </li>
+        <li>
+            <p>Amount of each payment is <span class="math"><script type="math/tex">Fr=\frac{F \alpha}{m}</script></span>.</p>
+        </li>
+        <li>
+            <p>let <span class="math"><script type="math/tex">n</script></span> denoted the numbers of coupon periods in the term of the bond. if it is an <strong>N-</strong> year bond, <span class="math"><script type="math/tex">n= Nm</script></span>.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">C</script></span> id the redemption amount , the bond holder receives at the bonds maturity date, excluding the regular coupon amount.</p>
+        </li>
+        <li>
+            <p>If <span class="math"><script type="math/tex">F=C</script></span>, the bond is said to be a <strong>par value bond / redeemable at particular</strong>.<br>
+                <code>if no redemption amount is specified, assume the bond is a par-value bond.</code></p>
+        </li>
+        <li>
+            <p><strong>Modified Coupon Rate</strong> <span class="math"><script type="math/tex">g=\frac{Fr}{C}</script></span>.</p>
+        </li>
+        <li>
+            <p>Annual effective yield rate <span class="math"><script type="math/tex">i</script></span>, investor’s effective yield rate per coupon period <span class="math"><script type="math/tex">j</script></span>, and <span class="math"><script type="math/tex">i=(1+j)^m-1</script></span>,
+                usually, the yield rate is specifies as a nominal rate <span class="math"><script type="math/tex">I</script></span>, convertible <span class="math"><script type="math/tex">m</script></span> times per year, <span class="math"><script type="math/tex">j=\frac{I}{m}</script></span>,
+                and <span class="math"><script type="math/tex">i = (1+ \frac{I}{m})^m -1</script></span></p>
+        </li>
+        <li>
+            <p><strong>Base Amount</strong> <span class="math"><script type="math/tex">G</script></span> is the amount you need to invest now, at interest <span class="math"><script type="math/tex">j</script></span>, to create a perpetuity paying an amount
+                of interest at the end of each coupon period that is equal to the coupon amount. <span class="math"><script type="math/tex">G</script></span> expresses the coupon amount in terms of the yield rate per coupon period <span class="math"><script type="math/tex">j</script></span>.
+                <span class="math"><script type="math/tex">G=\frac{Fr}{j}</script></span> .</p>
+        </li>
+        <li>
+            <p>The amount of each coupon payment is <span class="math"><script type="math/tex">Fr=Cg= Gj</script></span>.</p>
+        </li>
+        <li>
+            <p>Price paid for the bond to yield the investor <span class="math"><script type="math/tex">j</script></span> per interest period, <span class="math"><script type="math/tex">v_j = (1+j)^{-1}</script></span>.</p>
+        </li>
+        <li>
+            <p>Set <span class="math"><script type="math/tex">K=Cv_j^n</script></span>, the value of the redemption at the issue date figured using compound interest and the yield rate received by th e investor.</p>
+        </li>
+    </ul>
+    <p><img src="D:\Coding\github\wuzhuoran.github.io\MATH-175\assets\MATH-175-Chapter-6-670ab.png?v=1485983381251" alt="BONDS-VARIABLE"></p>
+    <ul>
+        <li><strong>Basic price formula</strong> <span class="math"><script type="math/tex">P = (Fr)a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub> <span class="math"><script type="math/tex">+Cv_j^n = (Fr)a</script></span>            <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub> <span class="math"><script type="math/tex">+K</script></span>.</li>
+    </ul>
+    <br>
+    <h2>6.3 The premuim-discount formula</h2>
+    <p><span class="math"><script type="math/tex">P = (Fr)a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub> <span class="math"><script type="math/tex">+Cv_j^n</script></span> <span class="math"><script type="math/tex">= (Cg)a</script></span>        <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub> <span class="math"><script type="math/tex">+C(1- ja</script></span> <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span> <span class="math"><script type="math/tex">)</script></span>.</sub></p>
+    <ul>
+        <li>
+            <p><strong>Premium-discount pricing formula</strong> <span class="math"><script type="math/tex">P = C+ C(g-j)a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub></p>
+        </li>
+        <li>
+            <p><strong>Sell at a premuim</strong> if the price <span class="math"><script type="math/tex">P</script></span> is greater than the redemption value <span class="math"><script type="math/tex">C</script></span>, <strong>premium / amount of premium</strong>                <span class="math"><script type="math/tex">=P-C</script></span>, <span class="math"><script type="math/tex">g>j</script></span>.</p>
+        </li>
+        <li>
+            <p><strong>Sell at a discount</strong> if the price <span class="math"><script type="math/tex">P</script></span> is less than the redemption value <span class="math"><script type="math/tex">C</script></span>, <strong>discount / amount of discount</strong>                <span class="math"><script type="math/tex">=C-P</script></span>, <span class="math"><script type="math/tex">j>g</script></span>.</p>
+        </li>
+        <li>
+            <p>Premium <span class="math"><script type="math/tex">= P-C = C(g-j)a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub></p>
+        </li>
+        <li>
+            <p>Discount <span class="math"><script type="math/tex">= C-P = C(j-g)a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub><br>
+                <br></p>
+        </li>
+    </ul>
+    <h2>6.4 Other price formulas</h2>
+    <ul>
+        <li>
+            <p>From the base amount formula we can get:</p>
+            <ul>
+                <li>
+                    <p>a<sub><span class="math"><script type="math/tex">{\overline{n|}}j</script></span></sub> <span class="math"><script type="math/tex">=\frac{1-v^n_j}{j}</script></span></p>
+                </li>
+                <li>
+                    <p><span class="math"><script type="math/tex">Cv_j^n = K</script></span></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">P = (C-G)v^n_j +G</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">P= Cg \frac{1-v^n_j}{j} +Cv_j^n = \frac{g}{j} C(1-v_j^n) +Cv_j^n</script></span></p>
+        </li>
+        <li>
+            <p>Makeham’s Formula: <span class="math"><script type="math/tex">P = \frac{g}{j} (C-K)+ K</script></span><br>
+                <br></p>
+        </li>
+    </ul>
+    <h2>6.5 Bond Amortization Schedule</h2>
+    <ul>
+        <li>
+            <p>The applicable interest rate for each interest period is <span class="math"><script type="math/tex">j</script></span>.</p>
+        </li>
+        <li>
+            <p>Set <strong>book value</strong> <span class="math"><script type="math/tex">B_t</script></span> <strong>the balance of the debt at time t</strong>, immediately after any time t coupon payment, before redemption payment.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">B_0 =P</script></span>, and <span class="math"><script type="math/tex">B_n =C</script></span></p>
+        </li>
+        <li>
+            <p><strong>interest due</strong> at time t,<br>
+                <span class="math"><script type="math/tex">I_t = jB_{t-1}=Cg - C(g-j) v_j^{n-t+1}</script></span></p>
+        </li>
+        <li>
+            <p><strong>amount for adjustment of principal</strong><br>
+                <span class="math"><script type="math/tex">P_t = B_{t-1} - B_t = C(g-j)v_j^{n-t+1}</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">I_ t+ P_t = Cg</script></span></p>
+            <ul>
+                <li>premium: <span class="math"><script type="math/tex">P_t</script></span> is positive;</li>
+                <li>discount: <span class="math"><script type="math/tex">P_t</script></span> is negative;</li>
+                <li>price equals the redemption value, <span class="math"><script type="math/tex">P_t=0</script></span>.</li>
+            </ul>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">B_t = (1+j)B_{t-1} - Cg</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">B_t= Fr a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n-t|}}j</script></span></sub> <span class="math"><script type="math/tex">+Cv_j^{n-t}</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">B_t= C(g-j)a</script></span> <sub><span class="math"><script type="math/tex">{\overline{n-t|}}j</script></span></sub> <span class="math"><script type="math/tex">+C</script></span></p>
+        </li>
+    </ul>
+    <h3>Premium bonds (writing down):</h3>
+    <p><img src="D:\Coding\github\wuzhuoran.github.io\MATH-175\assets\MATH-175-Chapter-6-f149b.png?v=1485983381251" alt="writing down"></p>
+    <h3>Discount bonds (writing up):</h3>
+    <p><img src="D:\Coding\github\wuzhuoran.github.io\MATH-175\assets\MATH-175-Chapter-6-2139c.png?v=1485983381251" alt="writing up"></p>
+    <h3>Bond with level coupons:</h3>
+    <p><img src="D:\Coding\github\wuzhuoran.github.io\MATH-175\assets\MATH-175-Chapter-6-a7852.png?v=1485983381252" alt="amortization level coupons"></p>
+    <h2>6.6 Value of Bond after issuing</h2>
+    <ul>
+        <li>
+            <p><strong>Value</strong> with respect of interest rate <span class="math"><script type="math/tex">j</script></span>(effective yield rate per coupon period) price paid for the bond;</p>
+        </li>
+        <li>
+            <p><strong>dirty value/ theoroetical dirty value</strong>: <span class="math"><script type="math/tex">D_T = B_T, 1≤T≤n</script></span>.<br>
+                <code>discountinue</code></p>
+        </li>
+        <li>
+            <p>clean value continues function.<br>
+                <br></p>
+        </li>
+    </ul>
+    <h2>6.7 Sell a Bond after issuing</h2>
+    <ul>
+        <li>price of bond purchased <strong>cum divident</strong> <span class="math"><script type="math/tex">= D^{j^{-}}_T</script></span></li>
+    </ul>
+    <p><img src="D:\Coding\github\wuzhuoran.github.io\MATH-175\assets\MATH-175-Chapter-6-7165d.png?v=1485983381252" alt="price-and-rate"></p>
+    <h2>6.8 Yield rate example</h2>
+    <h2>6.9 Callable bond</h2>
+    <ul>
+        <li>With <strong>agreement / call provision</strong>, allow the issuer to hasten the repayment of the debt.</li>
+        <li>at designated <strong>call date</strong>, <strong>lockout period</strong>,</li>
+    </ul>
+    <h3>European option</h3>
+    <p>single call date prior to maturity;<br> wait until the date;</p>
+    <h3>Bermuda option</h3>
+    <p>Multiple specified date, coincide with coupon dates;<br> wait until certain day;</p>
+    <h3>American option</h3>
+    <p>Callable at any time following the lockout period.<br> any day</p>
 </body>
 
 </html>

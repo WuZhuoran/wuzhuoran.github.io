@@ -1,10 +1,12 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Preface](#preface)
+
 - [Chapter 1](#chapter-1)
 	- [General features](#general-features)
 	- [Theorey of value](#theorey-of-value)
 	- [Microeconomics](#microeconomics)
+
 - [Chapter 2](#chapter-2)
 	- [Derivates](#derivates)
 		- [first order derivatives](#first-order-derivatives)
@@ -13,7 +15,7 @@
 		- [Utility function](#utility-function)
 		- [Partial derivatives](#partial-derivatives)
 		- [Total Differential](#total-differential)
-	- [Constrained Maximisation, **Lagrangian**](#constrained-maximisation-lagrangian)
+	- [Constrained Maximisation, Lagrangian](#constrained-maximisation-lagrangian)
 		- [$\lambda$ - Economic interpretation](#lambda-economic-interpretation)
 	- [Implicit function theorem: $g(x, y) = 0$, how $x,y$ are related](#implicit-function-theorem-gx-y-0-how-xy-are-related)
 	- [The Envelope theorem](#the-envelope-theorem)
@@ -25,7 +27,11 @@
 
 # Preface
 ---
-* Midterms 	10/25, 11/17 in class, 1hr 15 mins,
+* Midterms 	10/25, 11/17 in class, 1hr 15 mins     
+  - 1st midterm chapter 1-4
+  - 10 Mul Choice + 2 long question
+  - Scantron 882-E
+
 * Final 		12/8 11:30-2:30
 * Problems set will be graded due in one week
 * HW 10%

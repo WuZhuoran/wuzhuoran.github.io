@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>ECON-11-Chapter-10</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,35 +1132,278 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
+    <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
     <ul>
-        <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
+        <li><a href="#chapter-10">Chapter 10</a>
+            <ul>
+                <li><a href="#cost">Cost:</a></li>
+                <li><a href="#assumption">Assumption:</a></li>
+                <li><a href="#cost-minimizing-input">Cost minimizing input:</a>
+                    <ul>
+                        <li><a href="#compensated-factor-demands">Compensated Factor demands:</a></li>
+                        <li><a href="#example-2">Example 2</a></li>
+                        <li><a href="#opitimal-point-k-l-">Opitimal point <span class="math"><script type="math/tex">(k^* , l^* )</script></span></a></li>
+                        <li><a href="#lagrangian-multiplier-lambda">Lagrangian multiplier <span class="math"><script type="math/tex">\lambda</script></span>:</a></li>
+                        <li><a href="#expansion-path">Expansion Path:</a></li>
+                    </ul>
+                </li>
+                <li><a href="#total-cost-function">Total Cost Function:</a></li>
+                <li><a href="#average-cost-function">Average Cost Function:</a></li>
+                <li><a href="#marginal-cost-function">Marginal Cost Function:</a>
+                    <ul>
+                        <li><a href="#example-2-continued">Example 2 continued:</a></li>
+                    </ul>
+                </li>
+                <li><a href="#graphical-analysis-of-total-costs">Graphical analysis of Total Costs</a>
+                    <ul>
+                        <li><a href="#constant-return-to-scale-production-function">Constant return to scale production function</a></li>
+                        <li><a href="#properties-of-the-total-cost-function">Properties of the total cost function</a></li>
+                    </ul>
+                </li>
+                <li><a href="#short-run-long-run-distinction">Short run/ Long run Distinction</a>
+                    <ul>
+                        <li><a href="#short-run">Short run</a></li>
+                    </ul>
+                </li>
+            </ul>
         </li>
     </ul>
+    <!-- /TOC -->
+    <h1>Chapter 10</h1>
+    <p>Economic profits:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>profit <span class="math"><script type="math/tex">\pi</script></span></th>
+                <th>total revenue - total coast</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total Revenue</td>
+                <td><span class="math"><script type="math/tex">pq=pf(k,l)</script></span></td>
+            </tr>
+            <tr>
+                <td>total Costs</td>
+                <td><span class="math"><script type="math/tex">C=wl+vk</script></span></td>
+            </tr>
+            <tr>
+                <td>Economic profits</td>
+                <td><span class="math"><script type="math/tex">\pi = pq-C</script></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><code>Cost minimization (for a fixed level of output):</code></p>
+    <h2>Cost:</h2>
+    <ul>
+        <li>
+            <p><strong>Explicit cost</strong>:<br> Wages paid to employees (financial payment, rent, buying equipment etc.), and the cost of raw materials.</p>
+        </li>
+        <li>
+            <p><strong>Implicit cost</strong>:<br> opportunity cost of the entrepreneur not related to financial payment(time spent on the firm), capital used for production.</p>
+        </li>
+        <li>
+            <p><strong>Opportunity Cost</strong>:<br> remuneration the input would receive in its best alternative employment.</p>
+        </li>
+    </ul>
+    <h2>Assumption:</h2>
+    <ul>
+        <li>
+            <p>two inputs <span class="math"><script type="math/tex">k</script></span> and <span class="math"><script type="math/tex">l</script></span>:<br> entrepreneurial costs are included in capital costs.</p>
+        </li>
+        <li>
+            <p>inputs are hires in perfectly competitive markets, firms are f=price taker in input markets, meaning that <strong>price is  given</strong>.</p>
+        </li>
+    </ul>
+    <h2>Cost minimizing input:</h2>
+    <h3>Compensated Factor demands:</h3>
+    <p><span class="math"><script type="math/tex">TC = wl+vk</script></span>,</p>
+    <p>→ <span class="math"><script type="math/tex">k=-\frac{w}{v}l+\frac{TC}{v}</script></span></p>
+    <p>Given <span class="math"><script type="math/tex">min (wl+vk)</script></span>, such that <span class="math"><script type="math/tex">q^-=f(k,l)</script></span></p>
+    <p>→ <span class="math"><script type="math/tex">L =  wl+vk + \lambda(q^- -f(k,l))</script></span><br> solve for F.O.C:</p>
+    <p><span class="math"><script type="math/tex">\frac{\partial L}{\partial l} = w-\lambda \frac{\partial f}{\partial l}= 0</script></span></p>
+    <p><span class="math"><script type="math/tex">\frac{\partial L}{\partial k} = v-\lambda \frac{\partial f}{\partial l}= 0</script></span><br> …
+    </p>
+    <p>→ <span class="math"><script type="math/tex">\frac{w}{v} = \frac{\partial f}{\partial l} / \frac{\partial f}{\partial k}= RTS</script></span></p>
+    <p><strong>Compensated Factor demands:</strong><br>
+        <span class="math"><script type="math/tex">l^* = l^c (v, w, q^-)</script></span>,<br>
+        <span class="math"><script type="math/tex">k^* = k^c (v, w, q^-)</script></span>
+        <br></p>
+    <h3>Example 2</h3>
+    <p><span class="math"><script type="math/tex">q=f(k,l) = k^{\frac{1}{3}}l^{\frac{2}{3}}</script></span><br> Given <span class="math"><script type="math/tex">min (wl+vk)</script></span>, such that <span class="math"><script type="math/tex">q^-=k^{\frac{1}{3}}l^{\frac{2}{3}}</script></span>        → <span class="math"><script type="math/tex">q^- -k^{\frac{1}{3}}l^{\frac{2}{3}}=0</script></span><br>
+        <br></p>
+    <p>→ <span class="math"><script type="math/tex">L =  wl+vk + \lambda(q^- -k^{\frac{1}{3}} l^{\frac{2}{3}})</script></span><br> Solve for F.O.C:
+        <span class="math"><script type="math/tex">\frac{\partial L}{\partial l} = w - \frac{1}{3} \lambda k^{\frac{1}{3}} l^{-\frac{1}{3}} = 0</script></span><br> …
+    </p>
+    <p>→ <span class="math"><script type="math/tex">\frac{w}{v}= \frac{2}{3} k^{\frac{1}{3}} l^{-\frac{1}{3}} / \frac{1}{3} k^{-\frac{2}{3}} l^{\frac{2}{3}}</script></span></p>
+    <p>∴ <span class="math"><script type="math/tex">l^* = (\frac{2v}{w})^{\frac{1}{3}} q^-</script></span>, <span class="math"><script type="math/tex">k^* = (\frac{2}{2v})^{\frac{2}{3}} q^-</script></span>.</p>
+    <h3>Opitimal point <span class="math"><script type="math/tex">(k^* , l^* )</script></span></h3>
+    <ul>
+        <li>Given output <span class="math"><script type="math/tex">q_0</script></span> , we want to find the least point in the isoquant.<br>
+            <span class="math"><script type="math/tex">k=-\frac{w}{v}l+\frac{Total ~ Cost}{v}</script></span><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br></li>
+    </ul>
+    <h3>Lagrangian multiplier <span class="math"><script type="math/tex">\lambda</script></span>:</h3>
+    <p>how much the total cost would increase if output <span class="math"><script type="math/tex">q_0</script></span> would increase by a small amount.</p>
+    <h3>Expansion Path:</h3>
+    <ul>
+        <li>
+            <p>Firm can determine the cost minimizing combinations of <span class="math"><script type="math/tex">k</script></span> and <span class="math"><script type="math/tex">l</script></span> for every level of output.</p>
+        </li>
+        <li>
+            <p>Set of combination of optimal amount of <span class="math"><script type="math/tex">k</script></span> and <span class="math"><script type="math/tex">l</script></span> is called expansion path.<br>
+                <br><br>
+                <br><br>
+                <br></p>
+            <ul>
+                <li>
+                    <p>not have to be a straight line;<br> use of some input may increase faster than others, depends on the shape of the isoquants).</p>
+                </li>
+                <li>
+                    <p>not have to be upward sloping;<br> use of an input falls as output expands, that input is an <strong>inferior input.</strong></p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Total Cost Function:</h2>
+    <ul>
+        <li>
+            <p>Substituting the compensated factor demand function in the total cost:<br>
+                <span class="math"><script type="math/tex">C=wl^c(w,vq)+ vk^c(w,v,q)</script></span>,<br> → total cost function: <span class="math"><script type="math/tex">C=C(w,v,q)</script></span></p>
+        </li>
+        <li>
+            <p>minimum cost to produce the given quantity <span class="math"><script type="math/tex">q</script></span> with given <span class="math"><script type="math/tex">k</script></span> and <span class="math"><script type="math/tex">l</script></span>.</p>
+        </li>
+    </ul>
+    <h2>Average Cost Function:</h2>
+    <p>Total cost function per unit of output: <span class="math"><script type="math/tex">AC(v,w,q)=\frac{C(w,v,q)}{q}</script></span></p>
+    <h2>Marginal Cost Function:</h2>
+    <p>compute the change in the total cost function for a small change in output priduced.<br>
+        <span class="math"><script type="math/tex">MC(w,v,q)= \frac{\partial C(w,v,q)}{\partial q}</script></span></p>
+    <h3>Example 2 continued:</h3>
+    <p>since we calculated that <span class="math"><script type="math/tex">l^* = (\frac{2v}{w})^{\frac{1}{3}} q^-</script></span>, <span class="math"><script type="math/tex">k^* = (\frac{2}{2v})^{\frac{2}{3}} q^-</script></span>.</p>
+    <p><span class="math"><script type="math/tex">C(w,v,q)= wl^* +vk^* = w(\frac{2v}{w})^{\frac{1}{3}} q^- + v(\frac{2}{2v})^{\frac{2}{3}} q^-</script></span></p>
+    <p><span class="math"><script type="math/tex">= (2^{\frac{1}{3}}+2^{-\frac{2}{3}}) w^{\frac{2}{3}} v^{\frac{1}{3}} q</script></span>
+        <br></p>
+    <p>→ AC <span class="math"><script type="math/tex">= (2^{\frac{1}{3}}+2^{-\frac{2}{3}}) w^{\frac{2}{3}} v^{\frac{1}{3}}</script></span>
+        <br></p>
+    <p>→ MC <span class="math"><script type="math/tex">= (2^{\frac{1}{3}}+2^{-\frac{2}{3}}) w^{\frac{2}{3}} v^{\frac{1}{3}}</script></span><br>
+        <br></p>
+    <h2>Graphical analysis of Total Costs</h2>
+    <h3>Constant return to scale production function</h3>
+    <ul>
+        <li>
+            <p><span class="math"><script type="math/tex">k_1</script></span> unit of capital and <span class="math"><script type="math/tex">l_1</script></span> units of labor are the optimal choice to produce one unit of output, <span class="math"><script type="math/tex">C(q=1, v,w)=vk_1 + wl_1</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">k_m=mk_1, l_m=ml_1</script></span> when product <span class="math"><script type="math/tex">m</script></span> units.</p>
+        </li>
+        <li>
+            <p>optimal choice <span class="math"><script type="math/tex">\frac{w}{v} =RTS</script></span>, price did not change, RTS depends only on <span class="math"><script type="math/tex">k/l</script></span></p>
+            <ul>
+                <li>ratio <span class="math"><script type="math/tex">k_m/l_m = k_1/l_1</script></span><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br></li>
+            </ul>
+        </li>
+    </ul>
+    <p>small business, just stared: total cost rises slowly<br> constant return to scale, compensated amount of labor, specialization firm becomes larger, total cost rises very fast, lack of management, too many poople to control.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>increasing productibility<br> loss of efficiency</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>AC: U shape,<br> when MC <span class="math"><script type="math/tex"><</script></span> AC, AC goes down<br> when MC <span class='math'><script type='math/tex'>></script></span> AC, AC goes up<br> cross at the bottom at cost function (<span class="math"><script type="math/tex">min ~ AC</script></span>)</p>
+    <p><strong>Example</strong><br>
+        <span class="math"><script type="math/tex">q=f(k,l)=min(ak,bl)</script></span> → <span class="math"><script type="math/tex">ak=bl=q</script></span></p>
+    <table>
+        <thead>
+            <tr>
+                <th><span class="math"><script type="math/tex">k^c (w, v, q) = \frac{q}{a}</script></span></th>
+                <th><span class="math"><script type="math/tex">l^c (w, v, q) = \frac{q}{b}</script></span></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <p><span class="math"><script type="math/tex">C(w,v,q)=vk+vl</script></span><br>
+        <span class="math"><script type="math/tex">C(w,v,q)=q(\frac{v}{a}+\frac{w}{b})</script></span></p>
+    <h3>Properties of the total cost function</h3>
+    <ul>
+        <li>
+            <p>Homogeneity, cost function is homogenious of degree one</p>
+        </li>
+        <li>
+            <p>Increasing in <span class="math"><script type="math/tex">q</script></span></p>
+        </li>
+        <li>
+            <p>Non-decreasing in <span class="math"><script type="math/tex">v</script></span> and <span class="math"><script type="math/tex">w</script></span></p>
+        </li>
+        <li>
+            <p>Concave in input prices,</p>
+            <ul>
+                <li>price of labor goes up, firm’s optimal: firm will replace workers with capital.<br> (consequence. before everyone get money, after some get more, some get zero.)</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Short run/ Long run Distinction</h2>
+    <h3>Short run</h3>
+    <ul>
+        <li>Easier to hire (and fire )workers</li>
+        <li>Difficult to change the level of the capital stock</li>
+    </ul>
+    <ol>
+        <li>
+            <p>Increase Production in Short run:</p>
+            <ul>
+                <li>Difficult to acquire more capital</li>
+                <li>hire more workers and use existing capital more intensively</li>
+                <li>not optimal level of amount of capital, cost of production is higher than in the long run.</li>
+            </ul>
+        </li>
+        <li>
+            <p>Fixed Capital <span class="math"><script type="math/tex">k_1</script></span>, firm is free to vary its labor only, plug in <span class="math"><script type="math/tex">q=f(k,l)</script></span></p>
+        </li>
+    </ol>
+    <p><span class="math"><script type="math/tex">q=f(k,l)=k^{\frac{1}{2}} l^{\frac{1}{2}}</script></span>, with <span class="math"><script type="math/tex">min wl+vk</script></span><br>
+        <span class="math"><script type="math/tex">k^{\frac{1}{2}} l^{\frac{1}{2}} = q^-</script></span><br> since <span class="math"><script type="math/tex">k=k^-</script></span> constant,<br>
+        <span class="math"><script type="math/tex">q^- = k_-^{\frac{1}{2}} l^{\frac{1}{2}}</script></span><br>
+        <span class="math"><script type="math/tex">l^* =(w,v,q^-, k^-)= \frac{q^2}{k^-}</script></span></p>
+    <ol start="3">
+        <li>Short run total cost <span class="math"><script type="math/tex">=(w,v,q^-,k^-) = wl^* +vk^- = w\frac{q^2}{k^-} +vk^-</script></span></li>
+    </ol>
+    <ul>
+        <li>fixed cost: <span class="math"><script type="math/tex">vk^-</script></span>, cannot be change in short run</li>
+        <li><span class="math"><script type="math/tex">wl^* ~</script></span> variable costs</li>
+    </ul>
+    <ol start="4">
+        <li>
+            <p>Long run total cost <span class="math"><script type="math/tex">=(w,v,q^-)=2w^{\frac{1}{2}} v^{\frac{1}{2}} q^-</script></span><br> (choose capital as Zero, all costs varies)<br>
+                <br></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">k^-</script></span> is fixed, so RTS can not be the ratio of input changing price.</p>
+        </li>
+    </ol>
+    <ul>
+        <li>tangent cannot hold.<br>
+            <br><br>
+            <br><br>
+            <br></li>
+    </ul>
+    <ol start="6">
+        <li>Short Run average total cost (SAC)</li>
+    </ol>
+    <p>SAC <span class="math"><script type="math/tex">= \frac {short ~ run ~ total ~ costs}{total ~ output} = \frac {SC}{q}</script></span><br>
+        <br></p>
 </body>
 
 </html>
