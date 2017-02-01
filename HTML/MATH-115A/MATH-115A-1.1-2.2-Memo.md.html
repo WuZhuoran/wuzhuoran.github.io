@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>MATH-115A-1.1-2.2-Memo</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,35 +1132,188 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
+    <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
     <ul>
-        <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
+        <li><a href="#11-22-%E4%B8%BB%E8%A6%81%E5%AE%9A%E4%B9%89%E5%AE%9A%E7%90%86%E5%A4%87%E5%BF%98%E5%BD%95">1.1 - 2.2 主要定义、定理备忘录</a>
+            <ul>
+                <li><a href="#11-introduction">1.1 Introduction</a></li>
+                <li><a href="#12-vector-space">1.2 Vector Space</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#13-subspace">1.3 Subspace</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#14-linear-combinations-and-systems-of-linear-equations">1.4 Linear Combinations and Systems of Linear Equations</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#15-linear-dependence-and-linear-independence">1.5 Linear Dependence and Linear Independence</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#16-bases-and-dimension">1.6 Bases and Dimension</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#21-linear-transformations-null-spaces-and-ranges">2.1 Linear Transformations, Null Spaces and Ranges</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#22-the-matrix-representation-of-a-linear-transformation">2.2 The Matrix Representation of A Linear Transformation</a>
+                    <ul>
+                        <li><a href="#definitions">Definitions</a></li>
+                        <li><a href="#theorem">Theorem</a></li>
+                        <li><a href="#corollary">Corollary</a></li>
+                    </ul>
+                </li>
+            </ul>
         </li>
     </ul>
-</body>
+    <!-- /TOC -->
+    <h1>1.1 - 2.2 主要定义、定理备忘录</h1>
+    <hr>
+    <h2>1.1 Introduction</h2>
+    <p>略</p>
+    <hr>
+    <h2>1.2 Vector Space</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>Vector Space <code>(P18)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>1.1. Vector 加法消去律 <code>(P23)</code></li>
+        <li>1.2. 有关 <span class="math"><script type="math/tex">\vec{0}</script></span> Vector 的性质 <code>(P24)</code></li>
+    </ul>
+    <h3>Corollary</h3>
+    <ul>
+        <li>1. Vector Space 中 <span class="math"><script type="math/tex">\vec{0}</script></span> Vector 是唯一的 <code>(P23)</code></li>
+        <li>2. Vector Space 中 任何向量都是唯一的 <code>(P24)</code></li>
+    </ul>
+    <hr>
+    <h2>1.3 Subspace</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>subspace <code>(P28)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>1.3. Subspace 的 充分必要条件 <code>(P29)</code></li>
+        <li>1.4. Subspace 的 交集也是 Subspace <code>(P31)</code></li>
+    </ul>
+    <h3>Corollary</h3>
+    <hr>
+    <h2>1.4 Linear Combinations and Systems of Linear Equations</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>Linear Combination <code>(P36)</code></li>
+        <li>span <code>P(42)</code></li>
+        <li>spans (generates) <code>(P42)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>1.5. Vector Space 任何一个 Subset 的 span 都是这个 Space 的 Subspace，并且 Vector Space 如果包含这个 Subset 那么一定包含这个 Subset 的 Span <code>(P42)</code></li>
+    </ul>
+    <h3>Corollary</h3>
+    <hr>
+    <h2>1.5 Linear Dependence and Linear Independence</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>Linearly Dependent <code>(P48)</code></li>
+        <li>Linearly Independent <code>(P49)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>1.6. <span class="math"><script type="math/tex">V</script></span> 是一个 Vector Space 并且 <span class="math"><script type="math/tex">S_1 \subseteq S_2 \subseteq V</script></span> ，如果 <span class="math"><script type="math/tex">S_1</script></span> 是
+            linearly dependent 那么 <span class="math"><script type="math/tex">S_2</script></span> 也是 <code>(P51)</code></li>
+        <li>1.7. <span class="math"><script type="math/tex">S</script></span> 是 Vector Space <span class="math"><script type="math/tex">V</script></span> 的一个 linearly independent subset 并且有一个 vector <span class="math"><script type="math/tex">\vec{v}</script></span>            在 <span class="math"><script type="math/tex">V</script></span> 但是不在 <span class="math"><script type="math/tex">S</script></span> 里面，那么 <span class="math"><script type="math/tex">S \cup{\{\vec{v}\}}</script></span> 是 linearly dependent 当且仅当
+            <span class="math"><script type="math/tex">\vec{v} \in span(S)</script></span> <code>(P51)</code></li>
+    </ul>
+    <h3>Corollary</h3>
+    <ul>
+        <li>1. <span class="math"><script type="math/tex">V</script></span> 是一个 Vector Space 并且 <span class="math"><script type="math/tex">S_1 \subseteq S_2 \subseteq V</script></span> ，如果 <span class="math"><script type="math/tex">S_2</script></span> 是 linearly
+            independent 那么 <span class="math"><script type="math/tex">S_1</script></span> 也是 <code>(P51)</code></li>
+    </ul>
+    <hr>
+    <h2>1.6 Bases and Dimension</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>basis <code>(P55)</code></li>
+        <li>Dimension <code>(P58-P59)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>1.8. basis 成立的条件 <code>(P55)</code></li>
+        <li>1.9. vector space 有 finite basis 的条件 <code>(P56)</code></li>
+        <li>1.10. Replacement Theorem 替代定理 <code>(P57)</code></li>
+        <li>1.11. Subspace 和 Vector Space 维数的关系 <code>(P62)</code></li>
+    </ul>
+    <h3>Corollary</h3>
+    <ul>
+        <li>1. basis 数量都相同 <code>(P58)</code></li>
+        <li>2. N-dimension Vector Space 性质 <code>(P59-P60)</code></li>
+        <li>3. Subspace 的 basis和 Vector Space 的 basis 的关系 <code>(P63)</code></li>
+    </ul>
+    <hr>
+    <h2>2.1 Linear Transformations, Null Spaces and Ranges</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>Linear Transformation Form <code>(P77)</code></li>
+        <li>Null Space (Kernel) <code>(P79)</code></li>
+        <li>Range (Image) <code>(P79)</code></li>
+        <li>Nullity <code>(P81)</code></li>
+        <li>Rank <code>(P81)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>2.1. <span class="math"><script type="math/tex">N(T)</script></span> 和 <span class="math"><script type="math/tex">R(T)</script></span> 都是 subspace <code>(P80)</code></li>
+        <li>2.2. <span class="math"><script type="math/tex">R(T)</script></span> 和 <span class="math"><script type="math/tex">V</script></span> 的 basis 的关系 <code>(P80)</code></li>
+        <li>2.3. Dimension Theorem <code>(P82)</code></li>
+        <li>2.4. 一个 <span class="math"><script type="math/tex">T</script></span> 是 one-to-one 的条件 <code>(P83)</code></li>
+        <li>2.5. 一个 <span class="math"><script type="math/tex">T</script></span> 是 linear 的等价说法 <code>(P83)</code></li>
+        <li>2.6. 一个 <span class="math"><script type="math/tex">V</script></span> 的 basis 都可以被正好一个 <span class="math"><script type="math/tex">T</script></span> 成 <span class="math"><script type="math/tex">W</script></span> 里面的对应的值 <code>(P84)</code></li>
+    </ul>
+    <h3>Corollary</h3>
+    <ul>
+        <li>1. 两个 Transformation 相等的条件 <code>(P85)</code></li>
+    </ul>
+    <hr>
+    <h2>2.2 The Matrix Representation of A Linear Transformation</h2>
+    <h3>Definitions</h3>
+    <ul>
+        <li>ordered basis <code>(P91)</code></li>
+        <li>standard ordered basis <code>(P91)</code></li>
+        <li>coordinate vector <code>(P92)</code></li>
+        <li>matrix representation of <span class="math"><script type="math/tex">T</script></span> in the ordered bases <code>(P92)</code></li>
+        <li>Transformation Addition <code>(P94)</code></li>
+        <li>Transformation scalar multiplication <code>(P94)</code></li>
+        <li><span class="math"><script type="math/tex">\mathcal{L}(V,W)</script></span> <code>(P94)</code></li>
+    </ul>
+    <h3>Theorem</h3>
+    <ul>
+        <li>2.7. 两个 Transformation 相加后 加法和数乘性质 <code>(P94)</code></li>
+        <li>2.8. 两个 Transformation 运算之后的 coordinate 的关系 <code>(P94)</code></li>
+    </ul>
+    <h3>Corollary</h3></body>
 
 </html>

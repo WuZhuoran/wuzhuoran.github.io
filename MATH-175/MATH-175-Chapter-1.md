@@ -22,7 +22,7 @@
 * **Interest**, an investment amount $K grow to an amount $S over a period, the interest is the difference $K - $S.
 * Charging of interest is based on the **economic productivity of capital** .
 
-|**Investment opportunities theory**  | **time preference theory**|
+|**Investment opportunities theory**  | **Time preference theory**|
 |------------- | -------------|
 |that you borrow money from bank, the borrowed money allows you to make more money, so you pay a bit back to the bank, as interest.  | that the option to use money immediately, to lend the money out. interest compensates a lender for the loss of choice (immediate money), and the risk of landed money is lost.|
 <br/>
@@ -33,13 +33,13 @@
 
 * **Principal** the investment amount $K of money, or the amount of money borrowed.
 
-* Unit of time : year, month, day, quarter. Time t = 0, is the initial financial transaction, meaning $K is invested at t = 0.
-*
+* Unit of time : year, month, day, quarter. Time t = 0, is the initial financial transaction, meaning $K is invested at t = 0.     
+
 |**Amount function**  | **$\$A_k(t)$** | principle $\$K, where ~ t \ge 0$|
 |------------- | ------------- | -------------|
 |**Accumulation function** | **a(t)** | principle is $1.|
-NOTE: $A_K (t) = K a(t), A_K (0) = K, a(0) = 1$
-<br/>
+`NOTE`: $A_K (t) = K a(t),  A_K (0) = K, a(0) = 1$     
+<br/>     
 
 * $A_K(t)$  and $a(t)$ are most often **non - decreasing**  functions, if the interest is only paid at the end of each period, then amount functions are **step functions**.
 >  An investment of $\$1000$ grows by a constant amount of $\$250$ each year for five year.  
@@ -51,8 +51,6 @@ $A_1000(t) = \$1000 + \$250 t$.
 <br/>
 
 `Effective Interest Rate` for the internal $[t_1, t_2]$:
-$i_1 = a(1) - 1$
-
 |![Snip20161006_106](assets/MATH-175-Chapter-1-fc0b2.png) |![Snip20161006_107](assets/MATH-175-Chapter-1-004c4.png)|
 |------------- | -------------|
 <br/>
@@ -62,7 +60,8 @@ $i_1 = a(1) - 1$
 * $A_K(t) = K(1 + st)$, is the amount function for $\$K$ invested by **simple interest** at rate s.
 $a(t) = 1 + st$ , is the simple interest accumulation function at rate s.
  - Decreasing sequence, converge to 0, rarely used for loans of long duration.
-![Snip20160928_23](assets/MATH-175-Chapter-1-ebbaf.png)
+![Snip20160928_23](assets/MATH-175-Chapter-1-ebbaf.png)     
+<br/>     
 
 * **Exact simple interest**, actual/actual method, exact days/ days in a year.
  - leap year, can divided by 4, if it can be divided by 100, it need to be divided by 400 to be a leap year.
@@ -105,18 +104,16 @@ $a(t) = 1 + st$ , is the simple interest accumulation function at rate s.
 
 ## 1.6 interest in advance / the effective discount rate
 
-* **discount rate**, investor lends $K for one period at a discount rate D, then the borrower will have to pay $ K*D  in order to receive the used of $K.
+* **Discount rate**, investor lends $K for one period at a discount rate D, then the borrower will have to pay $K * D   in order to receive the used of $K.
 The quantity $KD is called the **amount of discount**.
 
-* **effective discount rate**,
+* **Effective discount rate**,
 
 |![Snip20160928_27](assets/MATH-175-Chapter-1-82ef9.png) | ![Snip20160928_28](assets/MATH-175-Chapter-1-0c78b.png)|
  |------ | ------|
 
-* **Equivalent rate**,
-
-|![Snip20161006_110](assets/MATH-175-Chapter-1-2ba86.png) | ![Snip20161006_111](assets/MATH-175-Chapter-1-5dfd9.png) | ![Snip20161006_112](assets/MATH-175-Chapter-1-37b2e.png)|
-| ------ | ------ | ------|
+* **Equivalent rate**,     
+$i_n=\frac{d_n}{1-d_n}$, $d_n=\frac{i_n}{1+i_n}$,  $(1+i_n)(1-d_n)=1$.
 
 >  growth of money is governed by the accumulation function a(t) = (1.05)^(t/2) (1+ 0,025t). find d<sub>4</sub> and i<sub>4</sub> .
 >> $a(4) = (1.05)^2 (1.1), a(3) = (1.05)^{\frac{3}{2}} (1.075)$    
@@ -126,12 +123,10 @@ $d_4 = a(4) - \frac{a(3)}{a(4)}, i_4 = a(4)-\frac{a(3)}{a(3)}$.
 
 ## 1.7 Discount function / The Time value of money
 
-1. **discount function**, accumulative function $a(t) = 1+ st$.
-![Snip20160928_29](assets/MATH-175-Chapter-1-fad4d.png)
-<br/>
+1. **discount function**, $v(t)=\frac{1}{a(t)}$
 
 2. **discount factor** ,  compound interest accumulation function $a(t) = (1+i)^t$,
-then we define discount factor ![Snip20160928_30](assets/MATH-175-Chapter-1-db62a.png)
+then we define discount factor $v=\frac{1}{1+i}$.
 <br/>
 
 3. **present value**, present value of $L to be received in year t
@@ -139,12 +134,13 @@ then we define discount factor ![Snip20160928_30](assets/MATH-175-Chapter-1-db62
 <br/>
 
 4. **Net Present Value**, sequence of investment returns received at time 0, $t_1, t_2, t_3, \ldots, t_n$.
-![Snip20161002_65](assets/MATH-175-Chapter-1-b1cb9.png)
-<br/>
+![Snip20161002_65](assets/MATH-175-Chapter-1-b1cb9.png)     
+`use calculator, enter CASH FLOW value then press NPV`     
+<br/>     
 
 ## 1.8 Simple Discount
 
-1. **simple discount**, when $v(t) = mt + b$ , $v(t)$ is linear.
+1. **Simple discount**, when $v(t) = mt + b$ , $v(t)$ is linear.
 2. increasing function with asymptote $t = \frac{1}{d}$, there fore the discount not he interval $[0, \frac{1}{d_1})$.
 
 |$A_K(t) = \frac {K}{1-dt}$ | amount function | $K invested by simple discount at rate d|
@@ -155,30 +151,38 @@ then we define discount factor ![Snip20160928_30](assets/MATH-175-Chapter-1-db62
 
 ## 1.9 Compound Discount
 
-**effective discount rate**,
-![Snip20161006_114](assets/MATH-175-Chapter-1-e4360.png)
-![Snip20161006_115](assets/MATH-175-Chapter-1-6e876.png)
+**effective discount rate**,     
+$d=1-v, v=1-d$, $a(t)=(1+t)^t=(1-d)^{-t}$.     
 
 For borrower, choose low annual effective interest rate, low annual effective discount rate.
 <br/>
 
 ## 1.10 nominal rates of interest and discount
 
-* bank credit interest more than once per year, *m* times per year.  **nominal** (annual) **interest rate** of i^((m)), convertible, compounded, or payable M times per year.
+* bank credit interest more than once per year, **m** times per year.  
+* **nominal** (annual) **interest rate** of $i^{(m)}$, convertible, compounded, or payable M times per year.
 
 * **i** is APY,  annual percentage yield.
 
-3. **nominal** (annual) **discount rate** of d^((m)), convertible, compounded, or payable M times per year.
-<br/>
+3. **nominal** (annual) **discount rate** of $d^{(m)}$, convertible, compounded, or payable M times per year.     
+<br/>     
 
-![Snip20161004_89](assets/MATH-175-Chapter-1-751f9.png) | ![Snip20161004_88](assets/MATH-175-Chapter-1-7bd2a.png)
- ----- | -----
-![Snip20161004_87](assets/MATH-175-Chapter-1-d5b86.png) | ![Snip20161004_91](assets/MATH-175-Chapter-1-61bce.png)
+$d^{(m)}= \frac{i^{(m)}}{1+ \frac{i^{(m)}}{m}}$     
+
+$d = 1- (1- \frac{d^{(m)}}{m})^{m}$     
+
+
+$i^{(m)}= \frac{d^{(m)}}{1- \frac{d^{(m)}}{m}}$     
+
+$i = (1+ \frac{i^{(m)}}{m})^{m}-1$     
 
 ![Snip20161004_90](assets/MATH-175-Chapter-1-976b5.png)
 <br/>
 
-## 1.11 Friendly competition(constant force of interest)
+`2nd-ICONV to calculate NOM and EFF`     
+<br/>     
+
+## 1.11 Friendly competition (constant force of interest)
 
 1. force of interest:     
 ![Snip20161004_92](assets/MATH-175-Chapter-1-25b5d.png)

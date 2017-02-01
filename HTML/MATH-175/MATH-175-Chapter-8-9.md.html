@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>MATH-175-Chapter-8-9</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,33 +1132,73 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
+    <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+    <ul>
+        <li><a href="#83-the-term-structure-of-interest-rates">8.3 the term structure of interest rates:</a>
+            <ul>
+                <li><a href="#zero-coupon-bonds-t0">Zero coupon bonds, <span class="math"><script type="math/tex">t>0</script></span>;</a></li>
+            </ul>
+        </li>
+        <li><a href="#92-duration">9.2 Duration</a></li>
+    </ul>
+    <!-- /TOC -->
+    <h1>8.3 the term structure of interest rates:</h1>
+    <p>interest rate varies with the investment term.</p>
+    <p><strong>Pure expectation theory:</strong><br> view a sequence of short term bonds as a perfect substitute for a single longterm bond.</p>
+    <p><strong>Liquidity preference theory:</strong></p>
     <ul>
         <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
+            <p>invest money for a sequence of short period so that the money is frequently accessible.</p>
         </li>
         <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
+            <p>issuers must offer long-term-bonds with higher rates, called <strong>liquidity premium</strong></p>
+        </li>
+    </ul>
+    <p><strong>Preferred habitat theory:</strong></p>
+    <ul>
+        <li>Investor’s own preferred investment term, but may be induced (感应) to leave their preferred habitat if the compensated yield rates are sufficiently higher, called <strong>term premium</strong>.</li>
+    </ul>
+    <p><strong>Market segmentation theory:</strong><br> not one market, divided into separate market for each term.</p>
+    <p><strong>Yield curve to see one’s annual yield rate.</strong><br>
+        <img src="D:\Coding\github\wuzhuoran.github.io\MATH-175\assets\MATH-175-Chapter-8-9-47263.png?v=1485983409877" alt="yield-curve"></p>
+    <h2>Zero coupon bonds, <span class="math"><script type="math/tex">t>0</script></span>;</h2>
+    <ul>
+        <li>
+            <p><strong>spot rate / zero-coupon rate</strong> <span class="math"><script type="math/tex">r_t</script></span> is the annual effective interest rate earned by money invested at time 0 for a period of t years.<br>
+                <span class="math"><script type="math/tex">(1+r_t)^t=1+i_{[0,t]}</script></span></p>
         </li>
         <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
+            <p><strong>Treasury bills</strong>, matures of one year or less, zero coupon bonds, semiannual coupons.</p>
+            <ul>
+                <li>if spot rate is more than one year, based on treasury securities, we need to remove coupons. (transfer a coupon bond unto a sequence of zero coupon bonds with different terms, called <strong>strips</strong>)</li>
+            </ul>
         </li>
         <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
+            <p>K$ invested at time 0 grows to <span class="math"><script type="math/tex">K(1+r_t)^t</script></span> at time t.<br> if <span class="math"><script type="math/tex">s>t</script></span>, investment grows to <span class="math"><script type="math/tex">K(1+r_s)^s</script></span>                at time s.<br> The annual effective interest rate foe the interval <span class="math"><script type="math/tex">[t,s]</script></span> is <span class="math"><script type="math/tex">f_{[t,s]}</script></span>, such that <span class="math"><script type="math/tex">(1+f_{[t,s]}^{s-t}) = \frac{(1+r_s)^s}{(1+r_t)^t}</script></span></p>
         </li>
         <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
+            <p><span class="math"><script type="math/tex">f_{[0,s]} = r_s</script></span></p>
         </li>
         <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
+            <p><span class="math"><script type="math/tex">f_{[t,s]}</script></span> the <strong>theoretical forward rate / implied forward rate</strong>.</p>
+        </li>
+    </ul>
+    <h1>9.2 Duration</h1>
+    <p>Assumption: compound interest, spot rate are all equal, if one spot rate changes, all change to remain a equal spot rate(parallel shifts).</p>
+    <p>Present Value <span class="math"><script type="math/tex">P(i)= \Sigma_{t≥0} C_t (1+i)^{-t}</script></span></p>
+    <p><span class="math"><script type="math/tex">\frac{P(i)-P(i_0)}{P(i_0} = \frac{P^,(i_0)}{P(i_0)}(i-i_0)</script></span></p>
+    <ul>
+        <li>
+            <p>when <span class="math"><script type="math/tex">i>-1</script></span>, <strong>modified duration</strong> <span class="math"><script type="math/tex">D(i,1) = - \frac{P^,(i_0)}{P(i_0)}</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">D(i,m) = - \frac{\frac{dP}{di^{(m)}}}{P(i_0)}, i^{(m)} = m[(1+i)^{\frac{1}{m}}-1]</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">D(i,m)(1+\frac{i^{(m)}}{m})= D(i,1)(1+i)</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">D(i,\infinite)= D(i,1)(1+i)</script></span></p>
         </li>
     </ul>
 </body>

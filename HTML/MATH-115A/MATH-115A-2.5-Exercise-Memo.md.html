@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>MATH-115A-2.5-Exercise-Memo</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,35 +1132,152 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
-    <ul>
-        <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
-        </li>
-    </ul>
-</body>
+    <h1>2.5 Exercise (P128-P131)</h1>
+    <h2>6</h2>
+    <h3>题目</h3>
+    <p>For each matrix A and ordered basis <span class="math"><script type="math/tex">\beta</script></span>, find <span class="math"><script type="math/tex">[L_A]_ \beta</script></span>. Also, find an invertible matrix <span class="math"><script type="math/tex">Q</script></span>        such that <span class="math"><script type="math/tex">[L_A]_ \beta = Q^{-1}AQ</script></span></p>
+    <p>(a) <span class="math"><script type="math/tex">A = \begin{pmatrix}
+1 & 3 \\
+1 & 1 \\
+\end{pmatrix}</script></span> and <span class="math"><script type="math/tex">\beta = \left\{\begin{pmatrix}
+1 \\
+1 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}\right\}</script></span></p>
+    <p>(b) <span class="math"><script type="math/tex">A = \begin{pmatrix}
+1 & 2 \\
+2 & 1 \\
+\end{pmatrix}</script></span> and <span class="math"><script type="math/tex">\beta = \left\{\begin{pmatrix}
+1 \\
+1 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+-1 \\
+\end{pmatrix}\right\}</script></span></p>
+    <p>(c) <span class="math"><script type="math/tex">A = \begin{pmatrix}
+1 & 1 & -1 \\
+2 & 0 & 1 \\
+1 & 1 & 0 \\
+\end{pmatrix}</script></span> and <span class="math"><script type="math/tex">\beta = \left\{\begin{pmatrix}
+1 \\
+1 \\
+1 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+0 \\
+1 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+1 \\
+2 \\
+\end{pmatrix}\right\}</script></span></p>
+    <p>(d) <span class="math"><script type="math/tex">A = \begin{pmatrix}
+13 & 1 & 4 \\
+1 & 13 & 4 \\
+4 & 4 & 10 \\
+\end{pmatrix}</script></span> and <span class="math"><script type="math/tex">\beta = \left\{\begin{pmatrix}
+1 \\
+1 \\
+-2 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+1 \\
+1 \\
+\end{pmatrix}\right\}</script></span></p>
+    <h3>解答</h3>
+    <blockquote>
+        <p>这道题每一问分成两部分，其中第一部分是计算 <span class="math"><script type="math/tex">L_A</script></span> 第二部分是计算一个新的矩阵 <span class="math"><script type="math/tex">Q</script></span>。首先看第一部分。</p>
+    </blockquote>
+    <p>Let <span class="math"><script type="math/tex">\alpha</script></span> be the standard basis (of <span class="math"><script type="math/tex">\mathbb{F}^2</script></span> or <span class="math"><script type="math/tex">\mathbb{F}^3</script></span>).</p>
+    <span class="math"><script type="math/tex; mode=display">\alpha = \left\{\begin{pmatrix}
+1 \\
+0 \\
+\end{pmatrix},\begin{pmatrix}
+0 \\
+1 \\
+\end{pmatrix}\right\} \\
+or \\
+\alpha = \left\{\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+\end{pmatrix},\begin{pmatrix}
+0 \\
+1 \\
+0 \\
+\end{pmatrix},\begin{pmatrix}
+0 \\
+0 \\
+1 \\
+\end{pmatrix}\right\}
+</script></span>
+    <p>We have that <span class="math"><script type="math/tex">A = [L_A]_ \alpha</script></span></p>
+    <blockquote>
+        <p>这个是来源于 Theorem 2.15 (P105), 这个定理是这么说的：</p>
+    </blockquote>
+    <blockquote>
+        <p>Theorem 2.15. 如果 <span class="math"><script type="math/tex">A</script></span> 是一个 <span class="math"><script type="math/tex">m\times n</script></span> 在 <span class="math"><script type="math/tex">F</script></span> 上的 <code>Matrix</code>。那么 <code>left-multiplication transformation</code>            <span class="math"><script type="math/tex">L_A:F^n \rightarrow F^m</script></span> 是 <code>Linear</code> 的。同时，如果我们还有一个 <span class="math"><script type="math/tex">m \times n</script></span> 的另一个 <code>Matrix</code> <span class="math"><script type="math/tex">B</script></span>。然后
+            <span class="math"><script type="math/tex">\beta</script></span> 和 <span class="math"><script type="math/tex">\gamma</script></span> 分别是 <span class="math"><script type="math/tex">F^n</script></span> 和 <span class="math"><script type="math/tex">F^m</script></span>            的 <code>standard ordered bases</code>，则有如下性质:<br> (a) <span class="math"><script type="math/tex">[L_A]_ \beta^\gamma = A</script></span><br> (b) <span class="math"><script type="math/tex">L_A = L_B</script></span> if and only if <span class="math"><script type="math/tex">A = B</script></span><br>            (c) <span class="math"><script type="math/tex">L_{A+B} = L_A + L_B</script></span> and <span class="math"><script type="math/tex">L_{\alpha A} = \alpha L_A</script></span> for all <span class="math"><script type="math/tex">\alpha \in F</script></span><br>            (d) If <span class="math"><script type="math/tex">T: F^n \rightarrow F^m</script></span> is linear, then there exists a unique <span class="math"><script type="math/tex">m \times n</script></span> matrix <span class="math"><script type="math/tex">C</script></span>            such that <span class="math"><script type="math/tex">T = l_C. In fact, $C = [T]_ \beta^\gamma</script></span><br> (e) If <span class="math"><script type="math/tex">E</script></span> is an <span class="math"><script type="math/tex">n \times p</script></span>            matrix, then <span class="math"><script type="math/tex">L_AE = L_A L_E</script></span><br> (f) If <span class="math"><script type="math/tex">m=n</script></span>, then <span class="math"><script type="math/tex">L_{I_{n}} = I_{F^n}</script></span></p>
+    </blockquote>
+    <blockquote>
+        <p>所以，有一个重点就是：<code>一个矩阵 A 和 left-multiplication 的关系</code>，在这里，只有我们确定了 <code>standard basis</code> 我们才能说 <code>A 和 L_A 相等</code>，也就是这个定理的 <code>(a)</code>。</p>
+    </blockquote>
+    <p>hence <span class="math"><script type="math/tex">[L_A]_ \beta = [I]_ \alpha ^\beta [L_A]_ \alpha [I]_ \beta ^\alpha</script></span>. So now we can calculate <span class="math"><script type="math/tex">[L_A]_ \beta</script></span> and <span class="math"><script type="math/tex">Q = [I]_ \beta ^\alpha</script></span>        and <span class="math"><script type="math/tex">Q^{-1} = [I]_ \alpha ^\beta</script></span></p>
+    <blockquote>
+        <p>这里是关键，其中要用到 Theorem .23 (P124)，这个定理是这么说的:<br>
+            <span class="math"><script type="math/tex">T</script></span> 是一个 <code>finite-dimensional vector space</code> <span class="math"><script type="math/tex">V</script></span> 的 <code>linear operator</code>，并且 <span class="math"><script type="math/tex">\beta</script></span>            和 <span class="math"><script type="math/tex">\beta'</script></span> 是两个 <span class="math"><script type="math/tex">V</script></span> 的 <code>ordered bases</code>。假设一个 <code>Matrix</code> <span class="math"><script type="math/tex">Q</script></span>            是 <code>change of coordinate matrix</code> 这个 <code>Matrix</code> 是从 <span class="math"><script type="math/tex">\beta'</script></span>-coordinates 到 <span class="math"><script type="math/tex">\beta</script></span>-coordinates。那么就有如下公式成立：</p>
+        <span class="math"><script type="math/tex; mode=display">[T]_ {\beta'} = Q^{-1}[T]_ {\beta}Q
+</script></span>
+    </blockquote>
+    <blockquote>
+        <p>这个定理的意义在于，我们不是知道一个 <code>T</code> 在两个 <code>basis</code> 下的矩阵么？那么这两个矩阵是什么关系呢？就是找到以这两个 <code>basis</code> 为基底的两个坐标系的变换矩阵<code>(change of coordinate matrix)</code>，就能求出两个 <code>T</code> 的数学关系。</p>
+    </blockquote>
+    <p>由于 <span class="math"><script type="math/tex">[I]_ \beta^\alpha</script></span> 是以 <span class="math"><script type="math/tex">\beta</script></span> 为 <code>basis</code> 的 <code>Matrix</code> 所以不太好求，我们先求 <span class="math"><script type="math/tex">[I]_ \alpha^\beta</script></span></p>
+    <span class="math"><script type="math/tex; mode=display">[I]_ \beta^\alpha =  不好求
+</script></span>
+    <span class="math"><script type="math/tex; mode=display">[I]_ \alpha^\beta =  好求
+</script></span>
+    <p>而 <span class="math"><script type="math/tex">[I]_ \alpha^\beta</script></span> 就是 <span class="math"><script type="math/tex">\left\{\begin{pmatrix}
+1 \\
+1 \\
+\end{pmatrix},\begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}\right\}</script></span> 用 <span class="math"><script type="math/tex">\alpha</script></span> 表示的 <code>Matrix</code>，因为 <span class="math"><script type="math/tex">\alpha</script></span> 就是 <code>standard basis</code>，所以：</p>
+    <span class="math"><script type="math/tex; mode=display">[I]_ \alpha^\beta = \begin{pmatrix}
+1 & 1 \\
+1 & 2 \\
+\end{pmatrix}
+</script></span>
+    <p>而 <span class="math"><script type="math/tex">[I]_ \beta^\alpha</script></span> 就是这个的 <code>invertible matrix</code> 所以算一下：</p>
+    <span class="math"><script type="math/tex; mode=display">[I]_ \beta^\alpha = \begin{pmatrix}
+2 & -1 \\
+-1 & 1 \\
+\end{pmatrix}
+</script></span>
+    <p>所以</p>
+    <span class="math"><script type="math/tex; mode=display">\displaystyle
+[L_A]_ \beta = [I]_ \alpha ^\beta [L_A]_ \alpha [I]_ \beta ^\alpha </script></span>
+    <span class="math"><script type="math/tex; mode=display">\displaystyle[L_A]_ \beta = \begin{pmatrix}
+2 & -1 \\
+-1 & 1 \\
+\end{pmatrix} \begin{pmatrix}
+1 & 3 \\
+1 & 1 \\
+\end{pmatrix} \begin{pmatrix}
+1 & 1 \\
+1 & 2 \\
+\end{pmatrix} </script></span>
+    <span class="math"><script type="math/tex; mode=display">\displaystyle[L_A]_ \beta = \begin{pmatrix}
+6 & 11 \\
+-2 & -4 \\
+\end{pmatrix}
+</script></span></body>
 
 </html>

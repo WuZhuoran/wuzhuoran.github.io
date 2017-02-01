@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>ECON-11-Chapter-5-6</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,35 +1132,505 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
+    <h1>Chapter 5, Income and Substitution Effects</h1>
     <ul>
         <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
+            <p>Marshallian demands(consumption varies with price and income)
+                <span class="math"><script type="math/tex">x_1^* =g_1(p_1, p_2,..., p_n, I)</script></span></p>
         </li>
         <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
+            <p>Hicksian Demands, (consumption varies with price and utility)
+                <span class="math"><script type="math/tex">x_1^* =h_1(p_1, p_2,..., p_n, U_-)</script></span></p>
         </li>
     </ul>
+    <h2>Changes in Income</h2>
+    <ul>
+        <li>
+            <p>Increase income → budget constrain swifts out in parallel. higher levels of utility.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">\frac{p_x}{p_y}</script></span> does not change, the MRS at a optimal will not change.</p>
+        </li>
+        <li>
+            <p>The change in consumption caused by a small change in income can be computed using the Marshallian Demands(Uncompensated demands)
+                <span class="math"><script type="math/tex">g_x(p_x, p_y, l') - g_x(p_x, p_y, l)</script></span></p>
+        </li>
+        <li>
+            <p>inferior &amp; normal:</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>x and y are <strong>normal</strong> goods
+                <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial I} ≥ 0</script></span> when increasing income, choose to consume more x and y.</p>
+        </li>
+        <li>
+            <p>x is an <strong>inferior</strong> goods
+                <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial I} ≤ 0</script></span> when increasing income, choose to consume less x and more y.<br>
+                <br></p>
+        </li>
+    </ul>
+    <h2>Changes in a Good’s price</h2>
+    <p>Alters the slope of the budget constraint.</p>
+    <ul>
+        <li>
+            <p><span class="math"><script type="math/tex">p_x</script></span> change, cause <span class="math"><script type="math/tex">x</script></span> change, use Marshallian demand function for <span class="math"><script type="math/tex">x=g_x(p_x^, ,p_y, I) - g_x(p_x, p_y, I)</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">p_x</script></span> change, cause <span class="math"><script type="math/tex">y</script></span> change, use Marshallian demand function for <span class="math"><script type="math/tex">y=g_y(p_x^, ,p_y, I) - g_y(p_x, p_y, I)</script></span></p>
+        </li>
+        <li>
+            <p>Small changes in <span class="math"><script type="math/tex">p_x</script></span>, cause change in <span class="math"><script type="math/tex">x</script></span>, use Marchallian demand function for <span class="math"><script type="math/tex">x=\frac{\partial g_x(p_x, p_y, I)}{\partial p_x} dp_x</script></span></p>
+        </li>
+        <li>
+            <p>Small changes in <span class="math"><script type="math/tex">p_x</script></span>, cause change in <span class="math"><script type="math/tex">y</script></span>, use Marchallian demand function for <span class="math"><script type="math/tex">y=\frac{\partial g_y(p_x, p_y, I)}{\partial p_x} dp_x</script></span></p>
+        </li>
+    </ul>
+    <h3>Substitution Effect:</h3>
+    <ul>
+        <li>
+            <p>A is always cheaper than B, people choose to <strong>buy cheaper things more.</strong>
+                <code>insert substitution effect pic form ppt</code></p>
+        </li>
+        <li>
+            <p>substitution effect caused by a change in <span class="math"><script type="math/tex">p_x</script></span> can be computed using the hicksian demand function:
+                <span class="math"><script type="math/tex">x=h_x(p_x^, ,p_y, U_-) - h_x(p_x, p_y, U_-)</script></span></p>
+        </li>
+        <li>
+            <p>caused by a small changes in <span class="math"><script type="math/tex">p_x</script></span> , <span class="math"><script type="math/tex">x=\frac{\partial h_x(p_x, p_y, U_-)}{\partial p_x}</script></span></p>
+        </li>
+    </ul>
+    <h3>Income Effect</h3>
+    <ul>
+        <li>
+            <p>When income does not change, and the price of A is dropped, <strong>purchasing power increased,</strong> achieve hight utility.
+                <code>insert pic form ppt</code></p>
+        </li>
+        <li>
+            <p>income effect caused by <span class="math"><script type="math/tex">p_x</script></span> is the total change-substitution effect:
+                <span class="math"><script type="math/tex">g_x(p_x^, ,p_y, I) - g_x(p_x, p_y, I) - h_x(p_x^, ,p_y, U_-) - h_x(p_x, p_y, U_-)</script></span></p>
+        </li>
+        <li>
+            <p>caused by a small change in the price <span class="math"><script type="math/tex">p_x</script></span> ia rhw difference between the total change and the substitution effect:
+                <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_x}dp_x - \frac{\partial h_x}{\partial p_x}dp_x</script></span></p>
+        </li>
+    </ul>
+    <h3>Slutsky Equation for <span class="math"><script type="math/tex">x, y, p_x, p_y</script></span>:</h3>
+    <ol>
+        <li>
+            <p>we have <span class="math"><script type="math/tex">x^*=g_x(p_x, p_y, I)</script></span>, <span class="math"><script type="math/tex">x^*=h_x(p_x, p_y, U_-)</script></span>, and <span class="math"><script type="math/tex">E(p_x, p_y, U_-)=I</script></span></p>
+        </li>
+        <li>
+            <p>We replace <span class="math"><script type="math/tex">I</script></span> by Expenditure function: <span class="math"><script type="math/tex">g_x(p_x, p_y, I)=g_x(p_x, p_y, (E(p_x, p_y, U_-)) = h_x(p_x, p_y, U_-)</script></span></p>
+        </li>
+    </ol>
+    <ol start="3">
+        <li>Take partial derivatives of the function, we get: <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x}= \frac{\partial g_x}{\partial p_x}+\frac{\partial g_x}{\partial E} \frac{\partial E}{\partial p_x}</script></span>,
+            and because of <span class="math"><script type="math/tex">E=I</script></span>, we replace the E: <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x}= \frac{\partial g_x}{\partial p_x}+\frac{\partial g_x}{\partial I} \frac{\partial E}{\partial p_x}</script></span>.</li>
+    </ol>
+    <ol start="4">
+        <li>Since <span class="math"><script type="math/tex">E(p_x, p_y, U_-)=p_x x^x*, p_y y^*</script></span>, we get <span class="math"><script type="math/tex">\frac{\partial E}{\partial p_x}= x^*</script></span> → (Envelop Theorem)</li>
+    </ol>
+    <ol start="5">
+        <li>
+            <p>plug back in to the function <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x}= \frac{\partial g_x}{\partial p_x}+\frac{\partial g_x}{\partial I} x^*</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_x}=\frac{\partial h_x}{\partial p_x}-\frac{\partial g_x}{\partial I} x^*</script></span>, → <strong>Slutsky Equation</strong>, where total effect = substitution effect
+                - income effect.
+                <br></p>
+        </li>
+    </ol>
+    <p><strong>Normal</strong> goods: <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_x}<= \frac{\partial h_x}{\partial p_x}</script></span>,</p>
+    <p><strong>Inferior</strong> goods: <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_x} > \frac{\partial h_x}{\partial p_x}</script></span>.
+        <br></p>
+    <p><strong>Example of a Cobb-Douglas Function</strong>: <span class="math"><script type="math/tex">U(x,y) = x^{0.5}y^{0,5}</script></span></p>
+    <p><span class="math"><script type="math/tex">x^*=g_x(p_x, p_y, I)= \frac{0.5}{p_x}I</script></span>,</p>
+    <p><span class="math"><script type="math/tex">x^*=h_x(p_x, p_y, U_-) = (\frac{p_y}{p_x})^{0.5}U_-</script></span>,</p>
+    <p>Total Effect:
+        <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_x}=0.5 I(- \frac{1}{(p_x)^2})=-\frac{0.5}{p_x^2}I<0</script></span></p>
+    <p>Substitution effect:
+        <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x} = -0.5 \frac{p_y^{0.5}}{p_x^{1.5}} U_- < 0</script></span></p>
+    <p><span class="math"><script type="math/tex">U_- = V(p_x, p_y, I)=\frac{I}{2p_x^{0.5} p_y^{0.5}}</script></span> plug in to above equation, we get <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x} = -0.25 \frac{I}{p_x^2}</script></span></p>
+    <p>Income effect: <span class="math"><script type="math/tex">- \frac{\partial g_x}{\partial I} x^* = -\frac{0.5}{p_x} \frac{0.5}{p_x} I = -0.25 \frac{0.5}{p_x^2}</script></span></p>
+    <p>Therefore, Sluskey Equation: <span class="math"><script type="math/tex">-\frac{0.5}{p_x}I = -0.25 \frac{I}{p_x^2}- 0.25 \frac{I}{p_x^2}</script></span>
+        <br></p>
+    <h2>Prices changes for Normal goods:</h2>
+    <ul>
+        <li>
+            <p>Normal Goods:</p>
+            <ul>
+                <li>price falls, both effects lead to a rise in quantity demanded;</li>
+                <li>price rises, both effects lead to a drop in quantity demanded;</li>
+            </ul>
+        </li>
+        <li>
+            <p>Inferior Goods: substitution and income effects move in opposite directions:</p>
+            <ul>
+                <li>price falls, substitution rises quantity demanded, income move to opposite;</li>
+                <li>price rises, substitution drops quantity demanded, income move to opposite.</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Giffen’s Paradox</h3>
+    <p>increase in price generates increase in real income</p>
+    <p>inferior: drop income = rise demanded</p>
+    <p>income effect greater than the substitution, consumption increase.</p>
+    <h2>Uncompensated &amp; Compensated Curve</h2>
+    <h3>Uncompensated Demand Curve</h3>
+    <ul>
+        <li>
+            <p>Uncompensated demand curve for <strong>good x</strong> is the Marshallian demand function with fixed price of the other good and income: <span class="math"><script type="math/tex">x^* = g_x(p_x,p_{y-},I_-)</script></span>;</p>
+        </li>
+        <li>
+            <p>Increase <span class="math"><script type="math/tex">p_x</script></span>:</p>
+            <ul>
+                <li>lower indifference curve,</li>
+                <li>Nominal income is constant, but real income falls as price of x rises.</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Compensated Demand Curve</h3>
+    <ul>
+        <li>Compensated Demand curve for <strong>good x</strong> is the Hicksian demand function with fixed price of the other good and utility level: <span class="math"><script type="math/tex">x^* = h_x(p_x,p_{y-},U_-)</script></span>;</li>
+    </ul>
+    <p><code>NOTE:</code> For <strong>normal good</strong>:</p>
+    <ul>
+        <li>compensated demand curve is less responsive of price changes than the uncompensated demand curve.</li>
+        <li>the uncompensated demand curve reflects both income and substitution effects:</li>
+        <li>compensated demand curve only reflect only substitution effects.<br>
+            <br></li>
+    </ul>
+    <h2>Demand Elasticities</h2>
+    <p>Since the size of partial derivatives depends on the unit we use to consume goods, it is hard to compare:<br> (changing currency, lB-kg, apple in 1980s and apple today. )</p>
+    <h3>Marshallian (Uncompensated) Demand Elasticities</h3>
+    <ul>
+        <li>
+            <p>Income elasticity of demand <span class="math"><script type="math/tex">e_{x, I}=\frac{\partial g_x}{\partial I} \frac{I}{g_x}= \frac{\partial ln g_x}{\partial ln I}</script></span>,<br> measures the percentage change in consumption of x in
+                response to one percent change in income.</p>
+        </li>
+        <li>
+            <p>Size of the elasticity:</p>
+            <ul>
+                <li><span class="math"><script type="math/tex">e_{x, I} > 0</script></span>, demand is normal;</li>
+                <li><span class="math"><script type="math/tex">e_{x, I} < 0</script></span>, demand is inferior;</li>
+                <li><span class="math"><script type="math/tex">e_{x, I} < 1</script></span>, the good is necessity;</li>
+                <li><span class="math"><script type="math/tex">e_{x, I} > 1</script></span>, the goos is luxury.
+                    <br></li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Own Price Elasticity of Demand:</h4>
+    <ul>
+        <li>
+            <p>Own price elasticity of demand is <strong>negative</strong>, the only exceptions are the Giffen goods.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">e_{x, p_x}=\frac{\partial g_x}{\partial p_x} \frac{P}{g_x}= \frac{\partial ln g_x}{\partial ln p_x}</script></span></p>
+        </li>
+        <li>
+            <p>the size of the elasticity is important,</p>
+            <ul>
+                <li><span class="math"><script type="math/tex">e_{x, I} < -1</script></span>, demand is elastic.</li>
+                <li><span class="math"><script type="math/tex">e_{x, I} > -1</script></span>, demand is inelastic.</li>
+                <li><span class="math"><script type="math/tex">e_{x, I} = -1</script></span>, demand is unit elastic.</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Cross price elasticity of demand</h4>
+    <p><span class="math"><script type="math/tex">e_{x, p_y}=\frac{\partial g_x}{\partial p_y} \frac{p_y}{g_x}= \frac{\partial ln g_x}{\partial ln p_y}</script></span>,</p>
+    <h3>Hicksian (Compensated) price elasticities</h3>
+    <h4>Compensated own price elasticity</h4>
+    <p><span class="math"><script type="math/tex">e^c_{x, p_x} = \frac{\partial h_x}{\partial p_x} \frac{p_x}{h_x}= \frac{\partial ln h_x}{\partial p_x}</script></span></p>
+    <h4>cross-price elasticity</h4>
+    <p><span class="math"><script type="math/tex">e^c_{x, p_y} = \frac{\partial h_x}{\partial p_y} \frac{p_y}{h_x}= \frac{\partial ln h_x}{\partial p_y}</script></span></p>
+    <h3>Slusky Equation</h3>
+    <ul>
+        <li>
+            <p>Difference between hicksian and marshallian price elasticities:</p>
+            <ul>
+                <li>income elasticity;</li>
+                <li>the share of income spent on the good.</li>
+            </ul>
+        </li>
+        <li>
+            <p>hicksian and marshallian price elasticities will be similar if:</p>
+            <ul>
+                <li>the income elasticity of x is small;</li>
+                <li>the share of income devoted to x is small.<br>
+                    <br></li>
+            </ul>
+        </li>
+        <li>
+            <p>Slusky Equaiton: <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_x}=\frac{\partial h_x}{\partial p_x}-\frac{\partial g_x}{\partial I} x^{* }</script></span>, multiply both sides by <span class="math"><script type="math/tex">\frac{p_x}{x^* }</script></span>,</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">\frac {p_x}{x^* } \frac{\partial g_x}{\partial p_x}=\frac {p_x}{x^* } \frac{\partial h_x}{\partial p_x} - \frac{p_x x^* }{x^* } \frac{\partial g_x}{\partial I} \frac{I}{x^* }</script></span></p>
+        </li>
+        <li>
+            <p>if we set <span class="math"><script type="math/tex">s_x = \frac{p_x x^* }{I}</script></span>, then <span class="math"><script type="math/tex">e_{x, p_x} = e_{x, p_x}^c - s_x e_{x, I}</script></span></p>
+        </li>
+    </ul>
+    <br>
+    <p><strong>Example:</strong></p>
+    <p>Known: <span class="math"><script type="math/tex">U(x,y)= x^\alpha y^\beta</script></span>, and <span class="math"><script type="math/tex">\alpha + \beta =1</script></span></p>
+    <ol>
+        <li>
+            <p>solve for marshallian <span class="math"><script type="math/tex">x^* = g_x(p_x, p_y, I)=\frac{\alpha}{p_x}I</script></span>,<br> → <span class="math"><script type="math/tex">e_{x, p_x} = \frac{\partial g_x}{\partial p_x} \frac{p_x}{g_x}= -\frac{\alpha I}{p_x(\frac{\alpha I}{p_x})} = -1</script></span></p>
+        </li>
+        <li>
+            <p>Aanother way to solve: <span class="math"><script type="math/tex">ln x^* =ln g_x(p_x, p_y, I) = ln \alpha + lnI - ln p_x</script></span></p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">e_{x, p_x} = \frac{\partial ln g_x}{\partial ln p_x} = -1</script></span><br>
+                <span class="math"><script type="math/tex">e_{x, p_y} = 0</script></span><br>
+                <span class="math"><script type="math/tex">e_{x, I} = \frac{\partial g_x}{\partial I} \frac{I}{g_x}=\frac{\alpha}{p_x}\frac{I}{g_x} = 1</script></span></p>
+        </li>
+    </ol>
+    <h3>Homogeneity, between demand elasticities, Euler’s theorem (relations)</h3>
+    <ul>
+        <li>Marshallian demand function are homogeneous of degree zero in all price and income;</li>
+    </ul>
+    <h4>The Euler’s Theorem</h4>
+    <p>For homogeneous function implies that: <span class="math"><script type="math/tex">0 = p_x \frac{\partial g_x}{\partial p_x} + p_y \frac{\partial g_x}{\partial p_y} + I \frac{\partial g_x}{\partial I}</script></span></p>
+    <ul>
+        <li>
+            <p>Devide by <span class="math"><script type="math/tex">g_x</script></span>, we get <span class="math"><script type="math/tex">0= e_{x, p_x} + e_{x, p_y} +e_{x, I}</script></span></p>
+        </li>
+        <li>
+            <p>A 1 percentage change in all prices and income will leave the quantity demanded of x unchanged.</p>
+        </li>
+    </ul>
+    <h4>Engel Aggregation</h4>
+    <ul>
+        <li>Income elasticity of demand for food items is less than one,</li>
+        <li>Income elasticity of demand for non food items must be greater than one;</li>
+    </ul>
+    <p><strong>Proof:</strong>
+        <span class="math"><script type="math/tex">I</script></span> = Expenditure <span class="math"><script type="math/tex">= p_x g_x(p_x, p_y, I) + p_y g_y(p_x, p_y, I)</script></span>
+        <span class="math"><script type="math/tex">1=p_x \frac{\partial g_x}{\partial I} + p_y \frac {\partial g_y}{\partial I}</script></span> mutiply <span class="math"><script type="math/tex">\frac{g_x I}{g_x I}</script></span> for each term:</p>
+    <p><span class="math"><script type="math/tex">1= \frac{p_x g_x}{I} \frac{\partial g_x}{\partial I} + \frac{p_y g_y}{I} \frac {\partial g_y}{\partial I}</script></span></p>
+    <p><span class="math"><script type="math/tex">1= s_x e_{e, I} + s_y e_{y,I}</script></span>
+        <span class="math"><script type="math/tex">s_x=</script></span> share on food, <span class="math"><script type="math/tex">s_y=1-s_x</script></span></p>
+    <p>$ (1- s_x) e_{y,I} = 1- s_x e_{x,I} &gt; 1-s_x <span class="math"><script type="math/tex">, since $e_{x,I} < 1</script></span>; cancel out <span class="math"><script type="math/tex">(1- s_x)</script></span>, therefore, <span class="math"><script type="math/tex">e_{y,I} > 1</script></span>.</p>
+    <p><strong>Example</strong> check the relationships:</p>
+    <ul>
+        <li>
+            <p>Homogeneity: <span class="math"><script type="math/tex">0= e_{x, p_x} + e_{x, p_y} + e_{x, I}</script></span>, since: <span class="math"><script type="math/tex">e_{x, p_x} = -1,  e_{x, p_y} = 0</script></span></p>
+        </li>
+        <li>
+            <p>Engel aggregation: <span class="math"><script type="math/tex">1= s_x e_{e, I} + s_y e_{y,I}</script></span>,
+                <span class="math"><script type="math/tex">s_x= \frac{p_x x^* }{I}= \frac{p_x \frac{\alpha I}{p_x}}{I}= \alpha</script></span>
+                <span class="math"><script type="math/tex">s_y= \frac{p_y y^* }{I}= \beta</script></span>
+                <span class="math"><script type="math/tex">e_{x, I} = e_{y, I}=1</script></span>,
+                <span class="math"><script type="math/tex">\alpha * 1+ \beta * 1 =  \alpha + \beta  =  1</script></span></p>
+        </li>
+    </ul>
+    <h3>Slusky equation in elasticity form:</h3>
+    <p><span class="math"><script type="math/tex">e_{x, p_x}= e^c_{x, p_x} -s_x e_{x,I}</script></span> → <span class="math"><script type="math/tex">e^c_{x, p_x} = e_{x, p_x} + s_x e_{x,I}</script></span>
+        <span class="math"><script type="math/tex">e^c_{x, p_x} = -1 + \alpha * 1 = \alpha -1 = - \beta</script></span><br>
+        <br></p>
+    <h2>Consumer Welfare</h2>
+    <ul>
+        <li>
+            <p>Price increase from <span class="math"><script type="math/tex">p^0 _ x</script></span> to <span class="math"><script type="math/tex">p^ 1 _ x</script></span>, to compare the expenditure for a given level of utility <span class="math"><script type="math/tex">U_-</script></span>.</p>
+        </li>
+        <li>
+            <p>if <span class="math"><script type="math/tex">p^1 _ x > p^0 _ x</script></span>,then <span class="math"><script type="math/tex">E(p^1 _x, p_y, U_-)>E(p^0 _x, p_y, U_-)</script></span></p>
+        </li>
+        <li>
+            <p>The difference is called <strong>compensating variation (CV)</strong>.</p>
+        </li>
+        <li>
+            <p>the increase in income that the individual would need to achieve <span class="math"><script type="math/tex">U_1</script></span>. point B and C have same slope:
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br></p>
+        </li>
+    </ul>
+    <ul>
+        <li>compensate the consumer to stay at the same indifference curve.</li>
+    </ul>
+    <p><code>One last result</code>:<br> derivative of the expenditure function with respect to <span class="math"><script type="math/tex">p_x</script></span> is the compensated demand function</p>
+    <p><span class="math"><script type="math/tex">\frac {\partial E}{p_x} = h_x</script></span>
+        <br></p>
+    <h2>Some Price Elasticities:</h2>
+    <p><strong>Special brand</strong>:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>category</th>
+                <th>elasticity</th>
+                <th>reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Coke</td>
+                <td>-1.71</td>
+                <td>people more linked to this brand than Pepsi</td>
+            </tr>
+            <tr>
+                <td>Pepsi</td>
+                <td>-2.08</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tide detergent</td>
+                <td>-2.79</td>
+                <td>lots of substitute</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Narrow Categories</strong>:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>category</th>
+                <th>elasticity</th>
+                <th>reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Transatlantic air travel</td>
+                <td>-1.3</td>
+                <td>for work(have to do it no matter the price), luxury(travel, then do not have to do so it the price is high, substitute to a different time ),</td>
+            </tr>
+            <tr>
+                <td>Tourism Thailand</td>
+                <td>-1.2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ground Beef</td>
+                <td>-1.02</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pork</td>
+                <td>-0.78</td>
+                <td>necessity</td>
+            </tr>
+            <tr>
+                <td>Milk</td>
+                <td>-0.54</td>
+                <td>necessity</td>
+            </tr>
+            <tr>
+                <td>Egg</td>
+                <td>-0.26</td>
+                <td>necessity</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Example of Inferior Goods:</h2>
+    <p>Fast Food, Used car, Lottery tickets, Fake brand, toilet paper…</p>
+    <br>
+    <br>
+    <br>
+    <h1>chapter 6</h1>
+    <h2>Substitutes and Complements</h2>
+    <ul>
+        <li>Substitute: One can replace the other in use. <code>coffee&amp;tea, butter&amp;cream</code></li>
+        <li>Complement: Used together. <code>coffee&amp;cream</code></li>
+    </ul>
+    <h3>Gross Substitutes and Complements:</h3>
+    <p><span class="math"><script type="math/tex">p_y</script></span>falls, <span class="math"><script type="math/tex">y=-\frac{p_x}{p_y}x+\frac{I}{p_y}</script></span></p>
+    <ul>
+        <li>goods <em>x</em> and <em>y</em> are <strong>gross substitutes</strong> if <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_y} > 0</script></span><br>
+            <span class="math"><script type="math/tex">p_y</script></span> increases, then consume more x;</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ul>
+        <li>goods <em>x</em> and <em>y</em> are <strong>gross Complements</strong> if <span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_y} < 0</script></span><br>
+            <span class="math"><script type="math/tex">p_y</script></span> increases, then consume less x;<br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br></li>
+    </ul>
+    <h3>Mathematical Treatment</h3>
+    <p>the change in <span class="math"><script type="math/tex">x</script></span> caused by a change in <span class="math"><script type="math/tex">p_y</script></span>, use Slutsky-type equation:</p>
+    <p><span class="math"><script type="math/tex">\frac{\partial g_x}{\partial p_y}=\frac{\partial h_x}{\partial p_y} - \frac{\partial g_x}{\partial I}y</script></span></p>
+    <br>
+    <br>
+    <br>
+    <h2>Asymmetry of the Gross definitions</h2>
+    <ul>
+        <li>
+            <p>Gross substitutes and gross complements are not symmetric</p>
+        </li>
+        <li>
+            <p>It is possible</p>
+            <ul>
+                <li>for x to be a substitute for y</li>
+                <li>at same time for y to be a complement of x.</li>
+            </ul>
+        </li>
+        <li>
+            <p>This occurs when the income effect dominates the substitution effect for one good but not for the other.</p>
+        </li>
+    </ul>
+    <p><strong>Example:</strong><br>
+        <span class="math"><script type="math/tex">U(x,y) = lnx+y</script></span><br> solve the utility maximization, we get <span class="math"><script type="math/tex">y^* = \frac{(I-p_x)}{p_y}</script></span>, <span class="math"><script type="math/tex">x^* = \frac{p_y}{p_x}</script></span><br>        therefore, <span class="math"><script type="math/tex">\frac{\partial x^* }{\partial p_y} > 0, \frac{\partial y^* }{\partial p_x} = 0</script></span><br>
+        <br></p>
+    <h3>Net Substitutes and Complement:</h3>
+    <p><code>focus solely on substitution effect</code></p>
+    <ul>
+        <li>
+            <p><strong>net substitutes</strong> if <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x}>0</script></span></p>
+        </li>
+        <li>
+            <p><strong>net complement</strong> if <span class="math"><script type="math/tex">\frac{\partial h_x}{\partial p_x}<0</script></span></p>
+        </li>
+        <li>
+            <p>This definition is unambiguous because <span class="math"><script type="math/tex">\frac{\partial h_i}{\partial p_j}=\frac{\partial h_j}{\partial p_i}</script></span>, since <span class="math"><script type="math/tex">h_i (p_1,..., p_n,U_-)=\frac{\partial E(p_1, p.., p_2, U_-)}{\partial p_i}</script></span><br>
+                <br></p>
+        </li>
+    </ul>
+    <p><strong>Example: Gross Complements but Net substitutes</strong><br>
+        <span class="math"><script type="math/tex">p_y</script></span> falls,<br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br></p>
+    <h2>Substitutability with many goods</h2>
+    <ul>
+        <li>“most” goods are net substitutes.</li>
+    </ul>
+    <p><strong>proof:</strong></p>
+    <ol>
+        <li>
+            <p>Start with Hicksian demand function <span class="math"><script type="math/tex">x_i = h_i(p_1, ..., p_n, U_-)</script></span>, homogeneous of degree zero in prices.</p>
+        </li>
+        <li>
+            <p>The Euler’s theorem yields <span class="math"><script type="math/tex">0= p_1 \frac{\partial h_i}{p_1} + ... p_i \frac{\partial h_i}{p_i}+...+ p_n \frac{\partial h_i}{p_n}</script></span></p>
+        </li>
+    </ol>
+    <p>3.Divide by <span class="math"><script type="math/tex">h^i</script></span>, same compensated elasticities <span class="math"><script type="math/tex">e^c_{i1}+...e^c_{ii}+...e^c_{in}=0</script></span></p>
+    <ol start="4">
+        <li>Since the negativity of Substitution effect that <span class="math"><script type="math/tex">e^c_{ii}<0</script></span>,<br>
+            <span class="math"><script type="math/tex">∑_{i≠j} e^c_{ij} = - e^c_{ii}≥0</script></span>
+            <br></li>
+    </ol>
 </body>
 
 </html>

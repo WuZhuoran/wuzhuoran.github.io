@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ECON-11-Home</title>
+    <title>ECON-11-Chapter-9</title>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ jax: ["input/TeX","output/HTML-CSS"], extensions: [], TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }, showMathMenu: false });
     </script>
@@ -21,7 +21,7 @@
         .markdown-preview:not([data-use-github-style])> :first-child {
             margin-top: 0px;
         }
-        
+
         .markdown-preview:not([data-use-github-style]) h1,
         .markdown-preview:not([data-use-github-style]) h2,
         .markdown-preview:not([data-use-github-style]) h3,
@@ -1132,35 +1132,314 @@
 </head>
 
 <body class='markdown-preview'>
-    <h1>UCLA-ECON-11 Class Notes</h1>
-    <hr>
-    <p><strong>Author: <code>Melissa</code></strong></p>
-    <p><strong>Update Time: <code>2/1/2017</code></strong></p>
-    <h2>Introduction</h2>
-    <hr>
-    <p>This is the class notes of <code>ECON-11</code>.</p>
-    <h2>Table of Content</h2>
-    <hr>
+    <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
     <ul>
-        <li>
-            <p><a href="ECON-11-Chapter-1-2.md.html">ECON-11-Chapter-1-2</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-3-4.md.html">ECON-11-Chapter-3-4</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-5-6.md.html">ECON-11-Chapter-5-6</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-9.md.html">ECON-11-Chapter-9</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-10.md.html">ECON-11-Chapter-10</a></p>
-        </li>
-        <li>
-            <p><a href="ECON-11-Chapter-11-12.md.html">ECON-11-Chapter-11-12</a></p>
+        <li><a href="#chapter-9-production-functions">chapter 9 Production Functions</a>
+            <ul>
+                <li><a href="#production-function">Production Function:</a></li>
+                <li><a href="#marginal-physical-product">Marginal Physical Product</a></li>
+                <li><a href="#diminishing-marginal-productivity">Diminishing Marginal Productivity</a></li>
+                <li><a href="#average-physical-product">Average Physical Product</a></li>
+                <li><a href="#isoquant-maps">Isoquant Maps:</a>
+                    <ul>
+                        <li><a href="#marginal-rate-of-technical-substitution-rts">Marginal rate of technical substitution (RTS)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#return-to-scale">Return to Scale:</a>
+                    <ul>
+                        <li><a href="#two-factors">Two factors:</a></li>
+                        <li><a href="#constant-return-to-scale-production-function">Constant return-to-scale production function</a></li>
+                    </ul>
+                </li>
+                <li><a href="#elasticity-of-substitution">Elasticity of substitution:</a>
+                    <ul>
+                        <li><a href="#linear-perfect-substitutes">Linear (Perfect Substitutes):</a></li>
+                        <li><a href="#fix-proportional-perfect-complements">Fix proportional, (perfect complements):</a></li>
+                        <li><a href="#cobb-douglas-production-function">Cobb Douglas production function:</a></li>
+                        <li><a href="#ces-production-function">CES production function:</a></li>
+                    </ul>
+                </li>
+            </ul>
         </li>
     </ul>
-</body>
+    <!-- /TOC -->
+    <h1>chapter 9 Production Functions</h1>
+    <h2>Production Function:</h2>
+    <ul>
+        <li>
+            <p>A firm’s Production Functions for a good <span class="math"><script type="math/tex">q</script></span> is the <strong>maximum</strong> amount of the good that can be produced using alternative combinations of inputs</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">q=f(x_a, ...,x_n)</script></span></p>
+        </li>
+        <li>
+            <p>Consider capital <span class="math"><script type="math/tex">k</script></span>, labor <span class="math"><script type="math/tex">l</script></span>, then <span class="math"><script type="math/tex">q=f(k,l)</script></span></p>
+        </li>
+    </ul>
+    <h2>Marginal Physical Product</h2>
+    <p>Additional output that can be produced by increasing by a small amount one of the input while holding other inputs constant.</p>
+    <ul>
+        <li>
+            <p>Marginal Physical Product of capital <span class="math"><script type="math/tex">MP_k = \frac{\partial q}{\partial k}= \frac{\partial f}{\partial k}=f_k</script></span></p>
+        </li>
+        <li>
+            <p>Marginal Physical Product of labor <span class="math"><script type="math/tex">MP_l = \frac{\partial q}{\partial l}= \frac{\partial f}{\partial l}=f_l</script></span><br>
+                <br></p>
+        </li>
+    </ul>
+    <h2>Diminishing Marginal Productivity</h2>
+    <ul>
+        <li>
+            <p>An input depends on how much of that input is used.</p>
+        </li>
+        <li>
+            <p>Marginal Product <strong>decreases</strong></p>
+        </li>
+    </ul>
+    <p><span class="math"><script type="math/tex">\frac{\partial MP_k}{\partial k}=\frac{\partial^2 f}{\partial k^2}= f_{kk}=f_{11}<0</script></span>, <span class="math"><script type="math/tex">\frac{\partial MP_l}{\partial l}=\frac{\partial^2 f}{\partial l^2}= f_{ll}=f_{22}<0</script></span>,</p>
+    <h2>Average Physical Product</h2>
+    <p>An input also depends on how much of the other input is used.</p>
+    <p><span class="math"><script type="math/tex">AP_l=\frac{output}{labor input} = \frac{q}{l}=\frac{f(k,l)}{l}</script></span></p>
+    <ul>
+        <li><span class="math"><script type="math/tex">AP_l</script></span> depends on the amount of capital employed.</li>
+        <li><span class="math"><script type="math/tex">AP_k</script></span> depends on the amount of labor employed.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <p><span class="math"><script type="math/tex">q = f(k,l)=600k^2l^2-k^3l^3</script></span></p>
+    <p>Marginal Product of labor <span class="math"><script type="math/tex">= \frac{\partial q}{\partial l}= \frac{\partial f}{\partial l} = 1200k^2l-3k^3l^2</script></span></p>
+    <p><span class="math"><script type="math/tex">k=10</script></span></p>
+    <p><span class="math"><script type="math/tex">MP_l=120000l-3000l^2</script></span></p>
+    <p><span class="math"><script type="math/tex">\frac{\partial MP_l}{\partial l} = \frac{\partial^2 f}{\partial l^2} = 120000-6000l<0</script></span></p>
+    <p><span class="math"><script type="math/tex">l>20</script></span></p>
+    <p>when <span class="math"><script type="math/tex">k=10</script></span>, <span class="math"><script type="math/tex">max f(k,l)= max (600k^2l^2-k^3l^3) = max (60000l^2-1000l^3)</script></span></p>
+    <p>f.o.c <span class="math"><script type="math/tex">MP_l=0, 120000l-3000l^2=0</script></span></p>
+    <p><span class="math"><script type="math/tex">l=40</script></span> (max profits)</p>
+    <p><span class="math"><script type="math/tex">f(k,l)= 600k^2l^2-k^3l^3</script></span><br>
+        <span class="math"><script type="math/tex">AP_l = \frac{f(k,l)}{l}= 600k^2l-k^3l^2</script></span><br>
+        <span class="math"><script type="math/tex">k=10, 60000l-1000l^2</script></span></p>
+    <h2>Isoquant Maps:</h2>
+    <ul>
+        <li>shows the combinations of <span class="math"><script type="math/tex">k</script></span> and <span class="math"><script type="math/tex">l</script></span> that can be used to produce a given level of output <span class="math"><script type="math/tex">(q_0)</script></span>,
+            meaning all <span class="math"><script type="math/tex">(k,l)</script></span> such that <span class="math"><script type="math/tex">f(k,l) = q_0</script></span></li>
+    </ul>
+    <h3>Marginal rate of technical substitution (RTS)</h3>
+    <ul>
+        <li>
+            <p>RTS is diminishing for increasing inputs of labor.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">RTS(l ~ for ~ k) = - \frac{dk}{dl}, when ~(q=q_0)</script></span><br>
+                <br><br>
+                <br>
+                <br></p>
+        </li>
+        <li>
+            <p>Marginal rate of technical substitution rate (RTS):<br> the rate at which capital can be substituted for labor while holding output constant along an isoquant.</p>
+        </li>
+    </ul>
+    <p><strong>Example:</strong><br>
+        <span class="math"><script type="math/tex">dq = qf(k,l) = \frac{\partial f}{\partial k} dk + \frac{\partial f}{\partial l} dl = MP_k dk + MP_l dl</script></span><br>
+        <span class="math"><script type="math/tex">dq=0</script></span><br>
+        <span class="math"><script type="math/tex">MP_k dk + MP_l dl = 0</script></span>, if stays on same isoquant map,</p>
+    <p><span class="math"><script type="math/tex">-\frac{dk}{dl}=\frac{MP_l}{MP_k}</script></span></p>
+    <h2>Return to Scale:</h2>
+    <ul>
+        <li>
+            <p>The effect of a proportional change in input and output.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">q=f(k,l)</script></span>, all inputs are multiplied by the same positive constant <span class="math"><script type="math/tex">t>1</script></span>, then</p>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>effect ont output</th>
+                <th>return to scale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="math"><script type="math/tex">f(tk,tl) = tf(k,l)</script></span></td>
+                <td>Constant</td>
+            </tr>
+            <tr>
+                <td><span class="math"><script type="math/tex">f(tk,tl) < tf(k,l)</script></span></td>
+                <td>Decreasing</td>
+            </tr>
+            <tr>
+                <td><span class="math"><script type="math/tex">f(tk,tl) > tf(k,l)</script></span></td>
+                <td>Increasing</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Two factors:</h3>
+    <ul>
+        <li>
+            <p>greater division os labor and specialization of function(divide complex jobs in simple tasks)</p>
+        </li>
+        <li>
+            <p>because of monitoring and communication, loss in efficiency because management may become more difficult given the larger scale of the firm.</p>
+        </li>
+    </ul>
+    <h3>Constant return-to-scale production function</h3>
+    <ul>
+        <li>
+            <p>Homogeneous of degree one in inputs. <span class="math"><script type="math/tex">f(tk,tl)=t^1f(k,l)=tq</script></span></p>
+        </li>
+        <li>
+            <p>Marginal Productivity functions are homogeneous of degree zero.(Derivative is one degree less than the function).</p>
+            <ul>
+                <li>
+                    <p>Marginal Productivity of any input depends only on the ratio of capital and labor.</p>
+                </li>
+                <li>
+                    <p>RTS between <span class="math"><script type="math/tex">k,l</script></span> depends only on the ratio of <span class="math"><script type="math/tex">k</script></span> to <span class="math"><script type="math/tex"></script></span>, not
+                        the scale of operation.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>the RTS will be the same on all isoquants (same shape and same space).<br>
+                <br><br>
+                <br><br>
+                <br></p>
+        </li>
+    </ul>
+    <ul>
+        <li>for <span class="math"><script type="math/tex">n</script></span> inputs, <span class="math"><script type="math/tex">q=f(x_1,x_2,..., x_n)</script></span>, RTS is same as two inputs.<br>
+            <br></li>
+    </ul>
+    <p><strong>Example, marginal product for constant RTS</strong></p>
+    <p><span class="math"><script type="math/tex">MP_e=\frac{\partial f(k,l)}{\partial l} = g(k,l)</script></span></p>
+    <p><span class="math"><script type="math/tex">g(\frac{k}{l}, \frac{l}{l})=(\frac{1}{e})^0 g(k,l)=g(k,l) = MP_l</script></span></p>
+    <p><span class="math"><script type="math/tex">g(\frac{k}{l})=MP_l</script></span></p>
+    <h2>Elasticity of substitution:</h2>
+    <ul>
+        <li>
+            <p>Elasticity of substitution <span class="math"><script type="math/tex">\sigma</script></span>, measures how easy it is to substitute one input with a different one.</p>
+        </li>
+        <li>
+            <p>proportional change in <span class="math"><script type="math/tex">k/l</script></span> relative to the proportional change in the RTS along an isoquant.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">\sigma</script></span> is always positive because <span class="math"><script type="math/tex">k/l</script></span> and RTS moves to same direction.</p>
+        </li>
+        <li>
+            <p><span class="math"><script type="math/tex">\sigma = \frac{d(k/l)}{dRTS}\frac{RTS}{k/l} = \frac{d ln(k/l)}{d ln RTS}</script></span></p>
+        </li>
+        <li>
+            <p>RTS and <span class="math"><script type="math/tex">k/l</script></span> will change as we move from point A to B.<br>
+                <span class="math"><script type="math/tex">\sigma</script></span> is the ratio of these proportional changes.<br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br></p>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th><span class="math"><script type="math/tex">\sigma</script></span> is high</th>
+                <th>a small change in RTS</th>
+                <th>→ a large change in <span class="math"><script type="math/tex">k/l</script></span></th>
+                <th>isoquant is linear</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="math"><script type="math/tex">\sigma</script></span> is low</td>
+                <td>a large change in RTS</td>
+                <td>→ a small change in <span class="math"><script type="math/tex">k/l</script></span></td>
+                <td>isoquant is curved</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>if define the elasticity of substitution between two input to be proportional change in RTS, we need to hold output and the levels of other inputs constant.</li>
+    </ul>
+    <h3>Linear (Perfect Substitutes):</h3>
+    <p>Given <span class="math"><script type="math/tex">q=f(k,l) = ak+bl</script></span>,</p>
+    <ol>
+        <li>
+            <p><span class="math"><script type="math/tex">f(tk,tl) = atk+btl = t(ak+bl)= tq</script></span> , → linear.</p>
+        </li>
+        <li>
+            <ul>
+                <li>isoquant constant.</li>
+                <li><span class="math"><script type="math/tex">-\sigma =</script></span> ∞.<br>
+                    <br><br>
+                    <br><br>
+                    <br></li>
+            </ul>
+        </li>
+    </ol>
+    <h3>Fix proportional, (perfect complements):</h3>
+    <p>Given <span class="math"><script type="math/tex">q= min(ak,bl), a,b >0</script></span></p>
+    <p>meaning capital and labor must always be used in a fixed ration.</p>
+    <p>→ <span class="math"><script type="math/tex">k/l = b/a</script></span> is constant, <span class="math"><script type="math/tex">\sigma =0</script></span></p>
+    <p>→ No substitution between labor and capital is possible, constant RTS.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Cobb Douglas production function:</h3>
+    <p>Given <span class="math"><script type="math/tex">q= f(k,l) = Ak^al^b, where A, a, b >0</script></span><br> different any RTS,</p>
+    <p><span class="math"><script type="math/tex">f(tk,tl) = Atk^a tl^b = A t^{a+b} k^a l^b = t^{a+b} f(k, l)</script></span></p>
+    <table>
+        <thead>
+            <tr>
+                <th>a+b=1</th>
+                <th>constant return to scale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>a+b&gt;1</td>
+                <td>Increasing return to scale</td>
+            </tr>
+            <tr>
+                <td>a+b&lt;1</td>
+                <td>Decreasing return to scale</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3>CES production function:</h3>
+    <p>Given <span class="math"><script type="math/tex">q=f(k,l)=[k^p+l^p]</script></span>, where <span class="math"><script type="math/tex">p≤1, p≠0, \gamma >0</script></span></p>
+    <table>
+        <thead>
+            <tr>
+                <th><span class="math"><script type="math/tex">-\gamma >1</script></span></th>
+                <th>increasing return to scale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="math"><script type="math/tex">-\gamma <1</script></span></td>
+                <td>Decreasing return to scale</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>when <span class="math"><script type="math/tex">\gamma = 1</script></span>, <span class="math"><script type="math/tex">\sigma = \frac{1}{1- \rho}</script></span></p>
+    <table>
+        <thead>
+            <tr>
+                <th><span class="math"><script type="math/tex">-p = 1</script></span></th>
+                <th>linear production function</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$-p infinite</td>
+                <td>fixed proportions production function</td>
+            </tr>
+            <tr>
+                <td>$-p = 0</td>
+                <td>Cobb Douglas</td>
+            </tr>
+        </tbody>
+    </table>
+    <br></body>
 
 </html>
