@@ -214,13 +214,13 @@
             return d.StdPrice / 1172076 * 35;
         }
         // add the graph canvas to the body of the webpage
-    var svg = d3.select('#svg1')
+    var svg1 = d3.select('#svg1')
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     // add the tooltip area to the webpage
-    var tooltip = d3.select("#polt1");
+    var tooltip1 = d3.select("#polt1");
     // load data
     d3.csv("price_earning.csv", function(error, data) {
         // change string (from CSV) into number format
@@ -234,7 +234,7 @@
         xScale.domain([d3.min(data, xValue) - 5000, d3.max(data, xValue) + 10000]);
         yScale.domain([d3.min(data, yValue) - 100000, d3.max(data, yValue) + 100000]);
         // x-axis
-        svg.append("g")
+        svg1.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis)
@@ -245,7 +245,7 @@
             .style("text-anchor", "end")
             .text("Earning");
         // y-axis
-        svg.append("g")
+        svg1.append("g")
             .attr("class", "y axis")
             .call(yAxis)
             .append("text")
@@ -256,7 +256,7 @@
             .style("text-anchor", "end")
             .text("Avg Price");
         // draw dots
-        svg.selectAll(".dot")
+        svg1.selectAll(".dot")
             .data(data)
             .enter().append("circle")
             .attr("class", "dot")
@@ -269,22 +269,22 @@
                 return color(cValue(d));
             })
             .on("mouseover", function(d) {
-                tooltip.transition()
+                tooltip1.transition()
                     .duration(200)
                     .style("opacity", .9);
-                tooltip.html(d["City"] + "<br/> Earning: " + xValue(d) +
+                tooltip1.html(d["City"] + "<br/> Earning: " + xValue(d) +
                         "<br/> Avg Price: " + yValue(d) +
                         "<br/> Std Price: " + d.StdPrice)
                     .style("left", (d3.event.pageX + 5) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
             .on("mouseout", function(d) {
-                tooltip.transition()
+                tooltip1.transition()
                     .duration(500)
                     .style("opacity", 0);
             });
         // draw legend
-        var legend = svg.selectAll(".legend")
+        var legend = svg1.selectAll(".legend")
             .data(color.domain())
             .enter().append("g")
             .attr("class", "legend")
@@ -352,13 +352,13 @@
             return d.StdPrice / 1600000 * 35;
         }
         // add the graph canvas to the body of the webpage
-    var svg = d3.select("#svg2")
+    var svg2 = d3.select("#svg2")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     // add the tooltip area to the webpage
-    var tooltip = d3.select("#polt2");
+    var tooltip2 = d3.select("#polt2");
     // load data
     d3.csv("price_crimerate.csv", function(error, data) {
         // change string (from CSV) into number format
@@ -372,7 +372,7 @@
         xScale.domain([d3.min(data, xValue) - 1000, d3.max(data, xValue) + 1000]);
         yScale.domain([d3.min(data, yValue) - 150000, d3.max(data, yValue) + 120000]);
         // x-axis
-        svg.append("g")
+        svg2.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis)
@@ -383,7 +383,7 @@
             .style("text-anchor", "end")
             .text("Crime rate");
         // y-axis
-        svg.append("g")
+        svg2.append("g")
             .attr("class", "y axis")
             .call(yAxis)
             .append("text")
@@ -394,7 +394,7 @@
             .style("text-anchor", "end")
             .text("Avg Price");
         // draw dots
-        svg.selectAll(".dot")
+        svg2.selectAll(".dot")
             .data(data)
             .enter().append("circle")
             .attr("class", "dot")
@@ -407,17 +407,17 @@
                 return color(cValue(d));
             })
             .on("mouseover", function(d) {
-                tooltip.transition()
+                tooltip2.transition()
                     .duration(200)
                     .style("opacity", .9);
-                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                tooltip2.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
                         "<br/> Avg Price: " + yValue(d) +
                         "<br/> Std Price: " + d.StdPrice)
                     .style("left", (d3.event.pageX + 5) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
             .on("mouseout", function(d) {
-                tooltip.transition()
+                tooltip2.transition()
                     .duration(500)
                     .style("opacity", 0);
             });
@@ -467,13 +467,13 @@
             return d.StdPrice / 1600000 * 35;
         }
         // add the graph canvas to the body of the webpage
-    var svg = d3.select("#svg6")
+    var svg6 = d3.select("#svg6")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     // add the tooltip area to the webpage
-    var tooltip = d3.select("#polt6")
+    var tooltip6 = d3.select("#polt6")
         .attr("class", "tooltip")
         .style("opacity", 0);
     // load data
@@ -489,7 +489,7 @@
         xScale.domain([d3.min(data, xValue) - 300, d3.max(data, xValue) + 300]);
         yScale.domain([d3.min(data, yValue) - 50000, d3.max(data, yValue) + 60000]);
         // x-axis
-        svg.append("g")
+        svg6.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis)
@@ -500,7 +500,7 @@
             .style("text-anchor", "end")
             .text("Crime rate");
         // y-axis
-        svg.append("g")
+        svg6.append("g")
             .attr("class", "y axis")
             .call(yAxis)
             .append("text")
@@ -511,7 +511,7 @@
             .style("text-anchor", "end")
             .text("Avg Price");
         // draw dots
-        svg.selectAll(".dot")
+        svg6.selectAll(".dot")
             .data(data)
             .enter().append("circle")
             .attr("class", "dot")
@@ -524,17 +524,17 @@
                 return color(cValue(d));
             })
             .on("mouseover", function(d) {
-                tooltip.transition()
+                tooltip6.transition()
                     .duration(200)
                     .style("opacity", .9);
-                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                tooltip6.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
                         "<br/> Avg Price: " + yValue(d) +
                         "<br/> Std Price: " + d.StdPrice)
                     .style("left", (d3.event.pageX + 5) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
             .on("mouseout", function(d) {
-                tooltip.transition()
+                tooltip6.transition()
                     .duration(500)
                     .style("opacity", 0);
             });
@@ -584,13 +584,13 @@
             return d.StdPrice / 1600000 * 35;
         }
         // add the graph canvas to the body of the webpage
-    var svg = d3.select("#svg5")
+    var svg5 = d3.select("#svg5")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     // add the tooltip area to the webpage
-    var tooltip = d3.select("#polt5")
+    var tooltip5 = d3.select("#polt5")
         .attr("class", "tooltip")
         .style("opacity", 0);
     // load data
@@ -606,7 +606,7 @@
         xScale.domain([d3.min(data, xValue) - 50, d3.max(data, xValue) - 600]);
         yScale.domain([d3.min(data, yValue) - 25000, d3.max(data, yValue) + 30000]);
         // x-axis
-        svg.append("g")
+        svg5.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis)
@@ -617,7 +617,7 @@
             .style("text-anchor", "end")
             .text("Crime rate");
         // y-axis
-        svg.append("g")
+        svg5.append("g")
             .attr("class", "y axis")
             .call(yAxis)
             .append("text")
@@ -628,7 +628,7 @@
             .style("text-anchor", "end")
             .text("Avg Price");
         // draw dots
-        svg.selectAll(".dot")
+        svg5.selectAll(".dot")
             .data(data)
             .enter().append("circle")
             .attr("class", "dot")
@@ -641,17 +641,17 @@
                 return color(cValue(d));
             })
             .on("mouseover", function(d) {
-                tooltip.transition()
+                tooltip5.transition()
                     .duration(200)
                     .style("opacity", .9);
-                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                tooltip5.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
                         "<br/> Avg Price: " + yValue(d) +
                         "<br/> Std Price: " + d.StdPrice)
                     .style("left", (d3.event.pageX + 5) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
             .on("mouseout", function(d) {
-                tooltip.transition()
+                tooltip5.transition()
                     .duration(500)
                     .style("opacity", 0);
             });
@@ -701,13 +701,13 @@
             return d.StdPrice / 1600000 * 35;
         }
         // add the graph canvas to the body of the webpage
-    var svg = d3.select("#svg7")
+    var svg7 = d3.select("#svg7")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     // add the tooltip area to the webpage
-    var tooltip = d3.select("#polt7")
+    var tooltip7 = d3.select("#polt7")
         .attr("class", "tooltip")
         .style("opacity", 0);
     // load data
@@ -723,7 +723,7 @@
         xScale.domain([d3.min(data, xValue) - 300, d3.max(data, xValue) + 300]);
         yScale.domain([d3.min(data, yValue) - 50000, d3.max(data, yValue) + 60000]);
         // x-axis
-        svg.append("g")
+        svg7.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis)
@@ -734,7 +734,7 @@
             .style("text-anchor", "end")
             .text("Crime rate");
         // y-axis
-        svg.append("g")
+        svg7.append("g")
             .attr("class", "y axis")
             .call(yAxis)
             .append("text")
@@ -745,7 +745,7 @@
             .style("text-anchor", "end")
             .text("Avg Price");
         // draw dots
-        svg.selectAll(".dot")
+        svg7.selectAll(".dot")
             .data(data)
             .enter().append("circle")
             .attr("class", "dot")
@@ -758,17 +758,17 @@
                 return color(cValue(d));
             })
             .on("mouseover", function(d) {
-                tooltip.transition()
+                tooltip7.transition()
                     .duration(200)
                     .style("opacity", .9);
-                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                tooltip7.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
                         "<br/> Avg Price: " + yValue(d) +
                         "<br/> Std Price: " + d.StdPrice)
                     .style("left", (d3.event.pageX + 5) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
             .on("mouseout", function(d) {
-                tooltip.transition()
+                tooltip7.transition()
                     .duration(500)
                     .style("opacity", 0);
             });
