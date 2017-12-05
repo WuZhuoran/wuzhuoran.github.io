@@ -21,7 +21,6 @@
         }
 
         .tooltip {
-            position: absolute;
             width: 200px;
             height: 28px;
             pointer-events: none;
@@ -104,8 +103,9 @@
             <div class="col-sm-12">
                 <h2>Analysis on Relationship between House price and Earning</h2>
                 <p>From our assumption, income of people in a specific city should have direct relation to the house price in the city. To test our hypothesis, we performed a scatter plot as shown below.</p>
-                <p>&lt;D3: plot-1 folder in Github&gt;</p>
-                <div id = "polt1" class="tooltip">
+                <svg id="svg1">
+                </svg>
+                <div id="polt1" class="tooltip">
                 </div>
                 <p>This figure shows relationship between average house price of each city and earning of people in the city. The size of points indicate the standard deviation of house prices in the city.</p>
                 <p>This plot obviously indicates that house prices and earning of people in each city have a strong direct relationship between them. We found that where people have high income in a city, the house price in that city is also high. On the
@@ -113,32 +113,41 @@
                 <h2>Analysis on different types of Crime of each city in California</h2>
                 <p>After we can see the very strong relationship in the figure above, we have an assumption that maybe crime rate should be useful somehow to estimate house price in particular areas. Therefore, we show more visualizations to see the relationship
                     if it does exist.</p>
-                <p>&lt;Plotly: <a href="https://plot.ly/~korn515253/16.embed">https://plot.ly/~korn515253/16.embed</a>&gt;</p>
+                <div>
+                    <a href="https://plot.ly/~korn515253/16/" target="_blank" title="crime-rate-boxplot" style="display: block; text-align: center;"><img src="https://plot.ly/~korn515253/16.png" alt="crime-rate-boxplot" style="max-width: 100%;width: 600px;" width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                    <script data-plotly="korn515253:16" src="https://plot.ly/embed.js" async></script>
+                </div>
                 <p>The figure above shows the crime rates of each city in a specific area in California. Each box plot means a type of crime rate. We found that murder and rape crime rates are really low in these particular cities. Moreover, property crime
                     rates which should be directly related to our work are the most sparse comparing to other types of crime. We need to consider in deeper detail about the interesting crime rate such as this property crime, all crime, violent crime.</p>
                 <h2>Analysis on Relationship between House price and Crime rate</h2>
-                <p>&lt;D3: plot-2 folder in Github&gt;</p>
+                <svg id="svg2">
+                </svg>
+                <div id="polt2" class="tooltip">
+                </div>
                 <p>This figure is scatter plot showing relation between average house price in each city and their crime rate in the city. The size of points are standard deviation of house prices in the city.</p>
                 <p>From the paper <code>[&quot;Crime and Residential Choice: A Neighborhood Level Analysis of the Impact of Crime on Housing Prices&quot; Tita, George E.; Petras, Tricia L.; Greenbaum, Robert T. Journal of Quantitative Criminology, December 2006, Volume 22, Issue 4, pp. 299-317.]</code>,
                     they stated that all crimes are not helpful for house price estimation. Our graph supports their statement. Even we zoom in the figure by discard the data that have average house price more than 450,000, we still cannot see any obvious
                     relation between all crime rate and house price as shown in the figure below.</p>
-                <p>&lt;D3: plot-6 folder in Github&gt;</p>
+                <svg id="svg6">
+                    </svg>
+                <div id="polt6" class="tooltip">
+                </div>
                 <p>Anyway, this paper said that the most useful crime statistic is violent crime so we change from using all crime rate to use only violent crime instead.</p>
-                <p>&lt;D3: plot-5 folder in Github&gt;</p>
+                <svg id="svg5">
+                    </svg>
+                <div id="polt5" class="tooltip">
+                </div>
                 <p>This plot apparently shows that there is a strong relationship between average house price and violent crime in the city. Note that this plot also discard the average house price more than 450,000 as mentioned in the previous paragraph.</p>
                 <p>In addition to the previous fact in the paper, they also mentioned about property crime that its rate is quite similar to the all crime rate so that we still cannot find the relationship of it and house price. The figure below shows that
                     this fact is true for our dataset as well.</p>
-                <p>&lt;D3: plot-7 folder in Github&gt;</p>
+                <svg id="svg7">
+                        </svg>
+                <div id="polt7" class="tooltip">
+                </div>
                 <p>Nonetheless, this leads to an interesting question - why there is no relation between house price and property crime? This type of crime should play an important role in order to predict house price. In the paper we mentioned so far, they
                     explain more about this. They found that the property crime is unstable varying on high-mid-low income areas. In particular, the property crime reduces house price in high-income area, but increases the price in middle-income area.
                     In our work, we consider overall property crime of each city, thus, we cannot see an obvious relation between the house price and property crime. However, if we combine earning and property house price together, it should our classifier
                     to perform a better result.</p>
-                <!--
-        <div class="col-sm-6">
-          <h2><a href="./layouts/">Layouts</a></h2>
-          <a href="./layouts/"><img class="img-responsive img-thumbnail" src="./layouts/quarter-grid/preview.png"></a>
-        </div>
-      -->
             </div>
         </div>
     </div>
@@ -205,7 +214,7 @@
             return d.StdPrice / 1172076 * 35;
         }
         // add the graph canvas to the body of the webpage
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select('#svg1')
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
@@ -297,6 +306,472 @@
             .text(function(d) {
                 return d;
             })
+    });
+</script>
+
+<script>
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 60
+        },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+    /*
+     * value accessor - returns the value to encode for a given data object.
+     * scale - maps value to a visual display encoding, such as a pixel position.
+     * map function - maps from data value to display value
+     * axis - sets up axis
+     */
+    // setup x
+    var xValue = function(d) {
+            return d["Crime Rate"];
+        }, // data -> value
+        xScale = d3.scale.linear().range([0, width]), // value -> display
+        xMap = function(d) {
+            return xScale(xValue(d));
+        }, // data -> display
+        xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+    // setup y
+    var yValue = function(d) {
+            return d["AvgPrice"];
+        }, // data -> value
+        yScale = d3.scale.linear().range([height, 0]), // value -> display
+        yMap = function(d) {
+            return yScale(yValue(d));
+        }, // data -> display
+        yAxis = d3.svg.axis().scale(yScale).orient("left");
+    // setup fill color
+    var cValue = function(d) {
+            return d.City;
+        },
+        color = d3.scale.category20b();
+    // setup radius based on StdPrice
+    var rValue = function(d) {
+            return d.StdPrice / 1600000 * 35;
+        }
+        // add the graph canvas to the body of the webpage
+    var svg = d3.select("#svg2")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    // add the tooltip area to the webpage
+    var tooltip = d3.select("#polt2");
+    // load data
+    d3.csv("price_crimerate.csv", function(error, data) {
+        // change string (from CSV) into number format
+        data.forEach(function(d) {
+            d.AvgPrice = +d.AvgPrice;
+            d.StdPrice = +d.StdPrice;
+            d["Crime Rate"] = +d["Crime Rate"];
+            // console.log(d);
+        });
+        // don't want dots overlapping axis, so add in buffer to data domain
+        xScale.domain([d3.min(data, xValue) - 1000, d3.max(data, xValue) + 1000]);
+        yScale.domain([d3.min(data, yValue) - 150000, d3.max(data, yValue) + 120000]);
+        // x-axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("x", width)
+            .attr("y", -6)
+            .style("text-anchor", "end")
+            .text("Crime rate");
+        // y-axis
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Avg Price");
+        // draw dots
+        svg.selectAll(".dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", function(d) {
+                return rValue(d);
+            })
+            .attr("cx", xMap)
+            .attr("cy", yMap)
+            .style("fill", function(d) {
+                return color(cValue(d));
+            })
+            .on("mouseover", function(d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                        "<br/> Avg Price: " + yValue(d) +
+                        "<br/> Std Price: " + d.StdPrice)
+                    .style("left", (d3.event.pageX + 5) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
+    });
+</script>
+
+<script>
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 60
+        },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+    /*
+     * value accessor - returns the value to encode for a given data object.
+     * scale - maps value to a visual display encoding, such as a pixel position.
+     * map function - maps from data value to display value
+     * axis - sets up axis
+     */
+    // setup x
+    var xValue = function(d) {
+            return d["Crime Rate"];
+        }, // data -> value
+        xScale = d3.scale.linear().range([0, width]), // value -> display
+        xMap = function(d) {
+            return xScale(xValue(d));
+        }, // data -> display
+        xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+    // setup y
+    var yValue = function(d) {
+            return d["AvgPrice"];
+        }, // data -> value
+        yScale = d3.scale.linear().range([height, 0]), // value -> display
+        yMap = function(d) {
+            return yScale(yValue(d));
+        }, // data -> display
+        yAxis = d3.svg.axis().scale(yScale).orient("left");
+    // setup fill color
+    var cValue = function(d) {
+            return d.City;
+        },
+        color = d3.scale.category20b();
+    // setup radius based on StdPrice
+    var rValue = function(d) {
+            return d.StdPrice / 1600000 * 35;
+        }
+        // add the graph canvas to the body of the webpage
+    var svg = d3.select("#svg6")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    // add the tooltip area to the webpage
+    var tooltip = d3.select("#polt6")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    // load data
+    d3.csv("price_crimerate_450000.csv", function(error, data) {
+        // change string (from CSV) into number format
+        data.forEach(function(d) {
+            d.AvgPrice = +d.AvgPrice;
+            d.StdPrice = +d.StdPrice;
+            d["Crime Rate"] = +d["Crime Rate"];
+            // console.log(d);
+        });
+        // don't want dots overlapping axis, so add in buffer to data domain
+        xScale.domain([d3.min(data, xValue) - 300, d3.max(data, xValue) + 300]);
+        yScale.domain([d3.min(data, yValue) - 50000, d3.max(data, yValue) + 60000]);
+        // x-axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("x", width)
+            .attr("y", -6)
+            .style("text-anchor", "end")
+            .text("Crime rate");
+        // y-axis
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Avg Price");
+        // draw dots
+        svg.selectAll(".dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", function(d) {
+                return rValue(d);
+            })
+            .attr("cx", xMap)
+            .attr("cy", yMap)
+            .style("fill", function(d) {
+                return color(cValue(d));
+            })
+            .on("mouseover", function(d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                        "<br/> Avg Price: " + yValue(d) +
+                        "<br/> Std Price: " + d.StdPrice)
+                    .style("left", (d3.event.pageX + 5) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
+    });
+</script>
+
+<script>
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 60
+        },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+    /*
+     * value accessor - returns the value to encode for a given data object.
+     * scale - maps value to a visual display encoding, such as a pixel position.
+     * map function - maps from data value to display value
+     * axis - sets up axis
+     */
+    // setup x
+    var xValue = function(d) {
+            return d["Crime Rate"];
+        }, // data -> value
+        xScale = d3.scale.linear().range([0, width]), // value -> display
+        xMap = function(d) {
+            return xScale(xValue(d));
+        }, // data -> display
+        xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+    // setup y
+    var yValue = function(d) {
+            return d["AvgPrice"];
+        }, // data -> value
+        yScale = d3.scale.linear().range([height, 0]), // value -> display
+        yMap = function(d) {
+            return yScale(yValue(d));
+        }, // data -> display
+        yAxis = d3.svg.axis().scale(yScale).orient("left");
+    // setup fill color
+    var cValue = function(d) {
+            return d.City;
+        },
+        color = d3.scale.category20b();
+    // setup radius based on StdPrice
+    var rValue = function(d) {
+            return d.StdPrice / 1600000 * 35;
+        }
+        // add the graph canvas to the body of the webpage
+    var svg = d3.select("#svg5")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    // add the tooltip area to the webpage
+    var tooltip = d3.select("#polt5")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    // load data
+    d3.csv("price_crimerate_violent_450000.csv", function(error, data) {
+        // change string (from CSV) into number format
+        data.forEach(function(d) {
+            d.AvgPrice = +d.AvgPrice;
+            d.StdPrice = +d.StdPrice;
+            d["Crime Rate"] = +d["Crime Rate"];
+            // console.log(d);
+        });
+        // don't want dots overlapping axis, so add in buffer to data domain
+        xScale.domain([d3.min(data, xValue) - 50, d3.max(data, xValue) - 600]);
+        yScale.domain([d3.min(data, yValue) - 25000, d3.max(data, yValue) + 30000]);
+        // x-axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("x", width)
+            .attr("y", -6)
+            .style("text-anchor", "end")
+            .text("Crime rate");
+        // y-axis
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Avg Price");
+        // draw dots
+        svg.selectAll(".dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", function(d) {
+                return rValue(d);
+            })
+            .attr("cx", xMap)
+            .attr("cy", yMap)
+            .style("fill", function(d) {
+                return color(cValue(d));
+            })
+            .on("mouseover", function(d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                        "<br/> Avg Price: " + yValue(d) +
+                        "<br/> Std Price: " + d.StdPrice)
+                    .style("left", (d3.event.pageX + 5) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
+    });
+</script>
+
+<script>
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 60
+        },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+    /*
+     * value accessor - returns the value to encode for a given data object.
+     * scale - maps value to a visual display encoding, such as a pixel position.
+     * map function - maps from data value to display value
+     * axis - sets up axis
+     */
+    // setup x
+    var xValue = function(d) {
+            return d["Crime Rate"];
+        }, // data -> value
+        xScale = d3.scale.linear().range([0, width]), // value -> display
+        xMap = function(d) {
+            return xScale(xValue(d));
+        }, // data -> display
+        xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+    // setup y
+    var yValue = function(d) {
+            return d["AvgPrice"];
+        }, // data -> value
+        yScale = d3.scale.linear().range([height, 0]), // value -> display
+        yMap = function(d) {
+            return yScale(yValue(d));
+        }, // data -> display
+        yAxis = d3.svg.axis().scale(yScale).orient("left");
+    // setup fill color
+    var cValue = function(d) {
+            return d.City;
+        },
+        color = d3.scale.category20b();
+    // setup radius based on StdPrice
+    var rValue = function(d) {
+            return d.StdPrice / 1600000 * 35;
+        }
+        // add the graph canvas to the body of the webpage
+    var svg = d3.select("#svg7")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    // add the tooltip area to the webpage
+    var tooltip = d3.select("#polt7")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    // load data
+    d3.csv("price_crimerate_property_450000.csv", function(error, data) {
+        // change string (from CSV) into number format
+        data.forEach(function(d) {
+            d.AvgPrice = +d.AvgPrice;
+            d.StdPrice = +d.StdPrice;
+            d["Crime Rate"] = +d["Crime Rate"];
+            // console.log(d);
+        });
+        // don't want dots overlapping axis, so add in buffer to data domain
+        xScale.domain([d3.min(data, xValue) - 300, d3.max(data, xValue) + 300]);
+        yScale.domain([d3.min(data, yValue) - 50000, d3.max(data, yValue) + 60000]);
+        // x-axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("x", width)
+            .attr("y", -6)
+            .style("text-anchor", "end")
+            .text("Crime rate");
+        // y-axis
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Avg Price");
+        // draw dots
+        svg.selectAll(".dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", function(d) {
+                return rValue(d);
+            })
+            .attr("cx", xMap)
+            .attr("cy", yMap)
+            .style("fill", function(d) {
+                return color(cValue(d));
+            })
+            .on("mouseover", function(d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html(d["City"] + "<br/> Crime rate: " + xValue(d) +
+                        "<br/> Avg Price: " + yValue(d) +
+                        "<br/> Std Price: " + d.StdPrice)
+                    .style("left", (d3.event.pageX + 5) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
     });
 </script>
 
